@@ -22,17 +22,7 @@
 - [RWKV 的 RAG 系统](#rwkv-rag)
 - [聊天机器人与推理 API 服务器](#聊天机器人与推理-api-服务器)
 - [RWKV 基准测试](#rwkv-基准测试)
-- [RWKV 推理框架](#rwkv-推理框架)
-  - [rwkv7.c](#rwkv7c)
-  - [rwkv.cpp](#rwkvcpp)
-  - [RWKVSharp](#rwkvsharp)
-  - [Pytorch 原生实现](#pytorch-原生实现)
-  - [WebGPU 实现](#webgpu-实现)
-  - [Candle 实现](#candle-实现)
-  - [Keras 实现](#keras-实现)
-  - [JAX 实现](#jax-实现)
-  - [移动端推理](#移动端推理)
-  - [其他支持 RWKV 的推理引擎](#其他支持-rwkv-的推理引擎)
+- [RWKV 推理框架/算子库](#rwkv-推理框架算子库)
 - [其他 RWKV 项目](#其他-rwkv-项目)
 
 ---
