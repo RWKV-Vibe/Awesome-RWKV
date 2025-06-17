@@ -19,7 +19,6 @@
 - [时间序列](#时间序列)
 - [机器人与具身智能](#机器人与具身智能)
 - [RWKV 分词器](#rwkv-分词器)
-- [Prompt 集合](#prompt-集合)
 - [RWKV 的 RAG 系统](#rwkv-rag)
 - [聊天机器人与推理 API 服务器](#聊天机器人与推理-api-服务器)
 - [RWKV 基准测试](#rwkv-基准测试)
@@ -49,6 +48,8 @@
 | RWKV pip 包 | [![PyPI - Downloads](https://img.shields.io/pypi/dm/rwkv.svg)](https://pypi.org/project/rwkv/) | | RWKV 的 pip 包，具体用法可以查看 [RWKV 官网](https://rwkv.cn/tutorials/intermediate/RWKVpip)。 |
 | RWKV-CUDA | [![Star](https://img.shields.io/github/stars/BlinkDL/RWKV-CUDA.svg?style=social&label=Star)](https://github.com/BlinkDL/RWKV-CUDA) | | RWKV 的官方 CUDA 算子。 |
 | Hugging Face 文档 | [![Hugging Face Docs](https://img.shields.io/badge/Hugging%20Face-Docs-blue)](https://huggingface.co/docs/transformers/model_doc/rwkv) | | Hugging Face 关于 RWKV 的介绍。 |
+| rwkvcn-docs | [![Star](https://img.shields.io/github/stars/LeoLin4258/rwkvcn-docs.svg?style=social&label=Star)](https://github.com/LeoLin4258/rwkvcn-docs) | | RWKV 的中文文档项目链接 |
+| RWKV.com | [![Star](https://img.shields.io/github/stars/BlinkDL/RWKV.com.svg?style=social&label=Star)](https://github.com/BlinkDL/RWKV.com) | | RWKV 的英文官网项目链接 |
 
 ---
 
@@ -70,6 +71,7 @@
 | :--- | :--- | :--- | :--- |
 | wind_rwkv | [![Star](https://img.shields.io/github/stars/johanwind/wind_rwkv.svg?style=social&label=Star)](https://github.com/johanwind/wind_rwkv) | | 一个包含 RWKV 语言模型优化内核的存储库。目前专注于 RWKV-7。 |
 | RWKV-LM-V7 | [![Star](https://img.shields.io/github/stars/RWKV-Vibe/RWKV-LM-V7.svg?style=social&label=Star)](https://github.com/RWKV-Vibe/RWKV-LM-V7) | | RWKV-LM-V7 是一个专注于易用性的 RWKV-7 多类模型训练项目，让开发者能够在15分钟内快速上手 RWKV-7 模型训练。 |
+| RWKV-LM-V7-AMD-ROCm | [![Star](https://img.shields.io/github/stars/Alic-Li/RWKV-LM-V7-AMD-ROCm.svg?style=social&label=Star)](https://github.com/Alic-Li/RWKV-LM-V7-AMD-ROCm7) | | 适用于 AMD 的RWKV-LM-V7  |
 | RWKV-infctx-trainer | [![Star](https://img.shields.io/github/stars/RWKV/RWKV-infctx-trainer.svg?style=social&label=Star)](https://github.com/RWKV/RWKV-infctx-trainer/) | | RWKV 无限上下文训练器，支持训练 10k 及以上长度的上下文。 |
 | RWKV-Ouroboros | [![Star](https://img.shields.io/github/stars/neromous/RWKV-Ouroboros.svg?style=social&label=Star)](https://github.com/neromous/RWKV-Ouroboros) | | 基于 API 的 rwkv-trainer 项目，支持交替运行训练和推理。 |
 | nanoRWKV | [![Star](https://img.shields.io/github/stars/Hannibal046/nanoRWKV.svg?style=social&label=Star)](https://github.com/Hannibal046/nanoRWKV) | | RWKV 模型的 nanoGPT 风格实现。 |
@@ -87,12 +89,18 @@
 | VisualRWKV | [![Star](https://img.shields.io/github/stars/howard-hou/VisualRWKV.svg?style=social&label=Star)](https://github.com/howard-hou/VisualRWKV) | | 基于 RWKV 的视觉语言模型，可处理视觉任务。 |
 | RWKV-CLIP | [![Star](https://img.shields.io/github/stars/deepglint/RWKV-CLIP.svg?style=social&label=Star)](https://github.com/deepglint/RWKV-CLIP) | [![arXiv:2406.06973](https://img.shields.io/badge/arXiv-2406.06973-b31b1b.svg)](https://arxiv.org/abs/2406.06973) | 🏅【EMNLP 2024】RWKV 驱动的 CLIP（视觉-语言表示学习）模型。 |
 
+### 图像分类
+
+| 标题 | 代码 | 论文 | 简介 |
+| :--- | :--- | :--- | :--- |
+|Vision_QRWKV|[![Star](https://img.shields.io/github/stars/ChiShengChen/Vision_QRWKV.svg?style=social&label=Star)](https://github.com/ChiShengChen/Vision_QRWKV)|[![arXiv:2506.06633](https://img.shields.io/badge/arXiv-2506.06633-b31b1b.svg)](https://arxiv.org/abs/2506.06633)|用于图像分类的量子增强型 RWKV 模型|
+
 ### 视觉骨干网络
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
 | Vision-RWKV (New Gen) | [![Star](https://img.shields.io/github/stars/xforcevesa/new-vrwkv.svg?style=social&label=Star)](https://github.com/xforcevesa/new-vrwkv) | | 全新一代 RWKV for Vision，基于 RWKV-7 实现。 |
-| Vision-RWKV | [![Star](https://img.shields.io/github/stars/OpenGVLab/Vision-RWKV.svg?style=social&label=Star)](https://github.com/OpenGVLab/Vision-RWKV) | [![arXiv:2403.02308](https://img.shields.io/badge/arXiv-2403.02308-b31b1b.svg)](https://arxiv.org/abs/2403.02308)| 基于 RWKV 的视觉感知模型，能平滑处理高分辨率图像。 |
+| Vision-RWKV | [![Star](https://img.shields.io/github/stars/OpenGVLab/Vision-RWKV.svg?style=social&label=Star)](https://github.com/OpenGVLab/Vision-RWKV) | [![arXiv:2403.02308](https://img.shields.io/badge/arXiv-2403.02308-b31b1b.svg)](https://arxiv.org/abs/2403.02308)| 🏅🏅🏅【ICLR 2025 Spotlight】基于 RWKV 的视觉感知模型，能平滑处理高分辨率图像。 |
 | PointRWKV | [![Star](https://img.shields.io/github/stars/hithqd/PointRWKV.svg?style=social&label=Star)](https://github.com/hithqd/PointRWKV) |[![arXiv:2405.15214](https://img.shields.io/badge/arXiv-2405.15214-b31b1b.svg)](https://arxiv.org/abs/2405.15214) | 🏅【AAAI 2025 】基于 RWKV 的 3D 点云学习框架。 |
 
 
@@ -120,6 +128,7 @@
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
+| FEAT | [![Star](https://img.shields.io/github/stars/Yaziwel/FEAT?style=social&label=Star)](https://github.com/Yaziwel/FEAT) |[![arXiv:2506.04956](https://img.shields.io/badge/arXiv-2506.04956-b31b1b.svg)](https://arxiv.org/abs/2506.04956) | 🏅🏅【MICCAI 2025 early accepted】基于 RWKV 的医学视频生成。 |
 | Restore-RWKV | [![Star](https://img.shields.io/github/stars/Yaziwel/Restore-RWKV.svg?style=social&label=Star)](https://github.com/Yaziwel/Restore-RWKV) |[![arXiv:2407.11087](https://img.shields.io/badge/arXiv-2407.11087-b31b1b.svg)](https://arxiv.org/abs/2407.11087) | 使用 RWKV 进行高效且有效的医学图像恢复（PyTorch 实现）。 |
 | LineRWKV | [![Star](https://img.shields.io/github/stars/diegovalsesia/linerwkv.svg?style=social&label=Star)](https://github.com/diegovalsesia/linerwkv) | [![arXiv:2403.17677](https://img.shields.io/badge/arXiv-2403.17677-b31b1b.svg)](https://arxiv.org/abs/2403.17677)| LineRWKV 是一种对高光谱图像进行无损和有损压缩的方法。 |
 
@@ -163,15 +172,6 @@
 
 ---
 
-## Prompt 集合
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
-| Awesome-RWKV-Prompts | [![Star](https://img.shields.io/github/stars/shoumenchougou/Awesome-RWKV-Prompts.svg?style=social&label=Star)](https://github.com/shoumenchougou/Awesome-RWKV-Prompts) | | 用户友好、开箱即用的 RWKV Prompts 示例，适用于所有用户。 |
-| **⚠️ (可能过时)** RWKV_chains | [![Star](https://img.shields.io/github/stars/jiamingkong/RWKV_chains.svg?style=social&label=Star)](https://github.com/jiamingkong/RWKV_chains) | | 使 RWKV 模型与 Langchain 一起工作的 prompts。 |
-
----
-
 ## RWKV-RAG
 
 | 标题 | 代码 | 论文 | 简介 |
@@ -207,71 +207,24 @@
 
 ---
 
-## RWKV 推理框架
-
-### rwkv7.c
+## RWKV 推理框架/算子库
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
+|cann-ops-rwkv|[![Star](https://img.shields.io/github/stars/appleinsky/rwkv_Ascend.svg?style=social&label=Star)](https://github.com/appleinsky/rwkv_Ascend)||昇腾与rwkv共建的算子仓库|
 | rwkv7.c | [![Star](https://img.shields.io/github/stars/KevlarKanou/rwkv7.c.svg?style=social&label=Star)](https://github.com/KevlarKanou/rwkv7.c) | | RWKV-7 的 C 语言实现，支持 RWKV-7 模型的推理。 |
-
-### rwkv.cpp
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
 | rwkv.cpp | [![Star](https://img.shields.io/github/stars/RWKV/rwkv.cpp.svg?style=social&label=Star)](https://github.com/RWKV/rwkv.cpp) | | 在 CPU 上推理 RWKV 模型，支持 FP16、量化 INT4、INT5 和 INT8 推理。 |
-
-### RWKVSharp
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
 | RWKVSharp | [![Star](https://img.shields.io/github/stars/imxcstar/RWKVSharp.svg?style=social&label=Star)](https://github.com/imxcstar/RWKVSharp) | | 使用 C# 封装的 RWKV 推理工具，基于 rwkv.cpp，支持运行 RWKV4/RWKV5/RWKV6/RWKV7 World 模型。 |
-
-### Pytorch 原生实现
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
 | RWKV_Pytorch | [![Star](https://img.shields.io/github/stars/yuunnn-w/RWKV_Pytorch.svg?style=social&label=Star)](https://github.com/yuunnn-w/RWKV_Pytorch) | | 用纯 Pytorch 原生实现的 RWKV 模型推理框架。 |
 | rwkv-kit | [![Star](https://img.shields.io/github/stars/TorchRWKV/rwkv-kit.svg?style=social&label=Star)](https://github.com/TorchRWKV/rwkv-kit) | | RWKV 模型推理框架，支持批量推理、并行推理训练等各种功能。 |
-
-### WebGPU 实现
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
 | web-rwkv | [![Star](https://img.shields.io/github/stars/cryscan/web-rwkv.svg?style=social&label=Star)](https://github.com/cryscan/web-rwkv) | | 在纯 WebGPU/Rust 中实现 RWKV 模型推理。 |
-
-### Candle 实现
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
 | candle-rwkv | [![Star](https://img.shields.io/github/stars/nkypy/candle-rwkv.svg?style=social&label=Star)](https://github.com/nkypy/candle-rwkv) | | 在 Rust 的极简机器学习框架 candle 中实现 RWKV 模型推理（支持量化）。 |
-
-### Keras 实现
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
 | **🚧 (施工中)** RWKV7-Keras | [![Star](https://img.shields.io/github/stars/pass-lin/RWKV7-Keras.svg?style=social&label=Star)](https://github.com/pass-lin/RWKV7-Keras) | | RWKV 模型的 Keras 实现，支持训练和推理。 |
 | RWKV6-Keras | [![Star](https://img.shields.io/github/stars/pass-lin/RWKV6-Keras.svg?style=social&label=Star)](https://github.com/pass-lin/RWKV6-Keras) | | RWKV 模型的 Keras 实现，支持训练和推理。 |
-
-### JAX 实现
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
-| rwkv-jax | [![Star](https://img.shields.io/github/stars/saran-gangster/rwkv-jax.svg?style=social&label=Star)](https://github.com/saran-gangster/rwkv-jax) | | RWKV 语言模型的 JAX 实现，适合 TPU 训练。 |
-| **⚠️ (可能过时)** RWKV-LM-jax | [![Star](https://img.shields.io/github/stars/mrsteyk/RWKV-LM-jax.svg?style=social&label=Star)](https://github.com/mrsteyk/RWKV-LM-jax) | | |
-| **⚠️ (可能过时)** tpu_rwkv | [![Star](https://img.shields.io/github/stars/tensorpro/tpu_rwkv.svg?style=social&label=Star)](https://github.com/tensorpro/tpu_rwkv) | | |
-
-### 移动端推理
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
+| rwkv-burn| [![Star](https://img.shields.io/github/stars/dymat/rwkv-burn.svg?style=social&label=Star)](https://github.com/dymat/rwkv-burn) | | RWKV 语言模型的 burn 实现。 |
+| jaxrwkv | [![Star](https://img.shields.io/github/stars/bsarkar321/jaxrwkv.svg?style=social&label=Star)](https://github.com/bsarkar321/jaxrwkv) | | RWKV 语言模型的 JAX 实现 |
 | **🚧 (开发中)** rwkv-mobile | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-mobile.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-mobile) | | RWKV 移动端推理引擎。 |
 | rwkv-qualcomm | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-qualcomm.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-qualcomm) | | 使用 Qualcomm AI Engine Direct SDK 推理 RWKV 模型。 |
-
-### 其他支持 RWKV 的推理引擎
-
-| 标题 | 代码 | 论文 | 简介 |
-| :--- | :--- | :--- | :--- |
 | rwkv-by-hand-excel | [![Star](https://img.shields.io/github/stars/playaswd/rwkv-by-hand-excel.svg?style=social&label=Star)](https://github.com/playaswd/rwkv-by-hand-excel) | | 使用 Excel 实现 RWKV，帮助开发者探索 RWKV 原理。 |
 | RWKV-Infer | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-Infer.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-Infer) | | 使用 FLA 进行 RWKV-V6/V7 推理，支持组合多个状态进行推理。 |
 | MLC LLM | [![Star](https://img.shields.io/github/stars/mlc-ai/mlc-llm.svg?style=social&label=Star)](https://github.com/mlc-ai/mlc-llm) | | 机器学习编译器和高性能部署引擎，支持 RWKV 模型。 |
@@ -286,3 +239,6 @@
 | JSONL to binidx | [![Star](https://img.shields.io/github/stars/Abel2076/json2binidx_tool.svg?style=social&label=Star)](https://github.com/Abel2076/json2binidx_tool) | | 这个工具用于将 `.jsonl` 文件转成适合 RWKV 训练的 `.bin /.idx`（binidx）数据。 |
 | AI Town - RWKV Proxy | [![Star](https://img.shields.io/github/stars/recursal/ai-town-rwkv-proxy.svg?style=social&label=Star)](https://github.com/recursal/ai-town-rwkv-proxy?tab=readme-ov-file) | | 通过 RWKV 在本地运营一个大型 AI 城镇！ |
 | Bot-Ani-RWKV | [![Star](https://img.shields.io/github/stars/Max-SF1/Bot-Ani-RWKV-twitter-bot-detection.svg?style=social&label=Star)](https://github.com/Max-SF1/Bot-Ani-RWKV-twitter-bot-detection) | | 基于 RWKV 的推特水军机器人检测工具。|
+| RWKVInverseFolding | [![Star](https://img.shields.io/github/stars/Lyttr/RWKVInverseFolding.svg?style=social&label=Star)](https://github.com/Lyttr/RWKVInverseFolding) | | 使用 RWKV 进行反向折叠。|
+| poker-ai-rwkv | [![Star](https://img.shields.io/github/stars/meraline/poker-ai-rwkv.svg?style=social&label=Star)](https://github.com/meraline/poker-ai-rwkv) | | 带有 RWKV 的AI 扑克牌游戏系统。|
+|Muon-RMS-Norm|[![Star](https://img.shields.io/github/stars/xTimeCrystal/Muon-RMS-Norm.svg?style=social&label=Star)](https://github.com/xTimeCrystal/Muon-RMS-Norm)|||
