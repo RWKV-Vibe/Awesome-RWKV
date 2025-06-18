@@ -59,7 +59,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
-| **⭐ (Recommended)** RWKV-PEFT | [![Star](https://img.shields.io/github/stars/JL-er/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/JL-er/RWKV-PEFT) | | An efficient fine-tuning repository for RWKV, including methods like LoRA, Pissa, Lisa, and State. |
+| **⭐ (Recommended)** RWKV-PEFT | [![Star](https://img.shields.io/github/stars/JL-er/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/JL-er/RWKV-PEFT) | | An efficient fine-tuning repository for RWKV, including methods like LoRA, Pissa, DiSHA, and State. |
 | RWKV-PEFT-Simple | [![Star](https://img.shields.io/github/stars/Seikaijyu/RWKV-PEFT-Simple.svg?style=social&label=Star)](https://github.com/Seikaijyu/RWKV-PEFT-Simple) | | A simplified version of RWKV-PEFT with convenient scripts and fine-tuning instructions. |
 | **🚧 (In Development)** RWKV-LM-RLHF | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-LM-RLHF.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-LM-RLHF) | | A Reinforcement Learning (RLHF) toolkit for RWKV, including SFT and alignment methods (DPO, ORPO). |
 | RWKV-LM-RLHF-DPO | [![Star](https://img.shields.io/github/stars/Triang-jyed-driung/RWKV-LM-RLHF-DPO.svg?style=social&label=Star)](https://github.com/Triang-jyed-driung/RWKV-LM-RLHF-DPO) | | An implementation of Direct Preference Optimization (DPO) for RWKV. |

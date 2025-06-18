@@ -59,7 +59,7 @@
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
-| **⭐ (推荐)** RWKV-PEFT | [![Star](https://img.shields.io/github/stars/JL-er/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/JL-er/RWKV-PEFT) | | RWKV 高效微调仓库，包含 LoRA、Pissa、Lisa、State 等多种微调方法。 |
+| **⭐ (推荐)** RWKV-PEFT | [![Star](https://img.shields.io/github/stars/JL-er/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/JL-er/RWKV-PEFT) | | RWKV 高效微调仓库，包含 LoRA、Pissa、DiSHA、State 等多种微调方法。 |
 | RWKV-PEFT-Simple | [![Star](https://img.shields.io/github/stars/Seikaijyu/RWKV-PEFT-Simple.svg?style=social&label=Star)](https://github.com/Seikaijyu/RWKV-PEFT-Simple) | | RWKV-PEFT 的简化版本，提供便捷脚本和微调说明。 |
 | **🚧 (开发中)** RWKV-LM-RLHF | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-LM-RLHF.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-LM-RLHF) | | RWKV 强化学习（RLHF）工具包，含 SFT、对齐（DPO、ORPO）等。 |
 | RWKV-LM-RLHF-DPO | [![Star](https://img.shields.io/github/stars/Triang-jyed-driung/RWKV-LM-RLHF-DPO.svg?style=social&label=Star)](https://github.com/Triang-jyed-driung/RWKV-LM-RLHF-DPO) | | RWKV 的 DPO 实现（直接偏好优化 - Direct Preference Optimization）。 |
