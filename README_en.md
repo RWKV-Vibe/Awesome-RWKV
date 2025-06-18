@@ -118,7 +118,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
 | U-RWKV | [![Star](https://img.shields.io/github/stars/hbyecoding/U-RWKV.svg?style=social&label=Star)](https://github.com/hbyecoding/U-RWKV) | | An image segmentation model based on RWKV. |
-| RWKV-SAM | [![Star](https://img.shields.io/github/stars/HarborYuan/ovsam.svg?style=social&label=Star)](https://github.com/HarborYuan/ovsam) | [![arXiv:2406.19369](https://img.shields.io/badge/arXiv-2406.19369-b31b1b.svg)](https://arxiv.org/abs/2406.19369)|  [ECCV 2024] "RWKV-SAM": An open-vocabulary image segmentation method based on RWKV. |
+| RWKV-SAM | [![Star](https://img.shields.io/github/stars/HarborYuan/ovsam.svg?style=social&label=Star)](https://github.com/HarborYuan/ovsam) | [![arXiv:2406.19369](https://img.shields.io/badge/arXiv-2406.19369-b31b1b.svg)](https://arxiv.org/abs/2406.19369)|  "RWKV-SAM": An open-vocabulary image segmentation method based on RWKV. |
 |MMSegRWKV|[![Star](https://img.shields.io/github/stars/supercyt/MMSegRWKV.svg?style=social&label=Star)](https://github.com/supercyt/MMSegRWKV)|| A multi-modal Magnetic Resonance Imaging (MRI) segmentation model developed on the RWKV architecture. |
 
 ### Image Generation
