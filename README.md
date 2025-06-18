@@ -71,7 +71,7 @@
 | :--- | :--- | :--- | :--- |
 | wind_rwkv | [![Star](https://img.shields.io/github/stars/johanwind/wind_rwkv.svg?style=social&label=Star)](https://github.com/johanwind/wind_rwkv) | | 一个包含 RWKV 语言模型优化内核的存储库。目前专注于 RWKV-7。 |
 | RWKV-LM-V7 | [![Star](https://img.shields.io/github/stars/RWKV-Vibe/RWKV-LM-V7.svg?style=social&label=Star)](https://github.com/RWKV-Vibe/RWKV-LM-V7) | | RWKV-LM-V7 是一个专注于易用性的 RWKV-7 多类模型训练项目，让开发者能够在15分钟内快速上手 RWKV-7 模型训练。 |
-| RWKV-LM-V7-AMD-ROCm | [![Star](https://img.shields.io/github/stars/Alic-Li/RWKV-LM-V7-AMD-ROCm.svg?style=social&label=Star)](https://github.com/Alic-Li/RWKV-LM-V7-AMD-ROCm7) | | 适用于 AMD 的RWKV-LM-V7  |
+| RWKV-LM-V7-AMD-ROCm | [![Star](https://img.shields.io/github/stars/Alic-Li/RWKV-LM-V7-AMD-ROCm.svg?style=social&label=Star)](https://github.com/Alic-Li/RWKV-LM-V7-AMD-ROCm) | | 适用于 AMD 的RWKV-LM-V7  |
 | RWKV-infctx-trainer | [![Star](https://img.shields.io/github/stars/RWKV/RWKV-infctx-trainer.svg?style=social&label=Star)](https://github.com/RWKV/RWKV-infctx-trainer/) | | RWKV 无限上下文训练器，支持训练 10k 及以上长度的上下文。 |
 | RWKV-Ouroboros | [![Star](https://img.shields.io/github/stars/neromous/RWKV-Ouroboros.svg?style=social&label=Star)](https://github.com/neromous/RWKV-Ouroboros) | | 基于 API 的 rwkv-trainer 项目，支持交替运行训练和推理。 |
 | nanoRWKV | [![Star](https://img.shields.io/github/stars/Hannibal046/nanoRWKV.svg?style=social&label=Star)](https://github.com/Hannibal046/nanoRWKV) | | RWKV 模型的 nanoGPT 风格实现。 |
