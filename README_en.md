@@ -118,7 +118,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
 | U-RWKV | [![Star](https://img.shields.io/github/stars/hbyecoding/U-RWKV.svg?style=social&label=Star)](https://github.com/hbyecoding/U-RWKV) | | An image segmentation model based on RWKV. |
-| RWKV-SAM | [![Star](https://img.shields.io/github/stars/HarborYuan/ovsam.svg?style=social&label=Star)](https://github.com/HarborYuan/ovsam) | [![arXiv:2401.02955](https://img.shields.io/badge/arXiv-2401.02955-b31b1b.svg)](https://arxiv.org/abs/2401.02955)|  [ECCV 2024] "RWKV-SAM": An open-vocabulary image segmentation method based on RWKV. |
+| RWKV-SAM | [![Star](https://img.shields.io/github/stars/HarborYuan/ovsam.svg?style=social&label=Star)](https://github.com/HarborYuan/ovsam) | [![arXiv:2406.19369](https://img.shields.io/badge/arXiv-2406.19369-b31b1b.svg)](https://arxiv.org/abs/2406.19369)|  [ECCV 2024] "RWKV-SAM": An open-vocabulary image segmentation method based on RWKV. |
 |MMSegRWKV|[![Star](https://img.shields.io/github/stars/supercyt/MMSegRWKV.svg?style=social&label=Star)](https://github.com/supercyt/MMSegRWKV)|| A multi-modal Magnetic Resonance Imaging (MRI) segmentation model developed on the RWKV architecture. |
 
 ### Image Generation
@@ -225,7 +225,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
-|cann-ops-rwkv|[![Star](https://img.shields.io/github/stars/appleinsky/rwkv_Ascend.svg?style=social&label=Star)](https://github.com/appleinsky/rwkv_Ascend)||Operator repository for Ascend, co-developed with RWKV.|
+|rwkv_Ascend|[![Star](https://img.shields.io/github/stars/appleinsky/rwkv_Ascend.svg?style=social&label=Star)](https://github.com/appleinsky/rwkv_Ascend)||Operator repository for Ascend, co-developed with RWKV.|
 | rwkv7.c | [![Star](https://img.shields.io/github/stars/KevlarKanou/rwkv7.c.svg?style=social&label=Star)](https://github.com/KevlarKanou/rwkv7.c) | | A C implementation for RWKV-7 model inference. |
 | rwkv.cpp | [![Star](https://img.shields.io/github/stars/RWKV/rwkv.cpp.svg?style=social&label=Star)](https://github.com/RWKV/rwkv.cpp) | | Inference for RWKV models on CPU, supporting FP16 and INT4/INT5/INT8 quantization. |
 | RWKVSharp | [![Star](https://img.shields.io/github/stars/imxcstar/RWKVSharp.svg?style=social&label=Star)](https://github.com/imxcstar/RWKVSharp) | | A C# wrapper for RWKV inference based on rwkv.cpp, supporting RWKV4/RWKV5/RWKV6/RWKV7 World models. |

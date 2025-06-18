@@ -118,7 +118,7 @@
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
 | U-RWKV | [![Star](https://img.shields.io/github/stars/hbyecoding/U-RWKV.svg?style=social&label=Star)](https://github.com/hbyecoding/U-RWKV) | | 基于 RWKV 的图像分割模型。 |
-| RWKV-SAM | [![Star](https://img.shields.io/github/stars/HarborYuan/ovsam.svg?style=social&label=Star)](https://github.com/HarborYuan/ovsam) | [![arXiv:2401.02955](https://img.shields.io/badge/arXiv-2401.02955-b31b1b.svg)](https://arxiv.org/abs/2401.02955)| 【ECCV 2024】基于 RWKV 的开放词表图像分段切割方法“RWKV-SAM”。 |
+| RWKV-SAM | [![Star](https://img.shields.io/github/stars/HarborYuan/ovsam.svg?style=social&label=Star)](https://github.com/HarborYuan/ovsam) | [![arXiv:2406.19369](https://img.shields.io/badge/arXiv-2406.19369-b31b1b.svg)](https://arxiv.org/abs/2406.19369)| 基于 RWKV 的开放词表图像分段切割方法“RWKV-SAM”。 |
 |MMSegRWKV|[![Star](https://img.shields.io/github/stars/supercyt/MMSegRWKV.svg?style=social&label=Star)](https://github.com/supercyt/MMSegRWKV)||基于 RWKV 架构开发的多模态磁共振成像（MRI）分割模型|
 
 ### 图像生成
@@ -225,7 +225,7 @@
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
-|cann-ops-rwkv|[![Star](https://img.shields.io/github/stars/appleinsky/rwkv_Ascend.svg?style=social&label=Star)](https://github.com/appleinsky/rwkv_Ascend)||昇腾与rwkv共建的算子仓库|
+|rwkv_Ascend|[![Star](https://img.shields.io/github/stars/appleinsky/rwkv_Ascend.svg?style=social&label=Star)](https://github.com/appleinsky/rwkv_Ascend)||昇腾与rwkv共建的算子仓库|
 | rwkv7.c | [![Star](https://img.shields.io/github/stars/KevlarKanou/rwkv7.c.svg?style=social&label=Star)](https://github.com/KevlarKanou/rwkv7.c) | | RWKV-7 的 C 语言实现，支持 RWKV-7 模型的推理。 |
 | rwkv.cpp | [![Star](https://img.shields.io/github/stars/RWKV/rwkv.cpp.svg?style=social&label=Star)](https://github.com/RWKV/rwkv.cpp) | | 在 CPU 上推理 RWKV 模型，支持 FP16、量化 INT4、INT5 和 INT8 推理。 |
 | RWKVSharp | [![Star](https://img.shields.io/github/stars/imxcstar/RWKVSharp.svg?style=social&label=Star)](https://github.com/imxcstar/RWKVSharp) | | 使用 C# 封装的 RWKV 推理工具，基于 rwkv.cpp，支持运行 RWKV4/RWKV5/RWKV6/RWKV7 World 模型。 |
