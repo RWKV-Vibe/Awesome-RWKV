@@ -1,3 +1,5 @@
+---
+
 [English Version](README_en.md)
 
 ---
@@ -12,7 +14,10 @@
 - [RWKV 微调与训练](#rwkv-微调与训练)
   - [微调项目](#微调项目)
   - [训练项目](#训练项目)
-- [模型架构与优化](#模型架构与优化)
+- [自然语言处理/大模型](#自然语言处理大模型)
+  - [模型架构与优化](#模型架构与优化)
+  - [自然语言处理](#自然语言处理)
+  - [多模态](#多模态)
 - [图像与图形](#图像与图形)
   - [视觉语言](#视觉语言)
   - [视觉骨干网络](#视觉骨干网络)
@@ -20,7 +25,10 @@
   - [图像分割](#图像分割)
   - [图像生成](#图像生成)
   - [目标检测](#目标检测)
+  - [超分辨率](#超分辨率)
+  - [图像去噪/图像增强](#图像去噪图像增强)
   - [其他图像任务](#其他图像任务)
+- [3D 与视频处理](#3d-与视频处理)
 - [音频相关](#音频相关)
 - [时间序列](#时间序列)
 - [机器人与具身智能](#机器人与具身智能)
@@ -41,9 +49,9 @@
 | RWKV-4 架构论文 | [![Star](https://img.shields.io/github/stars/BlinkDL/RWKV-LM.svg?style=social&label=Star)](https://github.com/BlinkDL/RWKV-LM/tree/main/RWKV-v4) | [![arXiv:2305.13048](https://img.shields.io/badge/arXiv-2305.13048-b31b1b.svg)](https://arxiv.org/abs/2305.13048) | RWKV-4 的架构论文。 |
 | RWKV 5/6 架构论文 | [![Star](https://img.shields.io/github/stars/BlinkDL/RWKV-LM.svg?style=social&label=Star)](https://github.com/BlinkDL/RWKV-LM/tree/main/RWKV-v5) | [![arXiv:2404.05892](https://img.shields.io/badge/arXiv-2404.05892-b31b1b.svg)](https://arxiv.org/abs/2404.05892) | RWKV-5/6 的架构论文。 |
 | RWKV-7 架构论文 | [![Star](https://img.shields.io/github/stars/BlinkDL/RWKV-LM.svg?style=social&label=Star)](https://github.com/BlinkDL/RWKV-LM/tree/main/RWKV-v7)| [![arXiv:2503.14456](https://img.shields.io/badge/arXiv-2503.14456-b31b1b.svg)](https://arxiv.org/abs/2503.14456) | RWKV-7 的架构论文。 |
-| RWKV pip 包 | [![PyPI - Downloads](https://img.shields.io/pypi/dm/rwkv.svg)](https://pypi.org/project/rwkv/) | | RWKV 的 pip 包，具体用法可以查看 [RWKV 官网](https://rwkv.cn/tutorials/intermediate/RWKVpip)。 |
+| RWKV pip 包 | [![PyPI](https://img.shields.io/pypi/v/rwkv.svg)](https://pypi.org/project/rwkv/)| | RWKV 的 pip 包，具体用法可以查看 [RWKV 官网](https://rwkv.cn/tutorials/intermediate/RWKVpip)。 |
 | RWKV-CUDA | [![Star](https://img.shields.io/github/stars/BlinkDL/RWKV-CUDA.svg?style=social&label=Star)](https://github.com/BlinkDL/RWKV-CUDA) | | RWKV 的官方 CUDA 算子。 |
-| Hugging Face 文档 | [![Hugging Face Docs](https://img.shields.io/badge/Hugging%20Face-Docs-blue)](https://huggingface.co/docs/transformers/model_doc/rwkv) | | Hugging Face 关于 RWKV 的介绍。 |
+| Hugging Face 文档 | [![🤗 RWKV](https://img.shields.io/badge/🤗%20RWKV-blue)](https://huggingface.co/docs/transformers/model_doc/rwkv) | | Hugging Face 关于 RWKV 的介绍。 |
 | rwkvcn-docs | [![Star](https://img.shields.io/github/stars/LeoLin4258/rwkvcn-docs.svg?style=social&label=Star)](https://github.com/LeoLin4258/rwkvcn-docs) | | RWKV 的中文文档项目链接 |
 | RWKV.com | [![Star](https://img.shields.io/github/stars/BlinkDL/RWKV.com.svg?style=social&label=Star)](https://github.com/BlinkDL/RWKV.com) | | RWKV 的英文官网项目链接 |
 
@@ -62,8 +70,6 @@
 | **⭐ (推荐)** RWKV-PEFT | [![Star](https://img.shields.io/github/stars/JL-er/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/JL-er/RWKV-PEFT) | | RWKV 高效微调仓库，包含 LoRA、Pissa、DiSHA、State 等多种微调方法。 |
 | RWKV-PEFT-Simple | [![Star](https://img.shields.io/github/stars/Seikaijyu/RWKV-PEFT-Simple.svg?style=social&label=Star)](https://github.com/Seikaijyu/RWKV-PEFT-Simple) | | RWKV-PEFT 的简化版本，提供便捷脚本和微调说明。 |
 | **🚧 (开发中)** RWKV-LM-RLHF | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-LM-RLHF.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-LM-RLHF) | | RWKV 强化学习（RLHF）工具包，含 SFT、对齐（DPO、ORPO）等。 |
-| RWKV-LM-RLHF-DPO | [![Star](https://img.shields.io/github/stars/Triang-jyed-driung/RWKV-LM-RLHF-DPO.svg?style=social&label=Star)](https://github.com/Triang-jyed-driung/RWKV-LM-RLHF-DPO) | | RWKV 的 DPO 实现（直接偏好优化 - Direct Preference Optimization）。 |
-| **⚠️ (可能过时)** RWKV-LoRA | [![Star](https://img.shields.io/github/stars/Blealtan/RWKV-LM-LoRA.svg?style=social&label=Star)](https://github.com/Blealtan/RWKV-LM-LoRA) | | RWKV LoRA 微调实现，不支持微调 RWKV-6 或更新的版本。 |
 
 ### 训练项目
 
@@ -80,13 +86,33 @@
 
 ---
 
-## 模型架构与优化
+## 自然语言处理/大模型
+
+### 模型架构与优化
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
 |RWKVQuant|[![Star](https://img.shields.io/github/stars/xuchen-dev/RWKVQuant.svg?style=social&label=Star)](https://github.com/xuchen-dev/RWKVQuant)| [![arXiv:2505.03803](https://img.shields.io/badge/arXiv-2505.03803-b31b1b.svg)](https://arxiv.org/abs/2505.03803)| RWKV 系列模型高效量化|
 |RWKV-X|[![Star](https://img.shields.io/github/stars/howard-hou/RWKV-X.svg?style=social&label=Star)](https://github.com/howard-hou/RWKV-X)|[![arXiv:2504.21463](https://img.shields.io/badge/arXiv-2504.21463-b31b1b.svg)](https://arxiv.org/abs/2504.21463)|基于RWKV架构的线性复杂度混合语言模|
 |ARWKV|[![Star](https://img.shields.io/github/stars/yynil/RWKVInside.svg?style=social&label=Star)](https://github.com/yynil/RWKVInside)|[![arXiv:2501.15570](https://img.shields.io/badge/arXiv-2501.15570-b31b1b.svg)](https://arxiv.org/abs/2501.15570)|RWKV 混合注意力的语言模型|
+|TemporalRNNs|[![Star](https://img.shields.io/github/stars/RazvanDu/TemporalRNNs.svg?style=social&label=Star)](https://github.com/RazvanDu/TemporalRNNs)|[![arXiv:2402.02625](https://img.shields.io/badge/arXiv-2402.02625-b31b1b.svg)](https://arxiv.org/abs/2402.02625)|【ICML 2024 workshop】多时间视角优化架构的方法|
+|GoldFinch||[![arXiv:2407.12077](https://img.shields.io/badge/arXiv-2407.12077-b31b1b.svg)](https://arxiv.org/abs/2407.12077)|RWKV/Transformer 混合模型|
+|RWKV-Lite||[![arXiv](https://img.shields.io/badge/arXiv-2412.10856-b31b1b)](https://arxiv.org/abs/2412.10856)|高效的 RWKV 模型深度压缩方案|
+|RADLADS|[![Star](https://img.shields.io/github/stars/recursal/RADLADS-paper.svg?style=social&label=Star)](https://github.com/recursal/RADLADS-paper)|[![arXiv](https://img.shields.io/badge/arXiv-2505.03005-b31b1b)](https://arxiv.org/abs/2505.03005)|将 Transformer 架构模型高效转换为 RWKV 架构模型|
+
+### 自然语言处理
+
+| 标题 | 代码 | 论文 | 简介 |
+| :--- | :--- | :--- | :--- |
+|L3TC|[![Star](https://img.shields.io/github/stars/alipay/L3TC-leveraging-rwkv-for-learned-lossless-low-complexity-text-compression.svg?style=social&label=Star)](https://github.com/alipay/L3TC-leveraging-rwkv-for-learned-lossless-low-complexity-text-compression)|[![arXiv:2412.16642](https://img.shields.io/badge/arXiv-2412.16642-b31b1b.svg)](https://arxiv.org/abs/2412.16642)|高效的无损文本压缩|
+|CMGN||[![ScienceDirect](https://img.shields.io/badge/ScienceDirect-Article-orange)](https://www.sciencedirect.com/science/article/abs/pii/S0925231225004837)|基于 RWKV 的假新闻检测|
+|RCME||[![Paper](https://img.shields.io/badge/Paper-PDF-blue)](https://www.engineeringletters.com/issues_v33/issue_6/EL_33_6_28.pdf)|混合架构的知识图谱补全|
+
+### 多模态
+
+| 标题 | 代码 | 论文 | 简介 |
+| :--- | :--- | :--- | :--- |
+|ModRWKV||[![arXiv](https://img.shields.io/badge/arXiv-2505.14505-b31b1b)](https://arxiv.org/abs/2505.14505)|基于 RWKV-7 的多模态融合框架|
 
 ---
 
@@ -96,8 +122,9 @@
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
-| VisualRWKV | [![Star](https://img.shields.io/github/stars/howard-hou/VisualRWKV.svg?style=social&label=Star)](https://github.com/howard-hou/VisualRWKV) | | 基于 RWKV 的视觉语言模型，可处理视觉任务。 |
+| VisualRWKV | [![Star](https://img.shields.io/github/stars/howard-hou/VisualRWKV.svg?style=social&label=Star)](https://github.com/howard-hou/VisualRWKV) | [![arXiv:2406.13362](https://img.shields.io/badge/arXiv-2406.13362-b31b1b.svg)](https://arxiv.org/abs/2406.13362)| 【COLING 2025】基于 RWKV 的视觉语言模型，可处理视觉任务。 |
 | RWKV-CLIP | [![Star](https://img.shields.io/github/stars/deepglint/RWKV-CLIP.svg?style=social&label=Star)](https://github.com/deepglint/RWKV-CLIP) | [![arXiv:2406.06973](https://img.shields.io/badge/arXiv-2406.06973-b31b1b.svg)](https://arxiv.org/abs/2406.06973) | 【EMNLP 2024】RWKV 驱动的 CLIP（视觉-语言表示学习）模型。 |
+|RWKV-UI||[![arXiv](https://img.shields.io/badge/arXiv-2502.03971-b31b1b)](https://arxiv.org/abs/2502.03971)|基于 RWKV 的视觉语言模型，专注于 UI 理解和设计|
 
 ### 视觉骨干网络
 
@@ -106,6 +133,7 @@
 | Vision-RWKV (New Gen) | [![Star](https://img.shields.io/github/stars/xforcevesa/new-vrwkv.svg?style=social&label=Star)](https://github.com/xforcevesa/new-vrwkv) | | 全新一代 RWKV for Vision，基于 RWKV-7 实现。 |
 | Vision-RWKV | [![Star](https://img.shields.io/github/stars/OpenGVLab/Vision-RWKV.svg?style=social&label=Star)](https://github.com/OpenGVLab/Vision-RWKV) | [![arXiv:2403.02308](https://img.shields.io/badge/arXiv-2403.02308-b31b1b.svg)](https://arxiv.org/abs/2403.02308)| 【ICLR 2025 Spotlight】基于 RWKV 的视觉感知模型，能平滑处理高分辨率图像。 |
 | PointRWKV | [![Star](https://img.shields.io/github/stars/hithqd/PointRWKV.svg?style=social&label=Star)](https://github.com/hithqd/PointRWKV) |[![arXiv:2405.15214](https://img.shields.io/badge/arXiv-2405.15214-b31b1b.svg)](https://arxiv.org/abs/2405.15214) | 【AAAI 2025 】基于 RWKV 的 3D 点云学习框架。 |
+|RSRWKV||[![arXiv](https://img.shields.io/badge/arXiv-2503.20382-b31b1b)](https://arxiv.org/abs/2503.20382)|高分辨率遥感分析，适用于分类、目标检测、分割等多种任务|
 
 ### 图像分类
 
@@ -120,12 +148,19 @@
 | U-RWKV | [![Star](https://img.shields.io/github/stars/hbyecoding/U-RWKV.svg?style=social&label=Star)](https://github.com/hbyecoding/U-RWKV) | | 基于 RWKV 的图像分割模型。 |
 | RWKV-SAM | [![Star](https://img.shields.io/github/stars/HarborYuan/ovsam.svg?style=social&label=Star)](https://github.com/HarborYuan/ovsam) | [![arXiv:2406.19369](https://img.shields.io/badge/arXiv-2406.19369-b31b1b.svg)](https://arxiv.org/abs/2406.19369)| 基于 RWKV 的开放词表图像分段切割方法“RWKV-SAM”。 |
 |MMSegRWKV|[![Star](https://img.shields.io/github/stars/supercyt/MMSegRWKV.svg?style=social&label=Star)](https://github.com/supercyt/MMSegRWKV)||基于 RWKV 架构开发的多模态磁共振成像（MRI）分割模型|
+|BSBP-RWKV|| [![PDF](https://img.shields.io/badge/PDF-OpenReview-red)](https://openreview.net/pdf?id=ULD5RCk0oo)|RWKV 医学图像分割|
+|RWKV-UNet||[![arXiv](https://img.shields.io/badge/arXiv-2501.08458-b31b1b)](https://arxiv.org/abs/2501.08458)|RWKV 改进的 Unet 进行医学图像分割|
+|HFE-RWKV||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10888300)|【ICASSP 2025】RWKV 强化高频成分的医学图像分割|
+|Zig-RiR||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/10969076)|【IEEE TMI】嵌套 RWKV 的医学图像分割|
+|Diet-Seg||[![bioRxiv](https://img.shields.io/badge/bioRxiv-2025.05.31.657149-b31b1b.svg)](https://www.biorxiv.org/content/10.1101/2025.05.31.657149v1)|医学图像分割|
+|Med-URWKV||[![arXiv:2506.10858](https://img.shields.io/badge/arXiv-2506.10858-b31b1b.svg)](https://arxiv.org/abs/2506.10858)|基于 ImageNet 预训练,用于医学图像分割的纯 RWKV|
 
 ### 图像生成
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
 | Diffusion-RWKV | [![Star](https://img.shields.io/github/stars/feizc/Diffusion-RWKV.svg?style=social&label=Star)](https://github.com/feizc/Diffusion-RWKV) |[![arXiv:2404.04478](https://img.shields.io/badge/arXiv-2404.04478-b31b1b.svg)](https://arxiv.org/abs/2404.04478) | 基于 RWKV 的图像生成任务模型，擅长处理高分辨率图像。 |
+|SDiT||[![arXiv:2402.11588](https://img.shields.io/badge/arXiv-2402.11588-b31b1b.svg)](https://arxiv.org/abs/2402.11588)|脉冲神经网络结合 RWKV 的图像生成|
 
 ### 目标检测
 
@@ -133,16 +168,55 @@
 | :--- | :--- | :--- | :--- |
 | LION | [![Star](https://img.shields.io/github/stars/happinesslz/LION.svg?style=social&label=Star)](https://github.com/happinesslz/LION) | [![arXiv:2407.18232](https://img.shields.io/badge/arXiv-2407.18232-b31b1b.svg)](https://arxiv.org/abs/2407.18232)| 【NeurIPS 2024】用于点云中 3D 对象检测的 Linear Group RNN（支持 RWKV）。 |
 |RWKV-VG| [![Star](https://img.shields.io/github/stars/nianfd/RWKV-VG.svg?style=social&label=Star)](https://github.com/nianfd/RWKV-VG)|[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s00530-025-01720-w)|基于 RWKV 架构的视觉定位框架|
+|Substation equipment||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s11760-025-03852-y)|变电站缺陷检测|
+
+### 超分辨率
+
+| 标题 | 代码 | 论文 | 简介 |
+| :--- | :--- | :--- | :--- |
+|OmniRWKVSR||[![arXiv](https://img.shields.io/badge/arXiv-2502.00404-b31b1b)](https://arxiv.org/abs/2502.00404)|【IJCNN】基于 RWKV 的单图超分|
+|Geometry-Aware RWKV||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10943155)|异构光场超分辨率|
+|Delta-WKV||[![arXiv](https://img.shields.io/badge/arXiv-2502.20852-b31b1b)](https://arxiv.org/abs/2502.20852)|【MICCAI 2025】磁共振成像超分模型|
+|MSB-RWKV||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s13042-025-02644-7)|红外图像超分辨率|
+
+### 图像去噪/图像增强
+
+| 标题 | 代码 | 论文 | 简介 |
+| :--- | :--- | :--- | :--- |
+|CRWKV|[![Star](https://img.shields.io/github/stars/Seeker98/CRWKV.svg?style=social&label=Star)](https://github.com/Seeker98/CRWKV)|[![arXiv:2505.02705](https://img.shields.io/badge/arXiv-2505.02705-b31b1b.svg)](https://arxiv.org/abs/2505.02705)|【IJCAI 2025】引入双向 WKV 机制的高效图像去噪|
+|RWKV-IR||[![arXiv:2412.03814](https://img.shields.io/badge/arXiv-2412.03814-b31b1b.svg)](https://arxiv.org/abs/2412.03814)|基于 RWKV 的图像恢复|
+| Restore-RWKV | [![Star](https://img.shields.io/github/stars/Yaziwel/Restore-RWKV.svg?style=social&label=Star)](https://github.com/Yaziwel/Restore-RWKV) |[![arXiv:2407.11087](https://img.shields.io/badge/arXiv-2407.11087-b31b1b.svg)](https://arxiv.org/abs/2407.11087) | 使用 RWKV 进行高效且有效的医学图像恢复（PyTorch 实现）。 |
+|SRCNet||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10888780)|【ICASSP 2025】基于 RWKV 的水下图像增强|
+|ID-RWKV||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10889384)|【ICASSP 2025】基于 RWKV 的高效图像去雨|
+|Flare-Aware RWKV||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10888487)|【ICASSP 2025】基于 RWKV 的高效图像去光晕|
+|URWKV||[![arXiv:2505.23068](https://img.shields.io/badge/arXiv-2505.23068-b31b1b.svg)](https://arxiv.org/abs/2505.23068)|【CVPR 2025】低光照图像恢复|
+|Pan-Sharpening||[![IEEE](https://img.shields.io/badge/IEEE-11023855-blue.svg)](https://ieeexplore.ieee.org/abstract/document/11023855)|【IEEE TGRS】基于 RWKV 的全色锐化|
+|DiffRWKVIR||[![arXiv:2506.14541](https://img.shields.io/badge/arXiv-2506.14541-b31b1b.svg)](https://arxiv.org/abs/2506.14541)|结合 RWKV 和扩散模型的图像修复|
 
 ### 其他图像任务
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
-| FEAT | [![Star](https://img.shields.io/github/stars/Yaziwel/FEAT.svg?style=social&label=Star)](https://github.com/Yaziwel/FEAT) |[![arXiv:2506.04956](https://img.shields.io/badge/arXiv-2506.04956-b31b1b.svg)](https://arxiv.org/abs/2506.04956) | 【MICCAI 2025 early accepted】基于 RWKV 的医学视频生成。 |
-|LALIC|[![Star](https://img.shields.io/github/stars/sjtu-medialab/RwkvCompress.svg?style=social&label=Star)](https://github.com/sjtu-medialab/RwkvCompress)|[![arXiv:2502.05741](https://img.shields.io/badge/arXiv-2502.05741-b31b1b.svg)](https://arxiv.org/abs/2502.05741)| 【CVOR 2025】基于 RWKV 的图像压缩框架|
-| Restore-RWKV | [![Star](https://img.shields.io/github/stars/Yaziwel/Restore-RWKV.svg?style=social&label=Star)](https://github.com/Yaziwel/Restore-RWKV) |[![arXiv:2407.11087](https://img.shields.io/badge/arXiv-2407.11087-b31b1b.svg)](https://arxiv.org/abs/2407.11087) | 使用 RWKV 进行高效且有效的医学图像恢复（PyTorch 实现）。 |
+|LALIC|[![Star](https://img.shields.io/github/stars/sjtu-medialab/RwkvCompress.svg?style=social&label=Star)](https://github.com/sjtu-medialab/RwkvCompress)|[![arXiv:2502.05741](https://img.shields.io/badge/arXiv-2502.05741-b31b1b.svg)](https://arxiv.org/abs/2502.05741)| 【CVPR 2025】基于 RWKV 的图像压缩框架|
 | LineRWKV | [![Star](https://img.shields.io/github/stars/diegovalsesia/linerwkv.svg?style=social&label=Star)](https://github.com/diegovalsesia/linerwkv) | [![arXiv:2403.17677](https://img.shields.io/badge/arXiv-2403.17677-b31b1b.svg)](https://arxiv.org/abs/2403.17677)| LineRWKV 是一种对高光谱图像进行无损和有损压缩的方法。 |
 |OpenPAR|[![Star](https://img.shields.io/github/stars/Event-AHU/OpenPAR.svg?style=social&label=Star)](https://github.com/Event-AHU/OpenPAR)| [![arXiv:2504.10018](https://img.shields.io/badge/arXiv-2504.10018-b31b1b.svg)](https://arxiv.org/abs/2504.10018)|开源的行人属性识别框架，包含 RWKV|
+|PathRWKV||[![arXiv](https://img.shields.io/badge/arXiv-2503.03199-b31b1b)](https://arxiv.org/abs/2503.03199)|全玻图像分析|
+|RWKVMatch||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10888484)|【ICASSP 2025】基于 vision-RWKV 的全局和交叉融合机制的医学图像配准|
+|EVA||[![arXiv:2505.11165](https://img.shields.io/badge/arXiv-2505.11165-b31b1b.svg)](https://arxiv.org/abs/2505.11165)|基于 RWKV-6 构建异步编码器的事件相机异步检测|
+|RWKV-DPA||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/10779439)|基于 RWKV 的高效深度估计|
+
+---
+
+## 3D 与视频处理
+
+| 标题 | 代码 | 论文 | 简介 |
+| :--- | :--- | :--- | :--- |
+| FEAT | [![Star](https://img.shields.io/github/stars/Yaziwel/FEAT.svg?style=social&label=Star)](https://github.com/Yaziwel/FEAT) |[![arXiv:2506.04956](https://img.shields.io/badge/arXiv-2506.04956-b31b1b.svg)](https://arxiv.org/abs/2506.04956) | 【MICCAI 2025 early accepted】基于 RWKV 的医学视频生成。 |
+|TLS-RWKV||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s11063-024-11540-0)|基于 RWKV 的在线动作检测（OAD）|
+|Video RWKV||[![arXiv:2411.05636](https://img.shields.io/badge/arXiv-2411.05636-b31b1b.svg)](https://arxiv.org/abs/2411.05636)|基于 RWKV 的视频动作识别|
+|TCVADS||[![arXiv:2412.20201](https://img.shields.io/badge/arXiv-2412.20201-b31b1b.svg)](https://arxiv.org/abs/2412.20201)|基于 RWKV 的视频异常检测|
+|StyleRWKV||[![arXiv:2412.19535](https://img.shields.io/badge/arXiv-2412.19535-b31b1b.svg)](https://arxiv.org/abs/2412.19535)|基于类 RWKV 架构的高效视频风格迁移|
+|RainRWKV||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s00371-025-03965-y)|基于 RWKV 的高效视频去雨|
 
 ---
 
@@ -153,6 +227,7 @@
 |MIDI-RWKV|[![Star](https://img.shields.io/github/stars/christianazinn/MIDI-RWKV.svg?style=social&label=Star)](https://github.com/christianazinn/MIDI-RWKV)|[![arXiv:2506.13001](https://img.shields.io/badge/arXiv-2506.13001-b31b1b.svg)](https://arxiv.org/abs/2506.13001)|基于 RWKV 的音乐生成|
 | RWKV-TTS | [![Star](https://img.shields.io/github/stars/yynil/RWKVTTS.svg?style=social&label=Star)](https://github.com/yynil/RWKVTTS) | [![arXiv:2504.03289](https://img.shields.io/badge/arXiv-2504.03289-b31b1b.svg)](https://arxiv.org/abs/2504.03289) | RWKV 语音合成模型，支持多种语言的文本转语音。 |
 | RWKV-ASR | [![Star](https://img.shields.io/github/stars/AGENDD/RWKV-ASR.svg?style=social&label=Star)](https://github.com/AGENDD/RWKV-ASR) | | 使用预训练的 RWKV 语言模型进行**语音识别**。 |
+|Rate-Aware||[![arXiv](https://img.shields.io/badge/arXiv-2501.11999-b31b1b)](https://arxiv.org/abs/2501.11999)|基于 RWKV 的语音压缩方案|
 
 ---
 
@@ -162,6 +237,18 @@
 | :--- | :--- | :--- | :--- |
 | BlackGoose_Rimer | [![Star](https://img.shields.io/github/stars/Alic-Li/BlackGoose_Rimer.svg?style=social&label=Star)](https://github.com/Alic-Li/BlackGoose_Rimer) |[![arXiv:2503.06121](https://img.shields.io/badge/arXiv-2503.06121-b31b1b.svg)](https://arxiv.org/abs/2503.06121) | 基于 RWKV-7 的时间序列预测模型，支持多种时间序列任务。 |
 | RWKV-TS | [![Star](https://img.shields.io/github/stars/howard-hou/RWKV-TS.svg?style=social&label=Star)](https://github.com/howard-hou/RWKV-TS) | | 基于 RWKV 的时间序列任务模型，低延迟和内存占用。 |
+|MSRWKV-2DTCN ||[![ScienceDirect](https://img.shields.io/badge/ScienceDirect-Article-orange)](https://www.sciencedirect.com/science/article/abs/pii/S0360544224028433)|多尺度 RWKV 的短期光伏发电功率预测|
+|AutoGMM-RWKV||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10729884)|基于 RWKV 的无线传感器网络选择性转发攻击检测方案|
+|DFT||[![arXiv:2411.06065](https://img.shields.io/badge/arXiv-2411.06065-b31b1b.svg)](https://arxiv.org/abs/2411.06065)|基于 RWKV 的股票价格预测|
+|MATCC||[![ACM DL](https://img.shields.io/badge/ACM-Paper-red)](https://dl.acm.org/doi/abs/10.1145/3627673.3679715)|基于 RWKV 的股票价格预测|
+|ET_MGNN||[![Paper](https://img.shields.io/badge/Paper-SSRN-orange)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5114041)|通过 RWKV 进行时序建模的脑科学诊断模型|
+|TabulaTime||[![arXiv](https://img.shields.io/badge/arXiv-2502.17049-b31b1b)](https://arxiv.org/abs/2502.17049)|用于 ACS 预测的时序模型|
+|LASTGCN||[![Scientific Reports](https://img.shields.io/badge/Scientific%20Reports-2025-green)](https://www.nature.com/articles/s41598-025-93179-y)|基于 RWKV 的时空多图交通流预测|
+|DREMnet||[![arXiv](https://img.shields.io/badge/arXiv-2503.22223-b31b1b)](https://arxiv.org/abs/2503.22223)|电磁信号去噪|
+|RWKV-TDR7||[![Wiley](https://img.shields.io/badge/Wiley-Online%20Library-red)](https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22544)|逆运动学的运动轨迹规划|
+|MolRWKV||[![Wiley](https://img.shields.io/badge/Wiley-Online%20Library-red)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.70100)|生物学条件分子生成|
+|QuantumRWKV||[![arXiv](https://img.shields.io/badge/arXiv-2505.13524-b31b1b)](https://arxiv.org/abs/2505.13524)|基于 RWKV 的量子增强时序预测|
+|STWGRL||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-11002535-blue.svg)](https://ieeexplore.ieee.org/abstract/document/11002535)|【IEEE IoT-J】使用 RWKV 作为核心模块的时序异常检测|
 
 ---
 
@@ -237,7 +324,7 @@
 | RWKV6-Keras | [![Star](https://img.shields.io/github/stars/pass-lin/RWKV6-Keras.svg?style=social&label=Star)](https://github.com/pass-lin/RWKV6-Keras) | | RWKV 模型的 Keras 实现，支持训练和推理。 |
 | rwkv-burn| [![Star](https://img.shields.io/github/stars/dymat/rwkv-burn.svg?style=social&label=Star)](https://github.com/dymat/rwkv-burn) | | RWKV 语言模型的 burn 实现。 |
 | jaxrwkv | [![Star](https://img.shields.io/github/stars/bsarkar321/jaxrwkv.svg?style=social&label=Star)](https://github.com/bsarkar321/jaxrwkv) | | RWKV 语言模型的 JAX 实现 |
-| **🚧 (开发中)** rwkv-mobile | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-mobile.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-mobile) | | RWKV 移动端推理引擎。 |
+| rwkv-mobile | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-mobile.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-mobile) | | RWKV 移动端推理引擎。 |
 | rwkv-qualcomm | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-qualcomm.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-qualcomm) | | 使用 Qualcomm AI Engine Direct SDK 推理 RWKV 模型。 |
 | rwkv-by-hand-excel | [![Star](https://img.shields.io/github/stars/playaswd/rwkv-by-hand-excel.svg?style=social&label=Star)](https://github.com/playaswd/rwkv-by-hand-excel) | | 使用 Excel 实现 RWKV，帮助开发者探索 RWKV 原理。 |
 | RWKV-Infer | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-Infer.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-Infer) | | 使用 FLA 进行 RWKV-V6/V7 推理，支持组合多个状态进行推理。 |
@@ -255,6 +342,9 @@
 | JSONL to binidx | [![Star](https://img.shields.io/github/stars/Abel2076/json2binidx_tool.svg?style=social&label=Star)](https://github.com/Abel2076/json2binidx_tool) | | 这个工具用于将 `.jsonl` 文件转成适合 RWKV 训练的 `.bin /.idx`（binidx）数据。 |
 | AI Town - RWKV Proxy | [![Star](https://img.shields.io/github/stars/recursal/ai-town-rwkv-proxy.svg?style=social&label=Star)](https://github.com/recursal/ai-town-rwkv-proxy?tab=readme-ov-file) | | 通过 RWKV 在本地运营一个大型 AI 城镇！ |
 | Bot-Ani-RWKV | [![Star](https://img.shields.io/github/stars/Max-SF1/Bot-Ani-RWKV-twitter-bot-detection.svg?style=social&label=Star)](https://github.com/Max-SF1/Bot-Ani-RWKV-twitter-bot-detection) | | 基于 RWKV 的推特水军机器人检测工具。|
-| RWKVInverseFolding | [![Star](https://img.shields.io/github/stars/Lyttr/RWKVInverseFolding.svg?style=social&label=Star)](https://github.com/Lyttr/RWKVInverseFolding) | | 使用 RWKV 进行反向折叠。|
+| RWKV-IF | [![Star](https://img.shields.io/github/stars/Lyttr/RWKVInverseFolding.svg?style=social&label=Star)](https://github.com/Lyttr/RWKVInverseFolding) | [![bioRxiv](https://img.shields.io/badge/bioRxiv-green)](https://www.biorxiv.org/content/10.1101/2025.06.13.659654v1.full.pdf)| 基于RWKV的高效可控RNA逆折叠设计框架。|
 | poker-ai-rwkv | [![Star](https://img.shields.io/github/stars/meraline/poker-ai-rwkv.svg?style=social&label=Star)](https://github.com/meraline/poker-ai-rwkv) | | 带有 RWKV 的AI 扑克牌游戏系统。|
-|Muon-RMS-Norm|[![Star](https://img.shields.io/github/stars/xTimeCrystal/Muon-RMS-Norm.svg?style=social&label=Star)](https://github.com/xTimeCrystal/Muon-RMS-Norm)|||
+|Muon-RMS-Norm|[![Star](https://img.shields.io/github/stars/xTimeCrystal/Muon-RMS-Norm.svg?style=social&label=Star)](https://github.com/xTimeCrystal/Muon-RMS-Norm)||一种新型归一化方法|
+|PCF-RWKV||[![Paper](https://img.shields.io/badge/Paper-Preprint-yellow)](https://www.preprints.org/manuscript/202412.1705/v1)|基于 RWKV 模型的产品碳足迹估算系统|
+|ChemRB||[![Paper](https://img.shields.io/badge/Paper-SNNU-orange)](https://jsnu.magtech.com.cn/CN/10.15983/j.cnki.jsnu.2025005)|医学分子生成|
+|DualComp||[![arXiv:2505.16256](https://img.shields.io/badge/arXiv-2505.16256-b31b1b.svg)](https://arxiv.org/abs/2505.16256)|基于 RWKV-7 的无损数据压缩|
