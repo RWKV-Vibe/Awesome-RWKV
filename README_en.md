@@ -12,10 +12,9 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 - [RWKV Fine-tuning & Training](#rwkv-fine-tuning--training)
   - [Fine-tuning Projects](#fine-tuning-projects)
   - [Training Projects](#training-projects)
-- [Natural Language Processing / Large Models](#natural-language-processing--large-language-models)
-  - [Model Architecture & Optimization](#model-architecture--optimization)
-  - [Natural Language Processing](#natural-language-processing)
-  - [Multimodality](#multimodality)
+- [Model Architecture & Optimization](#model-architecture--optimization)
+- [Natural Language Processing](#natural-language-processing)
+- [Multimodality](#multimodality)
 - [Image & Graphics](#image--graphics)
   - [Vision-Language](#vision-language)
   - [Vision Backbone](#vision-backbone)
@@ -84,9 +83,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 
 ---
 
-## Natural Language Processing / Large Language Models
-
-### Model Architecture & Optimization
+## Model Architecture & Optimization
 
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
@@ -98,7 +95,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 |RWKV-Lite||[![arXiv](https://img.shields.io/badge/arXiv-2412.10856-b31b1b)](https://arxiv.org/abs/2412.10856)| An efficient deep compression scheme for RWKV models. |
 |RADLADS|[![Star](https://img.shields.io/github/stars/recursal/RADLADS-paper.svg?style=social&label=Star)](https://github.com/recursal/RADLADS-paper)|[![arXiv](https://img.shields.io/badge/arXiv-2505.03005-b31b1b)](https://arxiv.org/abs/2505.03005)| Efficiently converts Transformer architecture models to RWKV architecture models. |
 
-### Natural Language Processing
+## Natural Language Processing
 
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
@@ -106,7 +103,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 |CMGN||[![ScienceDirect](https://img.shields.io/badge/ScienceDirect-Article-orange)](https://www.sciencedirect.com/science/article/abs/pii/S0925231225004837)| Fake news detection based on RWKV. |
 |RCME||[![Paper](https://img.shields.io/badge/Paper-PDF-blue)](https://www.engineeringletters.com/issues_v33/issue_6/EL_33_6_28.pdf)| Knowledge graph completion with a hybrid architecture. |
 
-### Multimodality
+## Multimodality
 
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
@@ -247,6 +244,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 |MolRWKV||[![Wiley](https://img.shields.io/badge/Wiley-Online%20Library-red)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.70100)| Conditional molecular generation in biology. |
 |QuantumRWKV||[![arXiv](https://img.shields.io/badge/arXiv-2505.13524-b31b1b)](https://arxiv.org/abs/2505.13524)| Quantum-enhanced time series forecasting based on RWKV. |
 |STWGRL||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-11002535-blue.svg)](https://ieeexplore.ieee.org/abstract/document/11002535)| [IEEE IoT-J] Time series anomaly detection using RWKV as a core module. |
+|MP-RWKV||[![MDPI](https://img.shields.io/badge/MDPI-Article-green)](https://www.mdpi.com/2673-4591/97/1/26)|Based on RWKV Long-term Power Load Forecasting|
 
 ---
 
@@ -285,13 +283,9 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | **⭐ (Recommended)** RWKV Runner | [![Star](https://img.shields.io/github/stars/josStorer/RWKV-Runner.svg?style=social&label=Star)](https://github.com/josStorer/RWKV-Runner) | | RWKV Runner is a management and launcher tool for RWKV models, with a user-friendly GUI, supporting both training and inference. |
 | **⭐ (Recommended)** AI00 RWKV Server | [![Star](https://img.shields.io/github/stars/cgisky1980/ai00_rwkv_server.svg?style=social&label=Star)](https://github.com/cgisky1980/ai00_rwkv_server) | | Ai00 Server is an **inference API server** for RWKV models, based on the web-rwkv inference engine. |
 |RWKV_APP|[![Star](https://img.shields.io/github/stars/RWKV-APP/RWKV_APP.svg?style=social&label=Star)](https://github.com/RWKV-APP/RWKV_APP)|| An on-device inference App for RWKV-LM implemented with Flutter. |
-| **🇨🇳 (Chinese)** Wenda Web UI | [![Star](https://img.shields.io/github/stars/wenda-LLM/wenda.svg?style=social&label=Star)](https://github.com/wenda-LLM/wenda) | | An LLM calling platform for content generation in specific contexts, with support for RWKV models. |
 | **🇨🇳 (Chinese)** Role Play Chatbot | [![Star](https://img.shields.io/github/stars/shengxia/RWKV_Role_Playing.svg?style=social&label=Star)](https://github.com/shengxia/RWKV_Role_Playing) | | A role-playing WebUI based on RWKV, built with Gradio. |
 | Easy_RWKV_webui | [![Star](https://img.shields.io/github/stars/No-22-Github/Easy_RWKV_webui.svg?style=social&label=Star)](https://github.com/No-22-Github/Easy_RWKV_webui) | | An online chat room for RWKV models based on PyWebIO. |
 | Mini Model Daemon | [![Star](https://img.shields.io/github/stars/recursal/minmodmon.svg?style=social&label=Star)](https://github.com/recursal/minmodmon) | | An inference tool for RWKV models based on the web-rwkv inference backend. |
-| LocalAI | [![Star](https://img.shields.io/github/stars/go-skynet/LocalAI.svg?style=social&label=Star)](https://github.com/go-skynet/LocalAI) | | An open-source OpenAI alternative that supports RWKV. |
-| GPT Academic | [![Star](https://img.shields.io/github/stars/binary-husky/gpt_academic.svg?style=social&label=Star)](https://github.com/binary-husky/gpt_academic) | | Provides a practical interactive interface for LLMs like GPT/GLM, with support for RWKV. |
-| LLMFarm | [![Star](https://img.shields.io/github/stars/guinmoon/LLMFarm.svg?style=social&label=Star)](https://github.com/guinmoon/LLMFarm) | | Use large language models offline on iOS and MacOS with the GGML library, with support for RWKV. |
 
 ---
 
@@ -326,7 +320,6 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | rwkv-qualcomm | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-qualcomm.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-qualcomm) | | Infers RWKV models using the Qualcomm AI Engine Direct SDK. |
 | rwkv-by-hand-excel | [![Star](https://img.shields.io/github/stars/playaswd/rwkv-by-hand-excel.svg?style=social&label=Star)](https://github.com/playaswd/rwkv-by-hand-excel) | | Implements RWKV in Excel to help developers explore its principles. |
 | RWKV-Infer | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-Infer.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-Infer) | | Infers RWKV-V6/V7 using FLA, supporting inference with combined multiple states. |
-| MLC LLM | [![Star](https://img.shields.io/github/stars/mlc-ai/mlc-llm.svg?style=social&label=Star)](https://github.com/mlc-ai/mlc-llm) | | A machine learning compiler and high-performance deployment engine that supports RWKV models. |
 
 ---
 
@@ -335,7 +328,6 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
 |SocialDeductionLLM|[![Star](https://img.shields.io/github/stars/SocialDeductionLLM/SocialDeductionLLM.svg?style=social&label=Star)](https://github.com/SocialDeductionLLM/SocialDeductionLLM)|[![arXiv:2502.06060](https://img.shields.io/badge/arXiv-2502.06060-b31b1b.svg)](https://arxiv.org/abs/2502.06060)| [AAMAS 2025] Multi-agent reinforcement learning. |
-|ARIES|[![Star](https://img.shields.io/github/stars/Chieko-Seren/ARIES.svg?style=social&label=Star)](https://github.com/Chieko-Seren/ARIES)|| An automated operations system with RWKV support. |
 | SpikeGPT | [![Star](https://img.shields.io/github/stars/ridgerchu/SpikeGPT.svg?style=social&label=Star)](https://github.com/ridgerchu/SpikeGPT) | | A new model inspired by RWKV. |
 | JSONL to binidx | [![Star](https://img.shields.io/github/stars/Abel2076/json2binidx_tool.svg?style=social&label=Star)](https://github.com/Abel2076/json2binidx_tool) | | A tool to convert `.jsonl` files to the `.bin /.idx` (binidx) format suitable for RWKV training. |
 | AI Town - RWKV Proxy | [![Star](https://img.shields.io/github/stars/recursal/ai-town-rwkv-proxy.svg?style=social&label=Star)](https://github.com/recursal/ai-town-rwkv-proxy?tab=readme-ov-file) | | Run a large-scale AI town locally with RWKV! |
