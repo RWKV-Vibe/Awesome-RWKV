@@ -80,6 +80,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | nanoRWKV | [![Star](https://img.shields.io/github/stars/Hannibal046/nanoRWKV.svg?style=social&label=Star)](https://github.com/Hannibal046/nanoRWKV) | | A nanoGPT-style implementation of the RWKV model. |
 | RWKV_LM_EXT | [![Star](https://img.shields.io/github/stars/yynil/RWKV_LM_EXT.svg?style=social&label=Star)](https://github.com/yynil/RWKV_LM_EXT) | | Implements functional extensions for RWKV, including sequence classification/embedding/peft/cross-encoder/bi-encoder/multimodality, etc. |
 | chunkRWKV6 | [![Star](https://img.shields.io/github/stars/00ffcc/chunkRWKV6.svg?style=social&label=Star)](https://github.com/00ffcc/chunkRWKV6) | | Optimizes RWKV prefill and training speed using chunk-wise parallelism. |
+| Mini_RWKV_7 | [![Star](https://img.shields.io/github/stars/Alic-Li/Mini_RWKV_7.svg?style=social&label=Star)](https://github.com/Alic-Li/Mini_RWKV_7) | | Complete training pipeline for lightweight RWKV-V7 language model |
 
 ---
 
@@ -94,6 +95,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 |GoldFinch||[![arXiv:2407.12077](https://img.shields.io/badge/arXiv-2407.12077-b31b1b.svg)](https://arxiv.org/abs/2407.12077)| An RWKV/Transformer hybrid model. |
 |RWKV-Lite||[![arXiv](https://img.shields.io/badge/arXiv-2412.10856-b31b1b)](https://arxiv.org/abs/2412.10856)| An efficient deep compression scheme for RWKV models. |
 |RADLADS|[![Star](https://img.shields.io/github/stars/recursal/RADLADS-paper.svg?style=social&label=Star)](https://github.com/recursal/RADLADS-paper)|[![arXiv](https://img.shields.io/badge/arXiv-2505.03005-b31b1b)](https://arxiv.org/abs/2505.03005)| Efficiently converts Transformer architecture models to RWKV architecture models. |
+| RWKV-Depth-recurrence | [![Star](https://img.shields.io/github/stars/EricZhang1412/RWKV-Depth-recurrence.svg?style=social&label=Star)](https://github.com/EricZhang1412/RWKV-Depth-recurrence) | | RWKV implementation with depth recurrence (cross-layer parameter sharing) |
 
 ## Natural Language Processing
 
@@ -102,6 +104,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 |L3TC|[![Star](https://img.shields.io/github/stars/alipay/L3TC-leveraging-rwkv-for-learned-lossless-low-complexity-text-compression.svg?style=social&label=Star)](https://github.com/alipay/L3TC-leveraging-rwkv-for-learned-lossless-low-complexity-text-compression)|[![arXiv:2412.16642](https://img.shields.io/badge/arXiv-2412.16642-b31b1b.svg)](https://arxiv.org/abs/2412.16642)| Efficient lossless text compression. |
 |CMGN||[![ScienceDirect](https://img.shields.io/badge/ScienceDirect-Article-orange)](https://www.sciencedirect.com/science/article/abs/pii/S0925231225004837)| Fake news detection based on RWKV. |
 |RCME||[![Paper](https://img.shields.io/badge/Paper-PDF-blue)](https://www.engineeringletters.com/issues_v33/issue_6/EL_33_6_28.pdf)| Knowledge graph completion with a hybrid architecture. |
+| TongShunLM | [![Star](https://img.shields.io/github/stars/ovo-Tim/TongShunLM.svg?style=social&label=Star)](https://github.com/ovo-Tim/TongShunLM) | | Lightweight fluency scoring model based on RWKV-7 architecture |
 
 ## Multimodality
 
@@ -135,6 +138,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
 |Vision_QRWKV|[![Star](https://img.shields.io/github/stars/ChiShengChen/Vision_QRWKV.svg?style=social&label=Star)](https://github.com/ChiShengChen/Vision_QRWKV)|[![arXiv:2506.06633](https://img.shields.io/badge/arXiv-2506.06633-b31b1b.svg)](https://arxiv.org/abs/2506.06633)| A quantum-enhanced RWKV model for image classification. |
+| Hi-RWKV (Will be open sourced after paper acceptance) | [![Star](https://img.shields.io/github/stars/HSI-Lab/Hi-RWKV.svg?style=social&label=Star)](https://github.com/HSI-Lab/Hi-RWKV) | | Hierarchical RWKV for hyperspectral image classification |
 
 ### Image Segmentation
 
@@ -187,6 +191,9 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 |URWKV||[![arXiv:2505.23068](https://img.shields.io/badge/arXiv-2505.23068-b31b1b.svg)](https://arxiv.org/abs/2505.23068)| [CVPR 2025] Low-light image restoration. |
 |Pan-Sharpening||[![IEEE](https://img.shields.io/badge/IEEE-11023855-blue.svg)](https://ieeexplore.ieee.org/abstract/document/11023855)| [IEEE TGRS] Pansharpening based on RWKV. |
 |DiffRWKVIR||[![arXiv:2506.14541](https://img.shields.io/badge/arXiv-2506.14541-b31b1b.svg)](https://arxiv.org/abs/2506.14541)| Image restoration combining RWKV and diffusion models. |
+| RetinexRWKV | [![Star](https://img.shields.io/github/stars/Alic-Li/RetinexRWKV.svg?style=social&label=Star)](https://github.com/Alic-Li/RetinexRWKV) | | RWKV-based low-light image enhancement model |
+| DRWKV | [![Star](https://img.shields.io/github/stars/JackBaixue/DRWKV.svg?style=social&label=Star)](https://github.com/JackBaixue/DRWKV) | [![arXiv:2507.18594](https://img.shields.io/badge/arXiv-2507.18594-b31b1b.svg)](https://arxiv.org/abs/2507.18594) |  Focusing on object edges for low-light image enhancement |
+| ChangeRWKV | [![Star](https://img.shields.io/github/stars/ChangeRWKV/ChangeRWKV.svg?style=social&label=Star)](https://github.com/ChangeRWKV/ChangeRWKV) | | Beyond Quadratic: Linear-Time Change Detection with RWKV |
 
 ### Other Image Tasks
 
@@ -223,6 +230,8 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | RWKV-TTS | [![Star](https://img.shields.io/github/stars/yynil/RWKVTTS.svg?style=social&label=Star)](https://github.com/yynil/RWKVTTS) | [![arXiv:2504.03289](https://img.shields.io/badge/arXiv-2504.03289-b31b1b.svg)](https://arxiv.org/abs/2504.03289) | An RWKV speech synthesis model, supporting text-to-speech in multiple languages. |
 | RWKV-ASR | [![Star](https://img.shields.io/github/stars/AGENDD/RWKV-ASR.svg?style=social&label=Star)](https://github.com/AGENDD/RWKV-ASR) | | **Speech recognition** using a pre-trained RWKV language model. |
 |Rate-Aware||[![arXiv](https://img.shields.io/badge/arXiv-2501.11999-b31b1b)](https://arxiv.org/abs/2501.11999)| A speech compression scheme based on RWKV. |
+| Con-RWKV | [![Star](https://img.shields.io/github/stars/NYCU-MLLab/Con-RWKV.svg?style=social&label=Star)](https://github.com/NYCU-MLLab/Con-RWKV) | | Con-RWKV for automatic speech recognition |
+| AudioRWKV | [![Star](https://img.shields.io/github/stars/Jiayu-Xiong/AudioRWKV.svg?style=social&label=Star)](https://github.com/Jiayu-Xiong/AudioRWKV) | | RWKV-based audio processing model |
 
 ---
 
@@ -286,6 +295,7 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | **🇨🇳 (Chinese)** Role Play Chatbot | [![Star](https://img.shields.io/github/stars/shengxia/RWKV_Role_Playing.svg?style=social&label=Star)](https://github.com/shengxia/RWKV_Role_Playing) | | A role-playing WebUI based on RWKV, built with Gradio. |
 | Easy_RWKV_webui | [![Star](https://img.shields.io/github/stars/No-22-Github/Easy_RWKV_webui.svg?style=social&label=Star)](https://github.com/No-22-Github/Easy_RWKV_webui) | | An online chat room for RWKV models based on PyWebIO. |
 | Mini Model Daemon | [![Star](https://img.shields.io/github/stars/recursal/minmodmon.svg?style=social&label=Star)](https://github.com/recursal/minmodmon) | | An inference tool for RWKV models based on the web-rwkv inference backend. |
+| frank_esp32 | [![Star](https://img.shields.io/github/stars/lsk-china/frank_esp32.svg?style=social&label=Star)](https://github.com/lsk-china/frank_esp32) | | Firefly chatbot hardware implementation based on RWKV |
 
 ---
 
@@ -320,6 +330,9 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | rwkv-qualcomm | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-qualcomm.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-qualcomm) | | Infers RWKV models using the Qualcomm AI Engine Direct SDK. |
 | rwkv-by-hand-excel | [![Star](https://img.shields.io/github/stars/playaswd/rwkv-by-hand-excel.svg?style=social&label=Star)](https://github.com/playaswd/rwkv-by-hand-excel) | | Implements RWKV in Excel to help developers explore its principles. |
 | RWKV-Infer | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-Infer.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-Infer) | | Infers RWKV-V6/V7 using FLA, supporting inference with combined multiple states. |
+| RWKV-DeepEmbed-mmap | [![Star](https://img.shields.io/github/stars/Beortext/RWKV-DeepEmbed-mmap.svg?style=social&label=Star)](https://github.com/Beortext/RWKV-DeepEmbed-mmap) | | RWKV DeepEmbed mmap efficient inference solution |
+| rwkv-burn(Rust-RWKV) | [![Star](https://img.shields.io/github/stars/w1c2j3/rwkv-burn.svg?style=social&label=Star)](https://github.com/w1c2j3/rwkv-burn) | | RWKV implementation in Rust |
+| RWKV-Infer | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-Infer.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-Infer) | | Large-scale RWKV v7 inference with multi-state combination and dynamic switching |
 
 ---
 
@@ -338,3 +351,6 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 |PCF-RWKV||[![Paper](https://img.shields.io/badge/Paper-Preprint-yellow)](https://www.preprints.org/manuscript/202412.1705/v1)| A product carbon footprint estimation system based on the RWKV model. |
 |ChemRB||[![Paper](https://img.shields.io/badge/Paper-SNNU-orange)](https://jsnu.magtech.com.cn/CN/10.15983/j.cnki.jsnu.2025005)| Medical molecular generation. |
 |DualComp||[![arXiv:2505.16256](https://img.shields.io/badge/arXiv-2505.16256-b31b1b.svg)](https://arxiv.org/abs/2505.16256)| Lossless data compression based on RWKV-7. |
+| Ai00 Character Maker | [![Star](https://img.shields.io/github/stars/Ai00-X/Ai00-character-maker.svg?style=social&label=Star)](https://github.com/Ai00-X/Ai00-character-maker) | | RWKV Role-Playing Data Synthesis Tool |
+| RWKV_7_on_AMD_Radeon-Instinct | [![Star](https://img.shields.io/github/stars/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct.svg?style=social&label=Star)](https://github.com/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct) | | Complete deployment pipeline for RWKV-7 on AMD Radeon & Instinct GPUs |
+| RWKV-PEFT-GUI | [![Star](https://img.shields.io/github/stars/cttailearn/RWKV-PEFT-GUI.svg?style=social&label=Star)](https://github.com/cttailearn/RWKV-PEFT-GUI) | | Graphical interface tool for RWKV model dataset processing |
