@@ -1,3 +1,4 @@
+Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.
 [中文版](README.md)
 
 ---
@@ -9,6 +10,13 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 ## Table of Contents
 
 - [Official RWKV Links](#official-rwkv-links)
+- [RWKV Model Resources](#rwkv-model-resources)
+  - [Official Fine-tuned Models](#official-fine-tuned-models)
+  - [Community Models](#community-models)
+  - [State-tuned Models](#state-tuned-models)
+  - [Architecture & Pretrained Models](#architecture--pretrained-models)
+  - [Multimodal Models](#multimodal-models)
+  - [Music Models](#music-models)
 - [RWKV Fine-tuning & Training](#rwkv-fine-tuning--training)
   - [Fine-tuning Projects](#fine-tuning-projects)
   - [Training Projects](#training-projects)
@@ -54,6 +62,98 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 
 ---
 
+## RWKV Model Resources
+
+The model resources below are grouped by source and use case. One code repository may support multiple independent models, so entries are distinguished by model name and download URL.
+
+### Official Fine-tuned Models
+
+| Model | Download | Code | Paper | Demo/Tutorial | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| RWKV-6 State | [HF Mirror](https://hf-mirror.com/BlinkDL/temp-latest-training-models/tree/main) |  |  | [Tutorial](https://rwkv.cn/news/read?id=343) | Task-specific state-tuning files for RWKV-6. |
+| RWKV-6-Jpn & ChnNovel | [Hugging Face](https://huggingface.co/BlinkDL/rwkv-6-misc/tree/main) | [![Star](https://img.shields.io/github/stars/Joluck/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/Joluck/RWKV-PEFT) |  | [Tutorial](https://rwkv.cn/news/read?id=4264) | An RWKV-6 model fine-tuned for Japanese and Chinese novels. |
+| RWKV-7 G1 RolePlay | [Hugging Face](https://huggingface.co/shoumenchougou/RWKV-7-G1-RolePlay-State) | [![Star](https://img.shields.io/github/stars/Joluck/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/Joluck/RWKV-PEFT) |  | [Tutorial](https://www.rwkv.cn/tutorials/advanced/Fine-Tune/RWKV-PEFT/State-Tuning) | An RWKV-7 G1 model fine-tuned for role-playing. |
+
+### Community Models
+
+| Model | Download | Code | Paper | Demo/Tutorial | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| RWKV-X | [Hugging Face](https://huggingface.co/howard-hou/RWKV-X) | [![Star](https://img.shields.io/github/stars/howard-hou/RWKV-X.svg?style=social&label=Star)](https://github.com/howard-hou/RWKV-X) | [![arXiv:2504.21463](https://img.shields.io/badge/arXiv-2504.21463-b31b1b.svg)](https://arxiv.org/abs/2504.21463) |  | A hybrid RWKV model designed for long-context modeling. |
+| RWKV-V7-Soothe | [Hugging Face](https://huggingface.co/keepzmy/RWKV-V7-Soothe) |  |  |  | An RWKV-7 conversational model for psychological counseling. |
+| ARWKV | [Hugging Face](https://huggingface.co/collections/RWKV-Red-Team/arwkv-7b-preview-01-679a55855cae3ab78d74f121) | [![Star](https://img.shields.io/github/stars/yynil/RWKVInside.svg?style=social&label=Star)](https://github.com/yynil/RWKVInside) | [![arXiv:2501.15570](https://img.shields.io/badge/arXiv-2501.15570-b31b1b.svg)](https://arxiv.org/abs/2501.15570) |  | A model that integrates RWKV time-mixing modules. |
+| rwkv-mobile-models | [Hugging Face](https://huggingface.co/mollysama/rwkv-mobile-models) |  |  |  | A collection of quantized RWKV models for on-device deployment. |
+| RWKV-7-Arithmetic-0.1B | [Hugging Face](https://huggingface.co/shoumenchougou/RWKV-7-Arithmetic-0.1B) |  |  |  | An RWKV-7 model for addition and subtraction. |
+| rwkv7-g1-1.5b-Lonely-Neko | [Hugging Face](https://huggingface.co/Seikaijyu/rwkv7-g1-1.5b-Lonely-Neko) |  |  |  | An RWKV-7 role-playing conversation model. |
+| Sudoku-RWKV | [GitHub](https://github.com/Jellyfish042/Sudoku-RWKV/blob/main/sudoku_rwkv_20241029.pth) | [![Star](https://img.shields.io/github/stars/Jellyfish042/Sudoku-RWKV.svg?style=social&label=Star)](https://github.com/Jellyfish042/Sudoku-RWKV) |  |  | An RWKV model for solving Sudoku puzzles. |
+| RWKV-6-3B-zh-cn-abnormal-text-review | [Hugging Face](https://huggingface.co/Seikaijyu/RWKV-x060-World-3B-v2.1-zh-cn-abnormal-text-review-v0) |  |  |  | An RWKV-6 model for reviewing abnormal Chinese text. |
+| Mod-RWKV | [Hugging Face](https://huggingface.co/modrwkv) |  | [![arXiv:2409.03939](https://img.shields.io/badge/arXiv-2409.03939-b31b1b.svg)](https://arxiv.org/abs/2409.03939) |  | An RWKV-based multimodal content moderation model. |
+| kgc_states_tuning | [Hugging Face](https://huggingface.co/yueyulin/kgc_states_tuning) |  |  |  | RWKV state-tuning files for knowledge graph extraction. |
+| Mobius-RWKV-r6-12B | [Hugging Face](https://huggingface.co/TimeMobius/Mobius-RWKV-r6-12B) |  |  |  | An RWKV-6 Chinese conversational model. |
+| rwkv6_crossencoder | [Hugging Face](https://huggingface.co/yueyulin/rwkv6_crossencoder) |  |  |  | An RWKV-6 cross-encoder for retrieval reranking. |
+| rwkv6_emb_4k_base | [Hugging Face](https://huggingface.co/yueyulin/rwkv6_emb_4k_base) |  |  |  | An RWKV-6 text embedding model. |
+| mystica-rwkv-11m | [Hugging Face](https://huggingface.co/IliaMurzinov/mystica-rwkv-11m) | [![Star](https://img.shields.io/github/stars/Splendor1980/Mystical-LLM-PYRAMID.svg?style=social&label=Star)](https://github.com/Splendor1980/Mystical-LLM-PYRAMID) |  |  | An 11M-parameter RWKV model for Russian. |
+| rwkv-novel-agent-g1h-13b-ctx10240 | [Hugging Face](https://huggingface.co/xiaol/rwkv-novel-agent-g1h-13b-ctx10240) |  |  |  | An RWKV-7 model for novel writing. |
+| Winner-RWKV-7-285M-20260601 | [Hugging Face](https://huggingface.co/Jellyfish042/Winner-RWKV-7-285M-20260601) | [![Star](https://img.shields.io/github/stars/Jellyfish042/GatedDeltaNet-2.svg?style=social&label=Star)](https://github.com/Jellyfish042/GatedDeltaNet-2) |  |  | A 285M-parameter RWKV-7 model trained from scratch. |
+| rwkv7-147m-early-modern-english | [Hugging Face](https://huggingface.co/geoppls/rwkv7-147m-early-modern-english) |  |  |  | An RWKV-7 model for Early Modern English. |
+| rwkv7-380M-15B-slimpajama | [Hugging Face](https://huggingface.co/puigde/rwkv7-380M-15B-slimpajama) |  |  |  | A 380M-parameter RWKV-7 model pretrained on SlimPajama. |
+| Mini_RWKV_7_34.2M | [Hugging Face](https://huggingface.co/Alic-Li/Mini_RWKV_7_34.2M) | [![Star](https://img.shields.io/github/stars/Alic-Li/Mini_RWKV_7.svg?style=social&label=Star)](https://github.com/Alic-Li/Mini_RWKV_7) |  |  | A 34M-parameter educational RWKV-7 model. |
+| RWKV_v7_G1_Translate | [Hugging Face](https://huggingface.co/Alic-Li/RWKV_v7_G1_Translate) |  |  |  | An RWKV-7 machine translation model. |
+| Mobius-rwkv-role-play-multiturn-12B-128k | [Hugging Face](https://huggingface.co/TimeMobius/Mobius-rwkv-role-play-multiturn-12B-128k) |  |  |  | A multi-turn RWKV role-playing model with a 128K context. |
+| RWKV-5.2-3b-World-DPO | [Hugging Face](https://huggingface.co/OpenMOSE/RWKV-5.2-3b-World-DPO) |  |  |  | A Japanese DPO model based on RWKV-5.2. |
+| rwkv-5-3b-ai-town | [Hugging Face](https://huggingface.co/recursal/rwkv-5-3b-ai-town) | [![Star](https://img.shields.io/github/stars/recursal/ai-town-rwkv-proxy.svg?style=social&label=Star)](https://github.com/recursal/ai-town-rwkv-proxy) |  |  | An RWKV-5 conversational model for AI Town. |
+| RWKV-Sloshed-Lawyer | [Hugging Face](https://huggingface.co/NextLaoHuang/RWKV-Sloshed-Lawyer) |  |  |  | An RWKV LoRA model for legal question answering. |
+
+### State-tuned Models
+
+| Model | Download | Code | Paper | Demo/Tutorial | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| rwkv7-g1-toolcalling-states | [Hugging Face](https://huggingface.co/Scarletwolf/rwkv7-g1-toolcalling-states) |  |  |  | RWKV-7 state-tuning files for tool calling. |
+| RWKV-7-Prover-1.5b | [Hugging Face](https://huggingface.co/imbue2025/RWKV-7-Prover-1.5b) |  |  |  | An RWKV-7 state model for mathematical theorem proving. |
+| RWKV7-G1C-2B9-Translate-State | [Hugging Face](https://huggingface.co/nekocross/RWKV7-G1C-2B9-Translate-State) |  |  |  | RWKV-7 state-tuning files for translation. |
+
+### Architecture & Pretrained Models
+
+| Model | Download | Code | Paper | Demo/Tutorial | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| rwkv-hils-3-m10 | [Hugging Face](https://huggingface.co/Vibelet/rwkv-hils-3-m10) |  |  |  | A model combining RWKV with sparse attention. |
+| LACES-BiRWKV-DLM-2.9B-F2 | [Hugging Face](https://huggingface.co/SII-Jiaquan/LACES-BiRWKV-DLM-2.9B-F2) | [![Star](https://img.shields.io/github/stars/Joshua-Zhang-Jiaquan/LACES.svg?style=social&label=Star)](https://github.com/Joshua-Zhang-Jiaquan/LACES) |  |  | A diffusion language model based on bidirectional RWKV-7. |
+| StateDiffRWKV-2.9B-trajectory4096-pretrained | [Hugging Face](https://huggingface.co/SII-Jiaquan/StateDiffRWKV-2.9B-trajectory4096-pretrained) | [![Star](https://img.shields.io/github/stars/Joshua-Zhang-Jiaquan/LACES.svg?style=social&label=Star)](https://github.com/Joshua-Zhang-Jiaquan/LACES) |  |  | A diffusion language model based on RWKV state trajectories. |
+| birwkv7-strict-small-babylm2026 | [Hugging Face](https://huggingface.co/yashmahe2018/birwkv7-strict-small-babylm2026) |  |  |  | A bidirectional RWKV-7 model for BabyLM 2026. |
+| B3D-RWKV | [Hugging Face](https://huggingface.co/leonardklin/B3D-RWKV) | [![Star](https://img.shields.io/github/stars/leonardodalinky/B3D-RWKV.svg?style=social&label=Star)](https://github.com/leonardodalinky/B3D-RWKV) | [![arXiv:2605.25969](https://img.shields.io/badge/arXiv-2605.25969-b31b1b.svg)](https://arxiv.org/abs/2605.25969) |  | A block-diffusion language model based on RWKV-7. |
+| RWKV-24B-A2B-wakaba-2601 | [Hugging Face](https://huggingface.co/OpenMOSE/RWKV-24B-A2B-wakaba-2601) |  |  |  | A sparse mixture-of-experts model based on a hybrid RWKV architecture. |
+| RWKV-Qwen3-30B-A3B-Instruct-hxa07d | [Hugging Face](https://huggingface.co/OpenMOSE/RWKV-Qwen3-30B-A3B-Instruct-hxa07d) |  |  |  | An instruction model combining RWKV with Qwen3. |
+| RWKV-Seed-OSS-36B-hxa07A | [Hugging Face](https://huggingface.co/OpenMOSE/RWKV-Seed-OSS-36B-hxa07A) | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKVInside.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKVInside) | [![arXiv:2505.03005](https://img.shields.io/badge/arXiv-2505.03005-b31b1b.svg)](https://arxiv.org/abs/2505.03005) |  | An RWKV-based hybrid-attention model. |
+| QRWKV7-7B-Instruct | [Hugging Face](https://huggingface.co/recursal/QRWKV7-7B-Instruct) | [![Star](https://img.shields.io/github/stars/recursal/RADLADS-paper.svg?style=social&label=Star)](https://github.com/recursal/RADLADS-paper) | [![arXiv:2505.03005](https://img.shields.io/badge/arXiv-2505.03005-b31b1b.svg)](https://arxiv.org/abs/2505.03005) |  | An instruction model distilled into the RWKV-7 architecture. |
+
+### Multimodal Models
+
+| Model | Download | Code | Paper | Demo/Tutorial | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| WorldRWKV | [Hugging Face](https://huggingface.co/WorldRWKV) | [![Star](https://img.shields.io/github/stars/Joluck/mod-rwkv.svg?style=social&label=Star)](https://github.com/Joluck/mod-rwkv) | [![arXiv:2505.14505](https://img.shields.io/badge/arXiv-2505.14505-b31b1b.svg)](https://arxiv.org/abs/2505.14505) |  | An RWKV-7-based multimodal model project. |
+| RWKV-TTS | [Hugging Face](https://huggingface.co/yueyulin/CosyVoice2-0.5B-RWKV-7-1.5B-Instruct-CHENJPKO) | [![Star](https://img.shields.io/github/stars/yynil/RWKVTTS.svg?style=social&label=Star)](https://github.com/yynil/RWKVTTS/) |  |  | An RWKV-based text-to-speech model. |
+| RWKV-CLIP | [Download](https://wisemodel.cn/models/deepglint/RWKV-CLIP/file) | [![Star](https://img.shields.io/github/stars/deepglint/RWKV-CLIP.svg?style=social&label=Star)](https://github.com/deepglint/RWKV-CLIP) | [![arXiv:2406.06973](https://img.shields.io/badge/arXiv-2406.06973-b31b1b.svg)](https://arxiv.org/abs/2406.06973) |  | An RWKV-based vision-language representation model. |
+| Diffusion-RWKV | [Hugging Face](https://huggingface.co/feizhengcong/Diffusion-RWKV/tree/main) | [![Star](https://img.shields.io/github/stars/feizc/Diffusion-RWKV.svg?style=social&label=Star)](https://github.com/feizc/Diffusion-RWKV) | [![arXiv:2404.04478](https://img.shields.io/badge/arXiv-2404.04478-b31b1b.svg)](https://arxiv.org/abs/2404.04478) |  | An RWKV-based diffusion model for image generation. |
+| Vision-RWKV | [Hugging Face](https://huggingface.co/OpenGVLab/Vision-RWKV/tree/main) | [![Star](https://img.shields.io/github/stars/OpenGVLab/Vision-RWKV.svg?style=social&label=Star)](https://github.com/OpenGVLab/Vision-RWKV) | [![arXiv:2403.02308](https://img.shields.io/badge/arXiv-2403.02308-b31b1b.svg)](https://arxiv.org/abs/2403.02308) |  | An RWKV-based visual representation model. |
+| VisualRWKV-6 | [Hugging Face](https://huggingface.co/howard-hou/visualrwkv-6) | [![Star](https://img.shields.io/github/stars/howard-hou/VisualRWKV.svg?style=social&label=Star)](https://github.com/howard-hou/VisualRWKV) | [![arXiv:2406.13362](https://img.shields.io/badge/arXiv-2406.13362-b31b1b.svg)](https://arxiv.org/abs/2406.13362) | [Demo](https://huggingface.co/spaces/howard-hou/VisualRWKV-Gradio-1) | An RWKV-6 vision-language model. |
+| rwkv-nepa-imagenet1k-pretrain-1600ep | [Hugging Face](https://huggingface.co/Curry33333/rwkv-nepa-imagenet1k-pretrain-1600ep) |  |  |  | An RWKV visual self-supervised pretraining model. |
+| rwkvox | [Hugging Face](https://huggingface.co/Ed-Love/rwkvox) | [![Star](https://img.shields.io/github/stars/Ed-Lovera/rwkvox.svg?style=social&label=Star)](https://github.com/Ed-Lovera/rwkvox) |  |  | An RWKV-7 voice cloning model. |
+| rwkv-vl-1.5v100m-finevisionmax | [Hugging Face](https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-finevisionmax) |  |  |  | An RWKV-based vision-language model. |
+| rwkv_asr | [Hugging Face](https://huggingface.co/yueyulin/rwkv_asr) | [![Star](https://img.shields.io/github/stars/yynil/RWKVTTS.svg?style=social&label=Star)](https://github.com/yynil/RWKVTTS/) |  |  | An RWKV-7 speech recognition model. |
+| rwkv_tts_instructed | [Hugging Face](https://huggingface.co/yueyulin/rwkv_tts_instructed) | [![Star](https://img.shields.io/github/stars/yynil/RWKVTTS.svg?style=social&label=Star)](https://github.com/yynil/RWKVTTS/) |  |  | An instruction-conditioned RWKV-7 text-to-speech model. |
+| RWKV7-0.4B-wavlmLarge-CNASR-demo | [Hugging Face](https://huggingface.co/WorldRWKV/RWKV7-0.4B-wavlmLarge-CNASR-demo) | [![Star](https://img.shields.io/github/stars/Joluck/mod-rwkv.svg?style=social&label=Star)](https://github.com/Joluck/mod-rwkv) | [![arXiv:2505.14505](https://img.shields.io/badge/arXiv-2505.14505-b31b1b.svg)](https://arxiv.org/abs/2505.14505) |  | An RWKV-7 Chinese speech recognition model. |
+| speech_rwkv_bat_asr-zh-cantonese-en-16k-vocab8501-pytorch-online | [ModelScope](https://modelscope.cn/models/dengcunqin/speech_rwkv_bat_asr-zh-cantonese-en-16k-vocab8501-pytorch-online) | [![Star](https://img.shields.io/github/stars/modelscope/FunASR.svg?style=social&label=Star)](https://github.com/modelscope/FunASR) |  |  | An RWKV-BAT speech recognition model for Cantonese, Mandarin, and English. |
+| speech_rwkv_bat_asr-en-16k-librispeech-vocab5003-pytorch-online | [ModelScope](https://modelscope.cn/models/iic/speech_rwkv_bat_asr-en-16k-librispeech-vocab5003-pytorch-online) | [![Star](https://img.shields.io/github/stars/modelscope/FunASR.svg?style=social&label=Star)](https://github.com/modelscope/FunASR) |  |  | An RWKV-BAT English speech recognition model trained on LibriSpeech. |
+
+### Music Models
+
+| Model | Download | Code | Paper | Demo/Tutorial | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| RWKV-5-ABC-82M | [Hugging Face](https://huggingface.co/BlinkDL/rwkv-5-music/blob/main/RWKV-5-ABC-82M-v1-20230901-ctx1024.pth) |  |  |  | An RWKV-5 model for generating music in ABC notation. |
+| RWKV-5-MIDI-560M | [Hugging Face](https://huggingface.co/BlinkDL/rwkv-5-music/blob/main/RWKV-5-MIDI-560M-v1-20230902-ctx4096.pth) |  |  |  | An RWKV-5 model for MIDI music generation. |
+| LiuBai-RWKV | [Hugging Face](https://huggingface.co/xiaol/LiuBai-RWKV) | [![Star](https://img.shields.io/github/stars/xiaol/LiuBai-RWKV.svg?style=social&label=Star)](https://github.com/xiaol/LiuBai-RWKV) |  |  | An RWKV-7 model for song generation. |
+| rwkv-midi-piano | [Hugging Face](https://huggingface.co/brianflakes/rwkv-midi-piano) | [![Star](https://img.shields.io/github/stars/briansemrau/MIDI-LLM-tokenizer.svg?style=social&label=Star)](https://github.com/briansemrau/MIDI-LLM-tokenizer) |  |  | An RWKV model for piano MIDI composition. |
+
+---
 ## RWKV Fine-tuning & Training
 
 | Title | Code | Paper | Description |
@@ -354,3 +454,5 @@ A curated list of awesome projects, tools, and resources in the RWKV ecosystem.
 | Ai00 Character Maker | [![Star](https://img.shields.io/github/stars/Ai00-X/Ai00-character-maker.svg?style=social&label=Star)](https://github.com/Ai00-X/Ai00-character-maker) | | RWKV Role-Playing Data Synthesis Tool |
 | RWKV_7_on_AMD_Radeon-Instinct | [![Star](https://img.shields.io/github/stars/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct.svg?style=social&label=Star)](https://github.com/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct) | | Complete deployment pipeline for RWKV-7 on AMD Radeon & Instinct GPUs |
 | RWKV-PEFT-GUI | [![Star](https://img.shields.io/github/stars/cttailearn/RWKV-PEFT-GUI.svg?style=social&label=Star)](https://github.com/cttailearn/RWKV-PEFT-GUI) | | Graphical interface tool for RWKV model dataset processing |
+
+

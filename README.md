@@ -1,4 +1,3 @@
----
 
 [English Version](README_en.md)
 
@@ -11,6 +10,13 @@
 ## 目录
 
 - [RWKV 官方链接](#rwkv-官方链接)
+- [RWKV 模型资源](#rwkv-模型资源)
+  - [官方微调模型](#官方微调模型)
+  - [社区模型](#社区模型)
+  - [状态微调模型](#状态微调模型)
+  - [架构与预训练模型](#架构与预训练模型)
+  - [多模态模型](#多模态模型)
+  - [音乐模型](#音乐模型)
 - [RWKV 微调与训练](#rwkv-微调与训练)
   - [微调项目](#微调项目)
   - [训练项目](#训练项目)
@@ -56,6 +62,98 @@
 
 ---
 
+## RWKV 模型资源
+
+以下模型资源按来源和用途分类。同一代码仓库可能对应多个独立模型，因此条目以模型名称和下载地址区分。
+
+### 官方微调模型
+
+| 模型 | 下载 | 代码 | 论文 | 演示/教程 | 简介 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| RWKV-6 State | [HF Mirror](https://hf-mirror.com/BlinkDL/temp-latest-training-models/tree/main) |  |  | [教程](https://rwkv.cn/news/read?id=343) | RWKV-6 任务状态微调文件 |
+| RWKV-6-Jpn & ChnNovel | [Hugging Face](https://huggingface.co/BlinkDL/rwkv-6-misc/tree/main) | [![Star](https://img.shields.io/github/stars/Joluck/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/Joluck/RWKV-PEFT) |  | [教程](https://rwkv.cn/news/read?id=4264) | 基于RWKV-6的日语及中文小说微调模型 |
+| RWKV-7 G1 RolePlay | [Hugging Face](https://huggingface.co/shoumenchougou/RWKV-7-G1-RolePlay-State) | [![Star](https://img.shields.io/github/stars/Joluck/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/Joluck/RWKV-PEFT) |  | [教程](https://www.rwkv.cn/tutorials/advanced/Fine-Tune/RWKV-PEFT/State-Tuning) | 基于RWKV-7的角色扮演微调模型 |
+
+### 社区模型
+
+| 模型 | 下载 | 代码 | 论文 | 演示/教程 | 简介 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| RWKV-X | [Hugging Face](https://huggingface.co/howard-hou/RWKV-X) | [![Star](https://img.shields.io/github/stars/howard-hou/RWKV-X.svg?style=social&label=Star)](https://github.com/howard-hou/RWKV-X) | [![arXiv:2504.21463](https://img.shields.io/badge/arXiv-2504.21463-b31b1b.svg)](https://arxiv.org/abs/2504.21463) |  | 基于 RWKV 的混合长上下文模型 |
+| RWKV-V7-Soothe | [Hugging Face](https://huggingface.co/keepzmy/RWKV-V7-Soothe) |  |  |  | 基于 RWKV-7 的心理咨询对话模型 |
+| ARWKV | [Hugging Face](https://huggingface.co/collections/RWKV-Red-Team/arwkv-7b-preview-01-679a55855cae3ab78d74f121) | [![Star](https://img.shields.io/github/stars/yynil/RWKVInside.svg?style=social&label=Star)](https://github.com/yynil/RWKVInside) | [![arXiv:2501.15570](https://img.shields.io/badge/arXiv-2501.15570-b31b1b.svg)](https://arxiv.org/abs/2501.15570) |  | 融合 RWKV 时间混合模块的模型 |
+| rwkv-mobile-models | [Hugging Face](https://huggingface.co/mollysama/rwkv-mobile-models) |  |  |  | RWKV 端侧量化模型集合 |
+| RWKV-7-Arithmetic-0.1B | [Hugging Face](https://huggingface.co/shoumenchougou/RWKV-7-Arithmetic-0.1B) |  |  |  | 基于 RWKV-7 的加减法模型 |
+| rwkv7-g1-1.5b-Lonely-Neko | [Hugging Face](https://huggingface.co/Seikaijyu/rwkv7-g1-1.5b-Lonely-Neko) |  |  |  | 基于 RWKV-7 的角色对话模型 |
+| Sudoku-RWKV | [GitHub](https://github.com/Jellyfish042/Sudoku-RWKV/blob/main/sudoku_rwkv_20241029.pth) | [![Star](https://img.shields.io/github/stars/Jellyfish042/Sudoku-RWKV.svg?style=social&label=Star)](https://github.com/Jellyfish042/Sudoku-RWKV) |  |  | 基于 RWKV 的数独求解模型 |
+| RWKV-6-3B-zh-cn-abnormal-text-review | [Hugging Face](https://huggingface.co/Seikaijyu/RWKV-x060-World-3B-v2.1-zh-cn-abnormal-text-review-v0) |  |  |  | 基于 RWKV-6 的文本审查模型 |
+| Mod-RWKV | [Hugging Face](https://huggingface.co/modrwkv) |  | [![arXiv:2409.03939](https://img.shields.io/badge/arXiv-2409.03939-b31b1b.svg)](https://arxiv.org/abs/2409.03939) |  | 基于 RWKV 的多模态内容审查模型 |
+| kgc_states_tuning | [Hugging Face](https://huggingface.co/yueyulin/kgc_states_tuning) |  |  |  | RWKV 知识图谱抽取状态文件 |
+| Mobius-RWKV-r6-12B | [Hugging Face](https://huggingface.co/TimeMobius/Mobius-RWKV-r6-12B) |  |  |  | 基于 RWKV-6 的中文对话模型 |
+| rwkv6_crossencoder | [Hugging Face](https://huggingface.co/yueyulin/rwkv6_crossencoder) |  |  |  | 基于 RWKV-6 的检索重排序模型 |
+| rwkv6_emb_4k_base | [Hugging Face](https://huggingface.co/yueyulin/rwkv6_emb_4k_base) |  |  |  | 基于 RWKV-6 的文本嵌入模型 |
+| mystica-rwkv-11m | [Hugging Face](https://huggingface.co/IliaMurzinov/mystica-rwkv-11m) | [![Star](https://img.shields.io/github/stars/Splendor1980/Mystical-LLM-PYRAMID.svg?style=social&label=Star)](https://github.com/Splendor1980/Mystical-LLM-PYRAMID) |  |  | 基于 RWKV 的俄语 11M 小模型 |
+| rwkv-novel-agent-g1h-13b-ctx10240 | [Hugging Face](https://huggingface.co/xiaol/rwkv-novel-agent-g1h-13b-ctx10240) |  |  |  | 基于 RWKV-7 的小说创作模型 |
+| Winner-RWKV-7-285M-20260601 | [Hugging Face](https://huggingface.co/Jellyfish042/Winner-RWKV-7-285M-20260601) | [![Star](https://img.shields.io/github/stars/Jellyfish042/GatedDeltaNet-2.svg?style=social&label=Star)](https://github.com/Jellyfish042/GatedDeltaNet-2) |  |  | 从头训练的 RWKV-7 285M 模型 |
+| rwkv7-147m-early-modern-english | [Hugging Face](https://huggingface.co/geoppls/rwkv7-147m-early-modern-english) |  |  |  | 基于 RWKV-7 的历史英语模型 |
+| rwkv7-380M-15B-slimpajama | [Hugging Face](https://huggingface.co/puigde/rwkv7-380M-15B-slimpajama) |  |  |  | 基于 RWKV-7 的 380M 预训练模型 |
+| Mini_RWKV_7_34.2M | [Hugging Face](https://huggingface.co/Alic-Li/Mini_RWKV_7_34.2M) | [![Star](https://img.shields.io/github/stars/Alic-Li/Mini_RWKV_7.svg?style=social&label=Star)](https://github.com/Alic-Li/Mini_RWKV_7) |  |  | 基于 RWKV-7 的 34M 教学模型 |
+| RWKV_v7_G1_Translate | [Hugging Face](https://huggingface.co/Alic-Li/RWKV_v7_G1_Translate) |  |  |  | 基于 RWKV-7 的机器翻译模型 |
+| Mobius-rwkv-role-play-multiturn-12B-128k | [Hugging Face](https://huggingface.co/TimeMobius/Mobius-rwkv-role-play-multiturn-12B-128k) |  |  |  | 基于 RWKV 的多轮角色扮演模型 |
+| RWKV-5.2-3b-World-DPO | [Hugging Face](https://huggingface.co/OpenMOSE/RWKV-5.2-3b-World-DPO) |  |  |  | 基于 RWKV-5.2 的日语 DPO 模型 |
+| rwkv-5-3b-ai-town | [Hugging Face](https://huggingface.co/recursal/rwkv-5-3b-ai-town) | [![Star](https://img.shields.io/github/stars/recursal/ai-town-rwkv-proxy.svg?style=social&label=Star)](https://github.com/recursal/ai-town-rwkv-proxy) |  |  | 基于 RWKV-5 的 AI Town 对话模型 |
+| RWKV-Sloshed-Lawyer | [Hugging Face](https://huggingface.co/NextLaoHuang/RWKV-Sloshed-Lawyer) |  |  |  | 基于 RWKV 的法律问答 LoRA 模型 |
+
+### 状态微调模型
+
+| 模型 | 下载 | 代码 | 论文 | 演示/教程 | 简介 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| rwkv7-g1-toolcalling-states | [Hugging Face](https://huggingface.co/Scarletwolf/rwkv7-g1-toolcalling-states) |  |  |  | RWKV-7 工具调用状态微调文件 |
+| RWKV-7-Prover-1.5b | [Hugging Face](https://huggingface.co/imbue2025/RWKV-7-Prover-1.5b) |  |  |  | 基于 RWKV-7 的数学证明状态模型 |
+| RWKV7-G1C-2B9-Translate-State | [Hugging Face](https://huggingface.co/nekocross/RWKV7-G1C-2B9-Translate-State) |  |  |  | RWKV-7 翻译任务状态微调文件 |
+
+### 架构与预训练模型
+
+| 模型 | 下载 | 代码 | 论文 | 演示/教程 | 简介 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| rwkv-hils-3-m10 | [Hugging Face](https://huggingface.co/Vibelet/rwkv-hils-3-m10) |  |  |  | 融合 RWKV 与稀疏注意力的模型 |
+| LACES-BiRWKV-DLM-2.9B-F2 | [Hugging Face](https://huggingface.co/SII-Jiaquan/LACES-BiRWKV-DLM-2.9B-F2) | [![Star](https://img.shields.io/github/stars/Joshua-Zhang-Jiaquan/LACES.svg?style=social&label=Star)](https://github.com/Joshua-Zhang-Jiaquan/LACES) |  |  | 基于双向 RWKV-7 的扩散语言模型 |
+| StateDiffRWKV-2.9B-trajectory4096-pretrained | [Hugging Face](https://huggingface.co/SII-Jiaquan/StateDiffRWKV-2.9B-trajectory4096-pretrained) | [![Star](https://img.shields.io/github/stars/Joshua-Zhang-Jiaquan/LACES.svg?style=social&label=Star)](https://github.com/Joshua-Zhang-Jiaquan/LACES) |  |  | 基于 RWKV 状态轨迹的扩散语言模型 |
+| birwkv7-strict-small-babylm2026 | [Hugging Face](https://huggingface.co/yashmahe2018/birwkv7-strict-small-babylm2026) |  |  |  | 基于双向 RWKV-7 的 BabyLM 模型 |
+| B3D-RWKV | [Hugging Face](https://huggingface.co/leonardklin/B3D-RWKV) | [![Star](https://img.shields.io/github/stars/leonardodalinky/B3D-RWKV.svg?style=social&label=Star)](https://github.com/leonardodalinky/B3D-RWKV) | [![arXiv:2605.25969](https://img.shields.io/badge/arXiv-2605.25969-b31b1b.svg)](https://arxiv.org/abs/2605.25969) |  | 基于 RWKV-7 的块扩散语言模型 |
+| RWKV-24B-A2B-wakaba-2601 | [Hugging Face](https://huggingface.co/OpenMOSE/RWKV-24B-A2B-wakaba-2601) |  |  |  | 基于 RWKV 混合架构的稀疏专家模型 |
+| RWKV-Qwen3-30B-A3B-Instruct-hxa07d | [Hugging Face](https://huggingface.co/OpenMOSE/RWKV-Qwen3-30B-A3B-Instruct-hxa07d) |  |  |  | 融合 RWKV 与 Qwen3 的指令模型 |
+| RWKV-Seed-OSS-36B-hxa07A | [Hugging Face](https://huggingface.co/OpenMOSE/RWKV-Seed-OSS-36B-hxa07A) | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKVInside.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKVInside) | [![arXiv:2505.03005](https://img.shields.io/badge/arXiv-2505.03005-b31b1b.svg)](https://arxiv.org/abs/2505.03005) |  | 基于 RWKV 的混合注意力模型 |
+| QRWKV7-7B-Instruct | [Hugging Face](https://huggingface.co/recursal/QRWKV7-7B-Instruct) | [![Star](https://img.shields.io/github/stars/recursal/RADLADS-paper.svg?style=social&label=Star)](https://github.com/recursal/RADLADS-paper) | [![arXiv:2505.03005](https://img.shields.io/badge/arXiv-2505.03005-b31b1b.svg)](https://arxiv.org/abs/2505.03005) |  | 基于 RWKV-7 的架构蒸馏指令模型 |
+
+### 多模态模型
+
+| 模型 | 下载 | 代码 | 论文 | 演示/教程 | 简介 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| WorldRWKV | [Hugging Face](https://huggingface.co/WorldRWKV) | [![Star](https://img.shields.io/github/stars/Joluck/mod-rwkv.svg?style=social&label=Star)](https://github.com/Joluck/mod-rwkv) | [![arXiv:2505.14505](https://img.shields.io/badge/arXiv-2505.14505-b31b1b.svg)](https://arxiv.org/abs/2505.14505) |  | 基于 RWKV-7 的多模态模型项目 |
+| RWKV-TTS | [Hugging Face](https://huggingface.co/yueyulin/CosyVoice2-0.5B-RWKV-7-1.5B-Instruct-CHENJPKO) | [![Star](https://img.shields.io/github/stars/yynil/RWKVTTS.svg?style=social&label=Star)](https://github.com/yynil/RWKVTTS/) |  |  | 基于 RWKV 的语音合成模型 |
+| RWKV-CLIP | [下载](https://wisemodel.cn/models/deepglint/RWKV-CLIP/file) | [![Star](https://img.shields.io/github/stars/deepglint/RWKV-CLIP.svg?style=social&label=Star)](https://github.com/deepglint/RWKV-CLIP) | [![arXiv:2406.06973](https://img.shields.io/badge/arXiv-2406.06973-b31b1b.svg)](https://arxiv.org/abs/2406.06973) |  | 基于 RWKV 的视觉语言表示模型 |
+| Diffusion-RWKV | [Hugging Face](https://huggingface.co/feizhengcong/Diffusion-RWKV/tree/main) | [![Star](https://img.shields.io/github/stars/feizc/Diffusion-RWKV.svg?style=social&label=Star)](https://github.com/feizc/Diffusion-RWKV) | [![arXiv:2404.04478](https://img.shields.io/badge/arXiv-2404.04478-b31b1b.svg)](https://arxiv.org/abs/2404.04478) |  | 基于 RWKV 的扩散图像生成模型 |
+| Vision-RWKV | [Hugging Face](https://huggingface.co/OpenGVLab/Vision-RWKV/tree/main) | [![Star](https://img.shields.io/github/stars/OpenGVLab/Vision-RWKV.svg?style=social&label=Star)](https://github.com/OpenGVLab/Vision-RWKV) | [![arXiv:2403.02308](https://img.shields.io/badge/arXiv-2403.02308-b31b1b.svg)](https://arxiv.org/abs/2403.02308) |  | 基于 RWKV 的视觉表征模型 |
+| VisualRWKV-6 | [Hugging Face](https://huggingface.co/howard-hou/visualrwkv-6) | [![Star](https://img.shields.io/github/stars/howard-hou/VisualRWKV.svg?style=social&label=Star)](https://github.com/howard-hou/VisualRWKV) | [![arXiv:2406.13362](https://img.shields.io/badge/arXiv-2406.13362-b31b1b.svg)](https://arxiv.org/abs/2406.13362) | [演示](https://huggingface.co/spaces/howard-hou/VisualRWKV-Gradio-1) | 基于 RWKV-6 的视觉语言模型 |
+| rwkv-nepa-imagenet1k-pretrain-1600ep | [Hugging Face](https://huggingface.co/Curry33333/rwkv-nepa-imagenet1k-pretrain-1600ep) |  |  |  | 基于 RWKV 的视觉自监督预训练模型 |
+| rwkvox | [Hugging Face](https://huggingface.co/Ed-Love/rwkvox) | [![Star](https://img.shields.io/github/stars/Ed-Lovera/rwkvox.svg?style=social&label=Star)](https://github.com/Ed-Lovera/rwkvox) |  |  | 基于 RWKV-7 的语音克隆模型 |
+| rwkv-vl-1.5v100m-finevisionmax | [Hugging Face](https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-finevisionmax) |  |  |  | 基于 RWKV 的视觉语言模型 |
+| rwkv_asr | [Hugging Face](https://huggingface.co/yueyulin/rwkv_asr) | [![Star](https://img.shields.io/github/stars/yynil/RWKVTTS.svg?style=social&label=Star)](https://github.com/yynil/RWKVTTS/) |  |  | 基于 RWKV-7 的语音识别模型 |
+| rwkv_tts_instructed | [Hugging Face](https://huggingface.co/yueyulin/rwkv_tts_instructed) | [![Star](https://img.shields.io/github/stars/yynil/RWKVTTS.svg?style=social&label=Star)](https://github.com/yynil/RWKVTTS/) |  |  | 基于 RWKV-7 的指令语音合成模型 |
+| RWKV7-0.4B-wavlmLarge-CNASR-demo | [Hugging Face](https://huggingface.co/WorldRWKV/RWKV7-0.4B-wavlmLarge-CNASR-demo) | [![Star](https://img.shields.io/github/stars/Joluck/mod-rwkv.svg?style=social&label=Star)](https://github.com/Joluck/mod-rwkv) | [![arXiv:2505.14505](https://img.shields.io/badge/arXiv-2505.14505-b31b1b.svg)](https://arxiv.org/abs/2505.14505) |  | 基于 RWKV-7 的中文语音识别模型 |
+| speech_rwkv_bat_asr-zh-cantonese-en-16k-vocab8501-pytorch-online | [ModelScope](https://modelscope.cn/models/dengcunqin/speech_rwkv_bat_asr-zh-cantonese-en-16k-vocab8501-pytorch-online) | [![Star](https://img.shields.io/github/stars/modelscope/FunASR.svg?style=social&label=Star)](https://github.com/modelscope/FunASR) |  |  | 基于 RWKV-BAT 的粤语语音识别模型 |
+| speech_rwkv_bat_asr-en-16k-librispeech-vocab5003-pytorch-online | [ModelScope](https://modelscope.cn/models/iic/speech_rwkv_bat_asr-en-16k-librispeech-vocab5003-pytorch-online) | [![Star](https://img.shields.io/github/stars/modelscope/FunASR.svg?style=social&label=Star)](https://github.com/modelscope/FunASR) |  |  | 基于 RWKV-BAT 的英语语音识别模型 |
+
+### 音乐模型
+
+| 模型 | 下载 | 代码 | 论文 | 演示/教程 | 简介 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| RWKV-5-ABC-82M | [Hugging Face](https://huggingface.co/BlinkDL/rwkv-5-music/blob/main/RWKV-5-ABC-82M-v1-20230901-ctx1024.pth) |  |  |  | 基于 RWKV-5 的 ABC 乐谱生成模型 |
+| RWKV-5-MIDI-560M | [Hugging Face](https://huggingface.co/BlinkDL/rwkv-5-music/blob/main/RWKV-5-MIDI-560M-v1-20230902-ctx4096.pth) |  |  |  | 基于 RWKV-5 的 MIDI 音乐模型 |
+| LiuBai-RWKV | [Hugging Face](https://huggingface.co/xiaol/LiuBai-RWKV) | [![Star](https://img.shields.io/github/stars/xiaol/LiuBai-RWKV.svg?style=social&label=Star)](https://github.com/xiaol/LiuBai-RWKV) |  |  | 基于 RWKV-7 的歌曲生成模型 |
+| rwkv-midi-piano | [Hugging Face](https://huggingface.co/brianflakes/rwkv-midi-piano) | [![Star](https://img.shields.io/github/stars/briansemrau/MIDI-LLM-tokenizer.svg?style=social&label=Star)](https://github.com/briansemrau/MIDI-LLM-tokenizer) |  |  | 基于 RWKV 的钢琴 MIDI 作曲模型 |
+
+---
 ## RWKV 微调与训练
 
 | 标题 | 代码 | 论文 | 简介 |
@@ -356,3 +454,5 @@
 | Ai00 Character Maker | [![Star](https://img.shields.io/github/stars/Ai00-X/Ai00-character-maker.svg?style=social&label=Star)](https://github.com/Ai00-X/Ai00-character-maker) | | RWKV 角色扮演数据合成工具 |
 | RWKV_7_on_AMD_Radeon-Instinct | [![Star](https://img.shields.io/github/stars/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct.svg?style=social&label=Star)](https://github.com/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct) | | RWKV-7 在 AMD Radeon & Instinct 显卡上的部署全流程 |
 | RWKV-PEFT-GUI | [![Star](https://img.shields.io/github/stars/cttailearn/RWKV-PEFT-GUI.svg?style=social&label=Star)](https://github.com/cttailearn/RWKV-PEFT-GUI) | | 用于 RWKV 模型数据集处理的图形化界面工具 |
+
+
