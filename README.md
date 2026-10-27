@@ -100,7 +100,7 @@
 |ARWKV|[![Star](https://img.shields.io/github/stars/yynil/RWKVInside.svg?style=social&label=Star)](https://github.com/yynil/RWKVInside)|[![arXiv:2501.15570](https://img.shields.io/badge/arXiv-2501.15570-b31b1b.svg)](https://arxiv.org/abs/2501.15570)|RWKV 混合注意力的语言模型|
 |TemporalRNNs|[![Star](https://img.shields.io/github/stars/RazvanDu/TemporalRNNs.svg?style=social&label=Star)](https://github.com/RazvanDu/TemporalRNNs)|[![arXiv:2402.02625](https://img.shields.io/badge/arXiv-2402.02625-b31b1b.svg)](https://arxiv.org/abs/2402.02625)|【ICML 2024 workshop】多时间视角优化架构的方法|
 |GoldFinch||[![arXiv:2407.12077](https://img.shields.io/badge/arXiv-2407.12077-b31b1b.svg)](https://arxiv.org/abs/2407.12077)|RWKV/Transformer 混合模型|
-|RWKV-Lite||[![arXiv](https://img.shields.io/badge/arXiv-2412.10856-b31b1b)](https://arxiv.org/abs/2412.10856)|高效的 RWKV 模型深度压缩方案|
+|RWKV-edge||[![arXiv](https://img.shields.io/badge/arXiv-2412.10856-b31b1b)](https://arxiv.org/abs/2412.10856)|高效的 RWKV 模型深度压缩方案|
 |RADLADS|[![Star](https://img.shields.io/github/stars/recursal/RADLADS-paper.svg?style=social&label=Star)](https://github.com/recursal/RADLADS-paper)|[![arXiv](https://img.shields.io/badge/arXiv-2505.03005-b31b1b)](https://arxiv.org/abs/2505.03005)|将 Transformer 架构模型高效转换为 RWKV 架构模型|
 | RWKV-Depth-recurrence | [![Star](https://img.shields.io/github/stars/EricZhang1412/RWKV-Depth-recurrence.svg?style=social&label=Star)](https://github.com/EricZhang1412/RWKV-Depth-recurrence) | | 具有深度递归（跨层参数共享）的 RWKV 模型实现 |
 | ROSA-Soft | [![Star](https://img.shields.io/github/stars/wjie98/rosa_soft.svg?style=social&label=Star)](https://github.com/wjie98/rosa_soft) |  | ROSA 后缀检索算子的 PyTorch 扩展，提供 CUDA 精确匹配、用于训练的替代梯度，以及基于 C++ 后缀自动机的有状态 CPU 推理。 |
@@ -183,7 +183,6 @@
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
 | Diffusion-RWKV | [![Star](https://img.shields.io/github/stars/feizc/Diffusion-RWKV.svg?style=social&label=Star)](https://github.com/feizc/Diffusion-RWKV) |[![arXiv:2404.04478](https://img.shields.io/badge/arXiv-2404.04478-b31b1b.svg)](https://arxiv.org/abs/2404.04478) | 基于 RWKV 的图像生成任务模型，擅长处理高分辨率图像。 |
-|SDiT||[![arXiv:2402.11588](https://img.shields.io/badge/arXiv-2402.11588-b31b1b.svg)](https://arxiv.org/abs/2402.11588)|脉冲神经网络结合 RWKV 的图像生成|
 
 ### 目标检测
 
@@ -245,7 +244,6 @@
 | FEAT | [![Star](https://img.shields.io/github/stars/Yaziwel/FEAT.svg?style=social&label=Star)](https://github.com/Yaziwel/FEAT) |[![arXiv:2506.04956](https://img.shields.io/badge/arXiv-2506.04956-b31b1b.svg)](https://arxiv.org/abs/2506.04956) | 【MICCAI 2025 early accepted】基于 RWKV 的医学视频生成。 |
 |TLS-RWKV||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s11063-024-11540-0)|基于 RWKV 的在线动作检测（OAD）|
 |Video RWKV||[![arXiv:2411.05636](https://img.shields.io/badge/arXiv-2411.05636-b31b1b.svg)](https://arxiv.org/abs/2411.05636)|基于 RWKV 的视频动作识别|
-|TCVADS||[![arXiv:2412.20201](https://img.shields.io/badge/arXiv-2412.20201-b31b1b.svg)](https://arxiv.org/abs/2412.20201)|基于 RWKV 的视频异常检测|
 |StyleRWKV||[![arXiv:2412.19535](https://img.shields.io/badge/arXiv-2412.19535-b31b1b.svg)](https://arxiv.org/abs/2412.19535)|基于类 RWKV 架构的高效视频风格迁移|
 |RainRWKV||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s00371-025-03965-y)|基于 RWKV 的高效视频去雨|
 | RWKV3D |  | [![ACM DL](https://img.shields.io/badge/ACM-Paper-red)](https://dl.acm.org/doi/abs/10.1145/3746027.3755658) | 【ACM MM 2025】面向点云分析的 RWKV 模型，结合局部特征混合与双向多头位移，支持从零训练及单模态、跨模态预训练。 |
