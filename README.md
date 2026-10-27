@@ -136,6 +136,8 @@
 | VisualRWKV | [![Star](https://img.shields.io/github/stars/howard-hou/VisualRWKV.svg?style=social&label=Star)](https://github.com/howard-hou/VisualRWKV) | [![arXiv:2406.13362](https://img.shields.io/badge/arXiv-2406.13362-b31b1b.svg)](https://arxiv.org/abs/2406.13362)| 【COLING 2025】基于 RWKV 的视觉语言模型，可处理视觉任务。 |
 | RWKV-CLIP | [![Star](https://img.shields.io/github/stars/deepglint/RWKV-CLIP.svg?style=social&label=Star)](https://github.com/deepglint/RWKV-CLIP) | [![arXiv:2406.06973](https://img.shields.io/badge/arXiv-2406.06973-b31b1b.svg)](https://arxiv.org/abs/2406.06973) | 【EMNLP 2024】RWKV 驱动的 CLIP（视觉-语言表示学习）模型。 |
 |RWKV-UI||[![arXiv](https://img.shields.io/badge/arXiv-2502.03971-b31b1b)](https://arxiv.org/abs/2502.03971)|基于 RWKV 的视觉语言模型，专注于 UI 理解和设计|
+| PestVL-Net |  | [![CVPR 2026 Findings](https://img.shields.io/badge/CVPR-2026%20Findings-blue)](https://openaccess.thecvf.com/content/CVPR2026F/html/Li_PestVL-Net_Enabling_Multimodal_Pest_Learning_Via_Fine-grained_Vision-Language_Interaction_CVPRF_2026_paper.html) | 【CVPR 2026 Findings】面向害虫细粒度识别的视觉语言框架，视觉分支以 RWKV 结合显著性引导的自适应窗口划分，语言端用 MLLM 融合农业专家知识与多模态思维链生成描述。 |
+| MCUVLM-RWKV |  | [![Paper](https://img.shields.io/badge/Paper-NSTL-orange)](https://opaj.napstic.cn/periodicalArticle/0120260300988014) | 面向 STM32 微控制器的轻量化视觉语言模型，由轻量视觉编码器、特征映射器与 RWKV 解码器组成，在单片机资源约束下完成图像描述。 |
 
 ### 视觉骨干网络
 
@@ -167,6 +169,13 @@
 |Diet-Seg||[![bioRxiv](https://img.shields.io/badge/bioRxiv-2025.05.31.657149-b31b1b.svg)](https://www.biorxiv.org/content/10.1101/2025.05.31.657149v1)|医学图像分割|
 |Med-URWKV||[![arXiv:2506.10858](https://img.shields.io/badge/arXiv-2506.10858-b31b1b.svg)](https://arxiv.org/abs/2506.10858)|基于 ImageNet 预训练,用于医学图像分割的纯 RWKV|
 | SCRWKV | [![Star](https://img.shields.io/github/stars/zhxhzy/SCRWKV.svg?style=social&label=Star)](https://github.com/zhxhzy/SCRWKV) | [![arXiv:2605.14926](https://img.shields.io/badge/arXiv-2605.14926-b31b1b.svg)](https://arxiv.org/abs/2605.14926) | 用于裂缝分割的结构校准 Vision-RWKV 网络，结合多尺度纹理建模与轻量解码器，提供训练、测试和评估代码。 |
+| SRWKV | [![Star](https://img.shields.io/github/stars/ukeLin/SRWKV.svg?style=social&label=Star)](https://github.com/ukeLin/SRWKV) | [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/11676832) | 【IEEE TNNLS】形状引导的 RWKV 医学图像分割网络，用形状先验引导序列遍历并以自适应位移调整感受野；官方实现含训练、测试脚本与权重下载说明。 |
+| RWKVFUSE | [![Star](https://img.shields.io/github/stars/alqurri/rwkv.svg?style=social&label=Star)](https://github.com/alqurri/rwkv) | [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/11515577) | 【ISBI 2026】VRWKV 与 CNN 的并行双编码器医学图像分割网络，融合局部空间特征与长程依赖；仓库提供 Synapse/ACDC 的训练与测试脚本。 |
+| FreRWKV-Net | [![Star](https://img.shields.io/github/stars/Stu-Ziyang-Zhang/FreRWKV-Net.svg?style=social&label=Star)](https://github.com/Stu-Ziyang-Zhang/FreRWKV-Net) | [![Springer](https://img.shields.io/badge/Springer-Article-red)](https://doi.org/10.1007/978-981-92-3495-0_14) | 视网膜血管分割的频域引导网络，由血管差分注意力 VDAM、频域方向预测驱动的 FGD-RWKV 与多尺度频空交叉注意力 MS-FSCA 组成；仓库提供模型与训练/测试代码，未附权重。 |
+| MD-RWKV-UNET | [作者仓库](https://github.com/fzy-eng/MD-RWKV-UNET)（无 README） | [![arXiv:2603.27261](https://img.shields.io/badge/arXiv-2603.27261-b31b1b.svg)](https://arxiv.org/abs/2603.27261) | 面向多器官分割的 RWKV-UNet 变体，引入尺度感知解剖编码与跨阶段融合；作者仓库仅有一次文件上传，无复现说明。 |
+| SegRWKV | [![Star](https://img.shields.io/github/stars/luminescentfrr/SegRWKV.svg?style=social&label=Star)](https://github.com/luminescentfrr/SegRWKV) | [![JCDE 2026](https://img.shields.io/badge/Oxford-JCDE%202026-blue)](https://doi.org/10.1093/jcde/qwag065) | 【JCDE】以 URWKV 为骨干、沿用 nnU-Net 流程的生物医学分割框架，覆盖腹部 MR、内窥镜与显微三类任务；仓库含预处理、训练与评估脚本。 |
+| RWKVSegDiT | [![Star](https://img.shields.io/github/stars/alqurri/RWKVSegDiT.svg?style=social&label=Star)](https://github.com/alqurri/RWKVSegDiT) |  | 以层级 RWKV 为骨干、将分割建模为图像条件掩码扩散的医学分割实现，仓库含 ISIC 数据准备、训练、采样与评估脚本。 |
+| CropRWKV | [![Star](https://img.shields.io/github/stars/Shutong-Hou/CropRWKV.svg?style=social&label=Star)](https://github.com/Shutong-Hou/CropRWKV) |  | 面向作物叶片病斑表型分析的线性复杂度 RWKV 分割研究，含统一训练协议、多种子基准、混合精度训练失败诊断与全部源数据表；稿件已投 *Plants*。 |
 
 
 ### 图像生成
@@ -183,6 +192,7 @@
 | LION | [![Star](https://img.shields.io/github/stars/happinesslz/LION.svg?style=social&label=Star)](https://github.com/happinesslz/LION) | [![arXiv:2407.18232](https://img.shields.io/badge/arXiv-2407.18232-b31b1b.svg)](https://arxiv.org/abs/2407.18232)| 【NeurIPS 2024】用于点云中 3D 对象检测的 Linear Group RNN（支持 RWKV）。 |
 |RWKV-VG| [![Star](https://img.shields.io/github/stars/nianfd/RWKV-VG.svg?style=social&label=Star)](https://github.com/nianfd/RWKV-VG)|[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s00530-025-01720-w)|基于 RWKV 架构的视觉定位框架|
 |Substation equipment||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s11760-025-03852-y)|变电站缺陷检测|
+| Titanium-Strip-Defect |  | [![ScienceDirect](https://img.shields.io/badge/ScienceDirect-Article-orange)](https://www.sciencedirect.com/science/article/abs/pii/S0952197626003799) | 面向钛带表面缺陷检测的 RWKV 启发上下文建模与层级差分融合方法，以线性复杂度上下文模块替代自注意力完成工业质检识别。 |
 
 ### 超分辨率
 
@@ -208,6 +218,9 @@
 |DiffRWKVIR||[![arXiv:2506.14541](https://img.shields.io/badge/arXiv-2506.14541-b31b1b.svg)](https://arxiv.org/abs/2506.14541)|结合 RWKV 和扩散模型的图像修复|
 | RetinexRWKV | [![Star](https://img.shields.io/github/stars/Alic-Li/RetinexRWKV.svg?style=social&label=Star)](https://github.com/Alic-Li/RetinexRWKV) | | 基于 RWKV 的低光照图像增强模型 |
 | DRWKV | [![Star](https://img.shields.io/github/stars/JackBaixue/DRWKV.svg?style=social&label=Star)](https://github.com/JackBaixue/DRWKV) | [![arXiv:2507.18594](https://img.shields.io/badge/arXiv-2507.18594-b31b1b.svg)](https://arxiv.org/abs/2507.18594) | 专注于物体边缘的低光照图像增强 |
+| Fourier-RWKV | [![Star](https://img.shields.io/github/stars/Dilizlr/Fourier-RWKV.svg?style=social&label=Star)](https://github.com/Dilizlr/Fourier-RWKV) | [![arXiv:2512.08161](https://img.shields.io/badge/arXiv-2512.08161-b31b1b.svg)](https://arxiv.org/abs/2512.08161) | 面向图像去雾的多状态感知网络，将 WKV 建模扩展到频域，并结合可变形四向位移与语义桥接模块；提供训练/测试代码与权重下载。 |
+| CLUIE | [![Star](https://img.shields.io/github/stars/geekpool/CLUIE.svg?style=social&label=Star)](https://github.com/geekpool/CLUIE) | [![arXiv:2607.21467](https://img.shields.io/badge/arXiv-2607.21467-b31b1b.svg)](https://arxiv.org/abs/2607.21467) | 【IEEE TIP】面向水下图像增强的聚类感知 RWKV 框架，通过语义动态重排构造内容自适应递归轨迹，并以暗响应调制补偿局部结构；提供 PyTorch 实现。 |
+| EvRWKV | [![Star](https://img.shields.io/github/stars/Echo0517/EvRWKV.svg?style=social&label=Star)](https://github.com/Echo0517/EvRWKV) | [![arXiv:2507.03184](https://img.shields.io/badge/arXiv-2507.03184-b31b1b.svg)](https://arxiv.org/abs/2507.03184) | 事件引导的低光图像增强框架，通过 Cross-RWKV 与频谱融合模块持续交互事件流与图像特征；官方实现已开源。 |
 
 ### 其他图像任务
 
@@ -221,7 +234,8 @@
 |EVA||[![arXiv:2505.11165](https://img.shields.io/badge/arXiv-2505.11165-b31b1b.svg)](https://arxiv.org/abs/2505.11165)|基于 RWKV-6 构建异步编码器的事件相机异步检测|
 |RWKV-DPA||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/10779439)|基于 RWKV 的高效深度估计|
 | ChangeRWKV | [![Star](https://img.shields.io/github/stars/ChangeRWKV/ChangeRWKV.svg?style=social&label=Star)](https://github.com/ChangeRWKV/ChangeRWKV) | | 基于 RWKV 的线性时间复杂度变化检测方法 |
-
+| RWKV-CD |  | [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/11456675) | 面向遥感建筑物变化检测的 Vision-RWKV 框架，通过双分支编码、特征融合与噪声抑制处理双时相影像。 |
+| MRT | [![Star](https://img.shields.io/github/stars/luke1453lh/MRT.svg?style=social&label=Star)](https://github.com/luke1453lh/MRT) | [![AAAI 2026](https://img.shields.io/badge/AAAI-2026-blue)](https://doi.org/10.1609/aaai.v40i9.37650) | 【AAAI 2026】极低码率图像压缩模型，窗口内用 Transformer 局部注意力、跨窗口用双向 RWKV 建模，配合 RWKV 压缩模型与生成式解码器；提供完整训练、编解码与评测脚本。 |
 ---
 
 ## 3D 与视频处理
@@ -234,7 +248,13 @@
 |TCVADS||[![arXiv:2412.20201](https://img.shields.io/badge/arXiv-2412.20201-b31b1b.svg)](https://arxiv.org/abs/2412.20201)|基于 RWKV 的视频异常检测|
 |StyleRWKV||[![arXiv:2412.19535](https://img.shields.io/badge/arXiv-2412.19535-b31b1b.svg)](https://arxiv.org/abs/2412.19535)|基于类 RWKV 架构的高效视频风格迁移|
 |RainRWKV||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s00371-025-03965-y)|基于 RWKV 的高效视频去雨|
-
+| RWKV3D |  | [![ACM DL](https://img.shields.io/badge/ACM-Paper-red)](https://dl.acm.org/doi/abs/10.1145/3746027.3755658) | 【ACM MM 2025】面向点云分析的 RWKV 模型，结合局部特征混合与双向多头位移，支持从零训练及单模态、跨模态预训练。 |
+| RWKV-PCSSC | [![Star](https://img.shields.io/github/stars/shuaiqianende/RWKVPCSSC.svg?style=social&label=Star)](https://github.com/shuaiqianende/RWKVPCSSC) | [![ACM DL](https://img.shields.io/badge/ACM-Paper-red)](https://dl.acm.org/doi/abs/10.1145/3746027.3754908) | 【ACM MM 2025】点云语义场景补全网络，用 RWKV 种子生成器与逐级点反卷积恢复场景，参数量较 PointSSC 降低约 4.18 倍；官方仓库已开源。 |
+| PointDGRWKV |  | [![arXiv:2508.20835](https://img.shields.io/badge/arXiv-2508.20835-b31b1b.svg)](https://arxiv.org/abs/2508.20835) | 面向未见域点云分类的 RWKV 框架，结合几何感知位移与跨域特征对齐；作者仓库已建但代码尚未发布。 |
+| P-RWKV / PointER |  | [![arXiv:2606.10395](https://img.shields.io/badge/arXiv-2606.10395-b31b1b.svg)](https://arxiv.org/abs/2606.10395) | 面向点云的 P-RWKV 模块及自监督表征学习框架 PointER，通过局部感知扩展与空间上下文增强建模非规则三维几何；论文声明接收后开源。 |
+| Otter |  | [![AAAI 2026](https://img.shields.io/badge/AAAI-2026-blue)](https://ojs.aaai.org/index.php/AAAI/article/view/37428) | 【AAAI 2026 Oral】面向广角少样本动作识别的增强 RWKV 模型，通过主体强调与时序重建抑制背景干扰。 |
+| MG-RWKV |  | [![arXiv:2607.00902](https://img.shields.io/badge/arXiv-2607.00902-b31b1b.svg)](https://arxiv.org/abs/2607.00902) | 【ECCV 2026】音视频时序伪造定位的多粒度 RWKV 框架，结合双向 RWKV、多粒度专家路由与跨粒度一致性约束，在 O(T) 复杂度下定位篡改片段。 |
+| VRWKV-Editor | [![Star](https://img.shields.io/github/stars/abdo-RG/VRWKV-Editor.svg?style=social&label=Star)](https://github.com/abdo-RG/VRWKV-Editor) | [![Springer](https://img.shields.io/badge/Springer-Multimedia%20Systems-red)](https://doi.org/10.1007/s00530-026-02649-4) | 【Multimedia Systems 2026】把扩散视频编辑中的二次时空注意力替换为线性 3D-VRWKV（双向 Bi-WKV）聚合，在 Tune-A-Video 流程上完成对象替换、背景修改与风格变换；提供训练与编辑代码。 |
 ---
 
 ## 音频相关
@@ -347,7 +367,6 @@
 | candle-rwkv | [![Star](https://img.shields.io/github/stars/nkypy/candle-rwkv.svg?style=social&label=Star)](https://github.com/nkypy/candle-rwkv) | | 在 Rust 的极简机器学习框架 candle 中实现 RWKV 模型推理（支持量化）。 |
 | **🚧 (施工中)** RWKV7-Keras | [![Star](https://img.shields.io/github/stars/pass-lin/RWKV7-Keras.svg?style=social&label=Star)](https://github.com/pass-lin/RWKV7-Keras) | | RWKV 模型的 Keras 实现，支持训练和推理。 |
 | RWKV6-Keras | [![Star](https://img.shields.io/github/stars/pass-lin/RWKV6-Keras.svg?style=social&label=Star)](https://github.com/pass-lin/RWKV6-Keras) | | RWKV 模型的 Keras 实现，支持训练和推理。 |
-| rwkv-burn| [![Star](https://img.shields.io/github/stars/dymat/rwkv-burn.svg?style=social&label=Star)](https://github.com/dymat/rwkv-burn) | | RWKV 语言模型的 burn 实现。 |
 | jaxrwkv | [![Star](https://img.shields.io/github/stars/bsarkar321/jaxrwkv.svg?style=social&label=Star)](https://github.com/bsarkar321/jaxrwkv) | | RWKV 语言模型的 JAX 实现 |
 | rwkv-mobile | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-mobile.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-mobile) | | RWKV 移动端推理引擎。 |
 | rwkv-qualcomm | [![Star](https://img.shields.io/github/stars/MollySophia/rwkv-qualcomm.svg?style=social&label=Star)](https://github.com/MollySophia/rwkv-qualcomm) | | 使用 Qualcomm AI Engine Direct SDK 推理 RWKV 模型。 |
