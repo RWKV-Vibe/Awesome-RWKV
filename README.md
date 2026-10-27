@@ -115,6 +115,9 @@
 |CMGN||[![ScienceDirect](https://img.shields.io/badge/ScienceDirect-Article-orange)](https://www.sciencedirect.com/science/article/abs/pii/S0925231225004837)|基于 RWKV 的假新闻检测|
 |RCME||[![Paper](https://img.shields.io/badge/Paper-PDF-blue)](https://www.engineeringletters.com/issues_v33/issue_6/EL_33_6_28.pdf)|混合架构的知识图谱补全|
 | TongShunLM | [![Star](https://img.shields.io/github/stars/ovo-Tim/TongShunLM.svg?style=social&label=Star)](https://github.com/ovo-Tim/TongShunLM) | | 基于 RWKV-7 的轻量化用词通顺度打分模型 |
+| rwkv-jev | [![Star](https://img.shields.io/github/stars/XingQiPan/rwkv-jev.svg?style=social&label=Star)](https://github.com/XingQiPan/rwkv-jev) |  | 基于 RWKV-7 的结构化决策服务，在固定候选标签集合上输出概率分布，兼容 TypeSafe 的 /v1/systemone 接口，适用于分类与受限决策。 |
+| RWKV_document-term-translator | [![Star](https://img.shields.io/github/stars/LuckySongXiao/RWKV_document-term-translator.svg?style=social&label=Star)](https://github.com/LuckySongXiao/RWKV_document-term-translator) |  | 基于 C# WPF 的 Windows 文档术语翻译助手，支持 Word、Excel 文档和术语库管理，可接入 rwkv_lightning 或 llama.cpp 推理后端。 |
+| rwkv-code-completion | [![Star](https://img.shields.io/github/stars/xun082/rwkv-code-completion.svg?style=social&label=Star)](https://github.com/xun082/rwkv-code-completion) |  | 基于 RWKV 的 VS Code 代码补全扩展，支持实时补全、多候选展示和中间填充（FIM），需连接自建 RWKV 推理后端。 |
 
 ## 多模态融合
 
@@ -163,6 +166,8 @@
 |Zig-RiR||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/10969076)|【IEEE TMI】嵌套 RWKV 的医学图像分割|
 |Diet-Seg||[![bioRxiv](https://img.shields.io/badge/bioRxiv-2025.05.31.657149-b31b1b.svg)](https://www.biorxiv.org/content/10.1101/2025.05.31.657149v1)|医学图像分割|
 |Med-URWKV||[![arXiv:2506.10858](https://img.shields.io/badge/arXiv-2506.10858-b31b1b.svg)](https://arxiv.org/abs/2506.10858)|基于 ImageNet 预训练,用于医学图像分割的纯 RWKV|
+| SCRWKV | [![Star](https://img.shields.io/github/stars/zhxhzy/SCRWKV.svg?style=social&label=Star)](https://github.com/zhxhzy/SCRWKV) | [![arXiv:2605.14926](https://img.shields.io/badge/arXiv-2605.14926-b31b1b.svg)](https://arxiv.org/abs/2605.14926) | 用于裂缝分割的结构校准 Vision-RWKV 网络，结合多尺度纹理建模与轻量解码器，提供训练、测试和评估代码。 |
+
 
 ### 图像生成
 
@@ -301,12 +306,20 @@
 | :--- | :--- | :--- | :--- |
 | **⭐ (中文推荐)** RWKV Runner | [![Star](https://img.shields.io/github/stars/josStorer/RWKV-Runner.svg?style=social&label=Star)](https://github.com/josStorer/RWKV-Runner) | | RWKV Runner 是 RWKV 模型的管理和启动工具，带用户友好的 GUI 界面，支持训练和推理。 |
 | **⭐ (中文推荐)** AI00 RWKV Server | [![Star](https://img.shields.io/github/stars/cgisky1980/ai00_rwkv_server.svg?style=social&label=Star)](https://github.com/cgisky1980/ai00_rwkv_server) | | Ai00 Server 是基于 web-rwkv 推理引擎的 RWKV 模型**推理 API 服务器**。 |
-|RWKV_APP|[![Star](https://img.shields.io/github/stars/RWKV-APP/RWKV_APP.svg?style=social&label=Star)](https://github.com/RWKV-APP/RWKV_APP)||使用 flutter 实现的 RWKV-LM 端侧推理 App|
+| RWKV_APP |[![Star](https://img.shields.io/github/stars/RWKV-APP/RWKV_APP.svg?style=social&label=Star)](https://github.com/RWKV-APP/RWKV_APP)||使用 flutter 实现的 RWKV-LM 端侧推理 App|
 | **🇨🇳 (中文)** Role Play Chatbot | [![Star](https://img.shields.io/github/stars/shengxia/RWKV_Role_Playing.svg?style=social&label=Star)](https://github.com/shengxia/RWKV_Role_Playing) | | 基于 RWKV 的角色扮演 WebUI，使用 Gradio 制作。 |
 | Easy_RWKV_webui | [![Star](https://img.shields.io/github/stars/No-22-Github/Easy_RWKV_webui.svg?style=social&label=Star)](https://github.com/No-22-Github/Easy_RWKV_webui) | | 基于 PyWebIO 的 RWKV 模型在线聊天室。 |
 | Mini Model Daemon | [![Star](https://img.shields.io/github/stars/recursal/minmodmon.svg?style=social&label=Star)](https://github.com/recursal/minmodmon) | | 基于 web-rwkv 推理后端的 RWKV 模型推理工具。 |
 | frank_esp32 | [![Star](https://img.shields.io/github/stars/lsk-china/frank_esp32.svg?style=social&label=Star)](https://github.com/lsk-china/frank_esp32) | | 基于 RWKV 的 Firefly 聊天机器人硬件实现 |
-
+| RWKV State Agent | [![Star](https://img.shields.io/github/stars/123123213weqw/rwkv-agent.svg?style=social&label=Star)](https://github.com/123123213weqw/rwkv-agent) |  | 以 RWKV 循环状态为核心的本地 Agent 运行时，支持跨轮状态复用、结构化工具调用和多任务状态隔离，提供联网检索、命令与文件工具。 |
+| rwkv_lightning | [![Star](https://img.shields.io/github/stars/RWKV-Vibe/rwkv_lightning.svg?style=social&label=Star)](https://github.com/RWKV-Vibe/rwkv_lightning) |  | 基于 Albatross 与 FastAPI 的 RWKV 批量推理后端，提供 NVIDIA CUDA 和 AMD ROCm 路径，并支持量化推理与服务接口。 |
+| RWKV-Server | [![Star](https://img.shields.io/github/stars/AUXStar/RWKV-Server.svg?style=social&label=Star)](https://github.com/AUXStar/RWKV-Server) |  | 面向并发请求的 RWKV 批量推理服务器，提供 OpenAI 兼容 API、SSE 流式输出、循环状态复用与动态批处理调度。 |
+| RWKV-Router | [![Star](https://img.shields.io/github/stars/cgisky1980/rwkv-router.svg?style=social&label=Star)](https://github.com/cgisky1980/rwkv-router) |  | 基于规则与小型 RWKV 分类器的请求路由网关，将请求分级并分配给本地模型或云端 API，提供 OpenAI、Anthropic 兼容接口与多语言绑定。 |
+| RWKV-Scout | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-Scout.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-Scout) |  | 以 RWKV 为决策核心的联网检索 Agent，涵盖任务拆解、查询与工具选择、证据审核及回答生成，并记录证据与执行轨迹。 |
+| rwkv_lightning_cuda | [![Star](https://img.shields.io/github/stars/Alic-Li/rwkv_lightning_cuda.svg?style=social&label=Star)](https://github.com/Alic-Li/rwkv_lightning_cuda) |  | 面向 NVIDIA CUDA、附带 AMD HIP 路径的 RWKV-7 推理服务，提供 OpenAI 兼容与原生批量 API、流式输出、状态缓存、状态微调和量化功能。 |
+| RWKV-LH | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-LH.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-LH) |  | 面向 RWKV 状态续写模型的实验性编码 Agent，结合决策模型、执行模型和按需调用的规划模型，提供工具执行、完成条件校验与中断恢复。 |
+| RWKV_Role_Playing_with_GPT-SoVITS | [![Star](https://img.shields.io/github/stars/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS.svg?style=social&label=Star)](https://github.com/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS) |  | 在 RWKV 角色扮演 WebUI 基础上接入 GPT-SoVITS 语音对话，支持角色配置与本地运行；适合单用户体验。 |
+| RWKV-Agent | [![Star](https://img.shields.io/github/stars/No-22-Github/RWKV-Agent.svg?style=social&label=Star)](https://github.com/No-22-Github/RWKV-Agent) |  | 面向 Apple Silicon 的本地优先 RWKV 工作区 Agent，使用 Go 与 MLX 推理，提供命令行、终端界面、桌面与浏览器入口；当前工具能力以只读操作为主。 |
 ---
 
 ## RWKV 基准测试
@@ -343,6 +356,21 @@
 | RWKV-DeepEmbed-mmap | [![Star](https://img.shields.io/github/stars/Beortext/RWKV-DeepEmbed-mmap.svg?style=social&label=Star)](https://github.com/Beortext/RWKV-DeepEmbed-mmap) | | RWKV DeepEmbed mmap 高效推理方案 |
 | rwkv-burn(Rust-RWKV) | [![Star](https://img.shields.io/github/stars/w1c2j3/rwkv-burn.svg?style=social&label=Star)](https://github.com/w1c2j3/rwkv-burn) | | Rust 实现的 RWKV 模型 |
 | RWKV-Infer | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-Infer.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-Infer) | | 大规模 RWKV v7 推理框架，支持多状态组合和动态切换 |
+| wkvm | [![Star](https://img.shields.io/github/stars/xiaol/wkvm.svg?style=social&label=Star)](https://github.com/xiaol/wkvm) |  | 面向 RWKV-7、GDN、Mamba2 等线性及混合模型的状态推理框架，以固定大小的状态槽管理请求，并提供状态快照、分叉、休眠与恢复能力。 |
+| RWKV-7 Hugging Face Reference | [![Star](https://img.shields.io/github/stars/rwkv-rs/hf-adapter.svg?style=social&label=Star)](https://github.com/rwkv-rs/hf-adapter) |  | 面向 Hugging Face Transformers 的纯 PyTorch RWKV-7 参考实现，分离模型配置、循环缓存与算子，提供权重转换工具及可选的 NVIDIA 加速算子接口。 |
+| FlashRWKV2 | [![Star](https://img.shields.io/github/stars/rwkv-rs/FlashRWKV2.svg?style=social&label=Star)](https://github.com/rwkv-rs/FlashRWKV2) |  | 基于 TileLang 的 RWKV-7 GPU 算子库，提供训练与推理共用的 BF16 前向路径、FP32 累加与循环状态，以及面向推理的融合算子接口。 |
+| RWKV-MUSA | [![Star](https://img.shields.io/github/stars/KakaruHayate/RWKV-MUSA.svg?style=social&label=Star)](https://github.com/KakaruHayate/RWKV-MUSA) |  | 面向摩尔线程 GPU 的 RWKV-7 循环算子与模型集成，提供可选 torch_musa 后端、Hugging Face 适配和 PyTorch 参考计算路径。 |
+| rwkv-hf-kernels | [![Star](https://img.shields.io/github/stars/Hakureirm/rwkv-hf-kernels.svg?style=social&label=Star)](https://github.com/Hakureirm/rwkv-hf-kernels) |  | 为 Hugging Face Transformers 的 RWKV-7 模型提供可选融合 CUDA 算子，以可移植的 PyTorch 实现作为参考路径。 |
+| rwkv-quant | [![Star](https://img.shields.io/github/stars/RafaelUI/rwkv-quant.svg?style=social&label=Star)](https://github.com/RafaelUI/rwkv-quant) |  | 面向 Apple Silicon 的 RWKV-7 量化工具包与 Metal 推理后端，提供可移植的 .rwkvq 检查点格式、校准和直接读取量化权重的 GPU 算子。 |
+| RWKV-7 Quantization Toolkit | [![Star](https://img.shields.io/github/stars/AUXStar/rwkv7-quantization.svg?style=social&label=Star)](https://github.com/AUXStar/rwkv7-quantization) |  | RWKV-7 量化与推理工具包，支持 FP8、INT8、INT4 等方案，并提供模型信息查看、量化前后比较及评估命令。 |
+| rwkv-rsv | [![Star](https://img.shields.io/github/stars/cgisky1980/rwkv-rsv.svg?style=social&label=Star)](https://github.com/cgisky1980/rwkv-rsv) |  | 使用 Rust 与 Vulkan/CUDA 计算着色器实现的 RWKV-7 推理引擎，支持 FP16、INT8 权重路径，并提供 CPU FP32 参考实现用于精度对照。 |
+| dspark-rwkv | [![Star](https://img.shields.io/github/stars/cgisky1980/dspark-rwkv.svg?style=social&label=Star)](https://github.com/cgisky1980/dspark-rwkv) |  | 将 DSpark 半自回归推测解码适配到 RWKV-7 的实验项目，提供训练、解码及评测实现；仓库已撤回早期加速与接受率结果，使用时需参照其勘误。 |
+| rwkv_mobile_flutter | [![Star](https://img.shields.io/github/stars/RWKV-APP/rwkv_mobile_flutter.svg?style=social&label=Star)](https://github.com/RWKV-APP/rwkv_mobile_flutter) |  | 连接 Flutter/Dart 应用与原生 rwkv-mobile 推理引擎的 FFI 插件和运行时编排层，用于设备端 RWKV、语音及多模态功能集成。 |
+| VKWR | [![Star](https://img.shields.io/github/stars/szxysdt/VKWR.svg?style=social&label=Star)](https://github.com/szxysdt/VKWR) |  | 带优化 CUDA 算子与连续批处理的 RWKV 推理引擎，提供命令行启动方式和 OpenAI 兼容 API 服务；项目仍在开发中。 |
+| rosalia | [![Star](https://img.shields.io/github/stars/cryscan/rosalia.svg?style=social&label=Star)](https://github.com/cryscan/rosalia) |  | 使用 Rust 与 Vulkan 计算着色器实现的 RWKV 推理引擎，探索在独立运行时中实现 Rosa 机制。 |
+| RWKV-7 × sglang | [![Star](https://img.shields.io/github/stars/Hakureirm/rwkv-sglang.svg?style=social&label=Star)](https://github.com/Hakureirm/rwkv-sglang) |  | 将 RWKV-7 接入 SGLang 的推理服务实现，支持循环状态推理、INT8/INT4 量化及 OpenAI 兼容服务，并提供基准与参考实现对照记录。 |
+| vllm-rwkv | [![Star](https://img.shields.io/github/stars/123123213weqw/vllm-rwkv.svg?style=social&label=Star)](https://github.com/123123213weqw/vllm-rwkv) |  | 集成原生 RWKV-7 循环状态调度与 Albatross 派生 CUDA 算子的 vLLM 发行版，提供动态状态管理、批处理和 OpenAI 兼容服务。 |
+| HTMLNLM | [![Star](https://img.shields.io/github/stars/ConsciousNode/HTMLNLM.svg?style=social&label=Star)](https://github.com/ConsciousNode/HTMLNLM) |  | 单文件浏览器端神经语言模型运行时，基于 RWKV-v7 架构，在网页中提供模型训练与推理，无需独立服务器或 Python 环境。 |
 
 ---
 
@@ -364,3 +392,6 @@
 | Ai00 Character Maker | [![Star](https://img.shields.io/github/stars/Ai00-X/Ai00-character-maker.svg?style=social&label=Star)](https://github.com/Ai00-X/Ai00-character-maker) | | RWKV 角色扮演数据合成工具 |
 | RWKV_7_on_AMD_Radeon-Instinct | [![Star](https://img.shields.io/github/stars/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct.svg?style=social&label=Star)](https://github.com/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct) | | RWKV-7 在 AMD Radeon & Instinct 显卡上的部署全流程 |
 | RWKV-PEFT-GUI | [![Star](https://img.shields.io/github/stars/cttailearn/RWKV-PEFT-GUI.svg?style=social&label=Star)](https://github.com/cttailearn/RWKV-PEFT-GUI) | | 用于 RWKV 模型数据集处理的图形化界面工具 |
+| RWKV-nonogram | [![Star](https://img.shields.io/github/stars/LeC-Z/RWKV-nonogram.svg?style=social&label=Star)](https://github.com/LeC-Z/RWKV-nonogram) |  | 使用约 20M 参数的 RWKV-6 模型求解数织谜题的实验项目，提供演示与 Colab 体验入口。 |
+| Sudoku-RWKV | [![Star](https://img.shields.io/github/stars/Jellyfish042/Sudoku-RWKV.svg?style=social&label=Star)](https://github.com/Jellyfish042/Sudoku-RWKV) |  | 基于 RWKV-6 的数独求解模型，提供交互演示、最小推理示例与训练数据生成脚本。 |
+| RWKV-15Puzzle | [![Star](https://img.shields.io/github/stars/Jellyfish042/RWKV-15Puzzle.svg?style=social&label=Star)](https://github.com/Jellyfish042/RWKV-15Puzzle) |  | 面向 15 拼图问题的 RWKV-6 专用模型，提供图形演示、最小推理入口和训练配置说明。 |
