@@ -69,6 +69,9 @@
 | **⭐ (推荐)** RWKV-PEFT | [![Star](https://img.shields.io/github/stars/JL-er/RWKV-PEFT.svg?style=social&label=Star)](https://github.com/JL-er/RWKV-PEFT) | | RWKV 高效微调仓库，包含 LoRA、Pissa、DiSHA、State 等多种微调方法。 |
 | RWKV-PEFT-Simple | [![Star](https://img.shields.io/github/stars/Seikaijyu/RWKV-PEFT-Simple.svg?style=social&label=Star)](https://github.com/Seikaijyu/RWKV-PEFT-Simple) | | RWKV-PEFT 的简化版本，提供便捷脚本和微调说明。 |
 | **🚧 (开发中)** RWKV-LM-RLHF | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-LM-RLHF.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-LM-RLHF) | | RWKV 强化学习（RLHF）工具包，含 SFT、对齐（DPO、ORPO）等。 |
+| stateswap | [![Star](https://img.shields.io/github/stars/Nice0o0/stateswap.svg?style=social&label=Star)](https://github.com/Nice0o0/stateswap) |  | 冻结 RWKV-7 模型权重，仅训练初始循环状态以保存人格或任务模式；提供状态热切换、混合、压缩和聊天界面。 |
+| Preen | [![Star](https://img.shields.io/github/stars/No-22-Github/Preen.svg?style=social&label=Star)](https://github.com/No-22-Github/Preen) |  | 面向 Apple Silicon Mac 的 RWKV-7 状态微调工具，提供 SwiftUI 图形界面和命令行入口，可导入 JSONL 数据并导出可加载的初始状态文件。 |
+| rwkvtune | [![Star](https://img.shields.io/github/stars/aierwiki/rwkvtune.svg?style=social&label=Star)](https://github.com/aierwiki/rwkvtune) |  | 面向 RWKV 的训练工具包，提供类似 Hugging Face TRL 的 Config、Trainer 与 Dataset 工作流，覆盖监督微调及偏好优化。 |
 
 ### 训练项目
 
@@ -83,7 +86,9 @@
 | RWKV_LM_EXT | [![Star](https://img.shields.io/github/stars/yynil/RWKV_LM_EXT.svg?style=social&label=Star)](https://github.com/yynil/RWKV_LM_EXT) | | 实现 RWKV 的功能扩展，包括序列分类/嵌入/peft/交叉编码器/双编码器/多模态等。 |
 | chunkRWKV6 | [![Star](https://img.shields.io/github/stars/00ffcc/chunkRWKV6.svg?style=social&label=Star)](https://github.com/00ffcc/chunkRWKV6) | | 使用分块并行优化 RWKV 的 prefill 和训练速度。 |
 | Mini_RWKV_7 | [![Star](https://img.shields.io/github/stars/Alic-Li/Mini_RWKV_7.svg?style=social&label=Star)](https://github.com/Alic-Li/Mini_RWKV_7) | | 轻量化 RWKV-V7 语言模型训练全流程 |
-
+| RWKV-Megatron | [![Star](https://img.shields.io/github/stars/TimeMobius/RWKV-Megatron.svg?style=social&label=Star)](https://github.com/TimeMobius/RWKV-Megatron) |  | 基于 NVIDIA Megatron-Core 的 RWKV-6/RWKV-7 分布式训练框架，集成张量、流水线、序列和数据并行，提供混合精度训练与检查点转换。 |
+| rwkv-metal | [![Star](https://img.shields.io/github/stars/RafaelUI/rwkv-metal.svg?style=social&label=Star)](https://github.com/RafaelUI/rwkv-metal) |  | 基于 MLX 与自定义 Metal WKV-7 算子的 Apple Silicon 训练框架，支持 RWKV-7 预训练、LoRA/QLoRA 微调、状态微调及推理。 |
+| transformers-rwkv7 | [![Star](https://img.shields.io/github/stars/dfytensor/transformers-rwkv7.svg?style=social&label=Star)](https://github.com/dfytensor/transformers-rwkv7) |  | 自包含的 Hugging Face 兼容 RWKV-7 Goose 实现，以纯 PyTorch 接入 Trainer、PEFT 等训练工具，并提供循环状态推理路径。 |
 ---
 
 ## 模型架构与优化
@@ -98,6 +103,9 @@
 |RWKV-Lite||[![arXiv](https://img.shields.io/badge/arXiv-2412.10856-b31b1b)](https://arxiv.org/abs/2412.10856)|高效的 RWKV 模型深度压缩方案|
 |RADLADS|[![Star](https://img.shields.io/github/stars/recursal/RADLADS-paper.svg?style=social&label=Star)](https://github.com/recursal/RADLADS-paper)|[![arXiv](https://img.shields.io/badge/arXiv-2505.03005-b31b1b)](https://arxiv.org/abs/2505.03005)|将 Transformer 架构模型高效转换为 RWKV 架构模型|
 | RWKV-Depth-recurrence | [![Star](https://img.shields.io/github/stars/EricZhang1412/RWKV-Depth-recurrence.svg?style=social&label=Star)](https://github.com/EricZhang1412/RWKV-Depth-recurrence) | | 具有深度递归（跨层参数共享）的 RWKV 模型实现 |
+| ROSA-Soft | [![Star](https://img.shields.io/github/stars/wjie98/rosa_soft.svg?style=social&label=Star)](https://github.com/wjie98/rosa_soft) |  | ROSA 后缀检索算子的 PyTorch 扩展，提供 CUDA 精确匹配、用于训练的替代梯度，以及基于 C++ 后缀自动机的有状态 CPU 推理。 |
+| ROSA-Tuning | [![Star](https://img.shields.io/github/stars/zyaaa-ux/ROSA-Tuning.svg?style=social&label=Star)](https://github.com/zyaaa-ux/ROSA-Tuning) | [![arXiv:2602.02499](https://img.shields.io/badge/arXiv-2602.02499-b31b1b.svg)](https://arxiv.org/abs/2602.02499) | 将 ROSA 后缀匹配记忆机制与窗口注意力语言模型结合，用于长上下文建模；提供训练实现和基于 Qwen3 的实验配置。 |
+| B3D-RWKV | [![Star](https://img.shields.io/github/stars/leonardodalinky/B3D-RWKV.svg?style=social&label=Star)](https://github.com/leonardodalinky/B3D-RWKV) | [![arXiv:2605.25969](https://img.shields.io/badge/arXiv-2605.25969-b31b1b.svg)](https://arxiv.org/abs/2605.25969) | 基于 RWKV-7 的三元块离散扩散语言模型，通过掩码块与干净块组合训练实现文本填充，提供训练、推理和评估代码。 |
 
 ## 自然语言处理
 
