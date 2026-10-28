@@ -214,7 +214,6 @@
 |Flare-Aware RWKV||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10888487)|【ICASSP 2025】基于 RWKV 的高效图像去光晕|
 |URWKV||[![arXiv:2505.23068](https://img.shields.io/badge/arXiv-2505.23068-b31b1b.svg)](https://arxiv.org/abs/2505.23068)|【CVPR 2025】低光照图像恢复|
 |Pan-Sharpening||[![IEEE](https://img.shields.io/badge/IEEE-11023855-blue.svg)](https://ieeexplore.ieee.org/abstract/document/11023855)|【IEEE TGRS】基于 RWKV 的全色锐化|
-|DiffRWKVIR||[![arXiv:2506.14541](https://img.shields.io/badge/arXiv-2506.14541-b31b1b.svg)](https://arxiv.org/abs/2506.14541)|结合 RWKV 和扩散模型的图像修复|
 | RetinexRWKV | [![Star](https://img.shields.io/github/stars/Alic-Li/RetinexRWKV.svg?style=social&label=Star)](https://github.com/Alic-Li/RetinexRWKV) | | 基于 RWKV 的低光照图像增强模型 |
 | DRWKV | [![Star](https://img.shields.io/github/stars/JackBaixue/DRWKV.svg?style=social&label=Star)](https://github.com/JackBaixue/DRWKV) | [![arXiv:2507.18594](https://img.shields.io/badge/arXiv-2507.18594-b31b1b.svg)](https://arxiv.org/abs/2507.18594) | 专注于物体边缘的低光照图像增强 |
 | Fourier-RWKV | [![Star](https://img.shields.io/github/stars/Dilizlr/Fourier-RWKV.svg?style=social&label=Star)](https://github.com/Dilizlr/Fourier-RWKV) | [![arXiv:2512.08161](https://img.shields.io/badge/arXiv-2512.08161-b31b1b.svg)](https://arxiv.org/abs/2512.08161) | 面向图像去雾的多状态感知网络，将 WKV 建模扩展到频域，并结合可变形四向位移与语义桥接模块；提供训练/测试代码与权重下载。 |
@@ -231,7 +230,6 @@
 |PathRWKV||[![arXiv](https://img.shields.io/badge/arXiv-2503.03199-b31b1b)](https://arxiv.org/abs/2503.03199)|全玻图像分析|
 |RWKVMatch||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10888484)|【ICASSP 2025】基于 vision-RWKV 的全局和交叉融合机制的医学图像配准|
 |EVA||[![arXiv:2505.11165](https://img.shields.io/badge/arXiv-2505.11165-b31b1b.svg)](https://arxiv.org/abs/2505.11165)|基于 RWKV-6 构建异步编码器的事件相机异步检测|
-|RWKV-DPA||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/10779439)|基于 RWKV 的高效深度估计|
 | ChangeRWKV | [![Star](https://img.shields.io/github/stars/ChangeRWKV/ChangeRWKV.svg?style=social&label=Star)](https://github.com/ChangeRWKV/ChangeRWKV) | | 基于 RWKV 的线性时间复杂度变化检测方法 |
 | RWKV-CD |  | [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/11456675) | 面向遥感建筑物变化检测的 Vision-RWKV 框架，通过双分支编码、特征融合与噪声抑制处理双时相影像。 |
 | MRT | [![Star](https://img.shields.io/github/stars/luke1453lh/MRT.svg?style=social&label=Star)](https://github.com/luke1453lh/MRT) | [![AAAI 2026](https://img.shields.io/badge/AAAI-2026-blue)](https://doi.org/10.1609/aaai.v40i9.37650) | 【AAAI 2026】极低码率图像压缩模型，窗口内用 Transformer 局部注意力、跨窗口用双向 RWKV 建模，配合 RWKV 压缩模型与生成式解码器；提供完整训练、编解码与评测脚本。 |
@@ -372,7 +370,6 @@
 | RWKV-Infer | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-Infer.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-Infer) | | 使用 FLA 进行 RWKV-V6/V7 推理，支持组合多个状态进行推理。 |
 | RWKV-DeepEmbed-mmap | [![Star](https://img.shields.io/github/stars/Beortext/RWKV-DeepEmbed-mmap.svg?style=social&label=Star)](https://github.com/Beortext/RWKV-DeepEmbed-mmap) | | RWKV DeepEmbed mmap 高效推理方案 |
 | rwkv-burn(Rust-RWKV) | [![Star](https://img.shields.io/github/stars/w1c2j3/rwkv-burn.svg?style=social&label=Star)](https://github.com/w1c2j3/rwkv-burn) | | Rust 实现的 RWKV 模型 |
-| RWKV-Infer | [![Star](https://img.shields.io/github/stars/OpenMOSE/RWKV-Infer.svg?style=social&label=Star)](https://github.com/OpenMOSE/RWKV-Infer) | | 大规模 RWKV v7 推理框架，支持多状态组合和动态切换 |
 | wkvm | [![Star](https://img.shields.io/github/stars/xiaol/wkvm.svg?style=social&label=Star)](https://github.com/xiaol/wkvm) |  | 面向 RWKV-7、GDN、Mamba2 等线性及混合模型的状态推理框架，以固定大小的状态槽管理请求，并提供状态快照、分叉、休眠与恢复能力。 |
 | RWKV-7 Hugging Face Reference | [![Star](https://img.shields.io/github/stars/rwkv-rs/hf-adapter.svg?style=social&label=Star)](https://github.com/rwkv-rs/hf-adapter) |  | 面向 Hugging Face Transformers 的纯 PyTorch RWKV-7 参考实现，分离模型配置、循环缓存与算子，提供权重转换工具及可选的 NVIDIA 加速算子接口。 |
 | FlashRWKV2 | [![Star](https://img.shields.io/github/stars/rwkv-rs/FlashRWKV2.svg?style=social&label=Star)](https://github.com/rwkv-rs/FlashRWKV2) |  | 基于 TileLang 的 RWKV-7 GPU 算子库，提供训练与推理共用的 BF16 前向路径、FP32 累加与循环状态，以及面向推理的融合算子接口。 |
@@ -407,6 +404,7 @@
 |ChemRB||[![Paper](https://img.shields.io/badge/Paper-SNNU-orange)](https://jsnu.magtech.com.cn/CN/10.15983/j.cnki.jsnu.2025005)|医学分子生成|
 |DualComp||[![arXiv:2505.16256](https://img.shields.io/badge/arXiv-2505.16256-b31b1b.svg)](https://arxiv.org/abs/2505.16256)|基于 RWKV-7 的无损数据压缩|
 | Ai00 Character Maker | [![Star](https://img.shields.io/github/stars/Ai00-X/Ai00-character-maker.svg?style=social&label=Star)](https://github.com/Ai00-X/Ai00-character-maker) | | RWKV 角色扮演数据合成工具 |
+| RWKV-DPA | | [论文](https://ieeexplore.ieee.org/document/10779439) | 面向车联网（V2X）通信的线性注意力信道估计方法。 |
 | RWKV_7_on_AMD_Radeon-Instinct | [![Star](https://img.shields.io/github/stars/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct.svg?style=social&label=Star)](https://github.com/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct) | | RWKV-7 在 AMD Radeon & Instinct 显卡上的部署全流程 |
 | RWKV-PEFT-GUI | [![Star](https://img.shields.io/github/stars/cttailearn/RWKV-PEFT-GUI.svg?style=social&label=Star)](https://github.com/cttailearn/RWKV-PEFT-GUI) | | 用于 RWKV 模型数据集处理的图形化界面工具 |
 | RWKV-nonogram | [![Star](https://img.shields.io/github/stars/LeC-Z/RWKV-nonogram.svg?style=social&label=Star)](https://github.com/LeC-Z/RWKV-nonogram) |  | 使用约 20M 参数的 RWKV-6 模型求解数织谜题的实验项目，提供演示与 Colab 体验入口。 |
