@@ -164,8 +164,8 @@
 |MMSegRWKV|[![Star](https://img.shields.io/github/stars/supercyt/MMSegRWKV.svg?style=social&label=Star)](https://github.com/supercyt/MMSegRWKV)||基于 RWKV 架构开发的多模态磁共振成像（MRI）分割模型|
 |BSBP-RWKV|| [![PDF](https://img.shields.io/badge/PDF-OpenReview-red)](https://openreview.net/pdf?id=ULD5RCk0oo)|RWKV 医学图像分割|
 |RWKV-UNet||[![arXiv](https://img.shields.io/badge/arXiv-2501.08458-b31b1b)](https://arxiv.org/abs/2501.08458)|RWKV 改进的 Unet 进行医学图像分割|
-|HFE-RWKV||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10888300)|【ICASSP 2025】RWKV 强化高频成分的医学图像分割|
-|Zig-RiR||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/document/10969076)|【IEEE TMI】嵌套 RWKV 的医学图像分割|
+| HFE-RWKV | [![Star](https://img.shields.io/github/stars/yezizi1022/HFE-RWKV.svg?style=social&label=Star)](https://github.com/yezizi1022/HFE-RWKV) | [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://doi.org/10.1109/ICASSP49660.2025.10888300) | 【ICASSP 2025】基于 RWKV 的层次特征增强医学图像分割模型 |
+| Zig-RiR | [![Star](https://img.shields.io/github/stars/txchen-USTC/Zig-RiR.svg?style=social&label=Star)](https://github.com/txchen-USTC/Zig-RiR) | [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://doi.org/10.1109/TMI.2025.3561797) | 基于 RWKV 的 Zigzag 扫描与反向残差医学图像分割模型 |
 |Diet-Seg||[![bioRxiv](https://img.shields.io/badge/bioRxiv-2025.05.31.657149-b31b1b.svg)](https://www.biorxiv.org/content/10.1101/2025.05.31.657149v1)|医学图像分割|
 |Med-URWKV||[![arXiv:2506.10858](https://img.shields.io/badge/arXiv-2506.10858-b31b1b.svg)](https://arxiv.org/abs/2506.10858)|基于 ImageNet 预训练,用于医学图像分割的纯 RWKV|
 | SCRWKV | [![Star](https://img.shields.io/github/stars/zhxhzy/SCRWKV.svg?style=social&label=Star)](https://github.com/zhxhzy/SCRWKV) | [![arXiv:2605.14926](https://img.shields.io/badge/arXiv-2605.14926-b31b1b.svg)](https://arxiv.org/abs/2605.14926) | 用于裂缝分割的结构校准 Vision-RWKV 网络，结合多尺度纹理建模与轻量解码器，提供训练、测试和评估代码。 |
@@ -198,7 +198,7 @@
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
 |OmniRWKVSR||[![arXiv](https://img.shields.io/badge/arXiv-2502.00404-b31b1b)](https://arxiv.org/abs/2502.00404)|【IJCNN】基于 RWKV 的单图超分|
-|Geometry-Aware RWKV||[![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://ieeexplore.ieee.org/abstract/document/10943155)|异构光场超分辨率|
+| Geometry-Aware RWKV | [![Star](https://img.shields.io/github/stars/chenzean/LF-RWKVNet.svg?style=social&label=Star)](https://github.com/chenzean/LF-RWKVNet) | [![IEEE Xplore](https://img.shields.io/badge/IEEE%20Xplore-Abstract-orange)](https://doi.org/10.1109/LSP.2025.3555445) | 基于 RWKV 的几何感知光场图像超分辨率模型 |
 |Delta-WKV||[![arXiv](https://img.shields.io/badge/arXiv-2502.20852-b31b1b)](https://arxiv.org/abs/2502.20852)|【MICCAI 2025】磁共振成像超分模型|
 |MSB-RWKV||[![Springer](https://img.shields.io/badge/Springer-Article-red)](https://link.springer.com/article/10.1007/s13042-025-02644-7)|红外图像超分辨率|
 
