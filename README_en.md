@@ -32,6 +32,7 @@ A curated list of outstanding projects, tools, and resources in the RWKV ecosyst
 - [Time Series](#time-series)
 - [Robotics and Embodied Intelligence](#robotics-and-embodied-intelligence)
 - [RWKV Tokenizers](#rwkv-tokenizers)
+- [RWKV-agent](#rwkv-agent)
 - [RAG Systems for RWKV](#rag-systems-for-rwkv)
 - [Chatbots and Inference API Servers](#chatbots-and-inference-api-servers)
 - [RWKV Benchmarks](#rwkv-benchmarks)
@@ -308,6 +309,28 @@ A curated list of outstanding projects, tools, and resources in the RWKV ecosyst
 
 ---
 
+## RWKV-agent
+
+RWKV agent runtimes, desktop clients, retrieval/coding agents, and multi-agent research projects; see each repository for actual capabilities and model compatibility.
+
+| Title | Code | Paper | Description |
+| :--- | :--- | :--- | :--- |
+| RWKV-Agent | [![Star](https://img.shields.io/github/stars/No-22-Github/RWKV-Agent.svg?style=social&label=Star)](https://github.com/No-22-Github/RWKV-Agent) |  | A local-first RWKV workspace agent for Apple Silicon, using Go and MLX inference, with command-line, terminal UI, desktop, and browser interfaces; its current tools primarily support read-only operations. |
+| RWKV State Agent | [![Star](https://img.shields.io/github/stars/123123213weqw/rwkv-agent.svg?style=social&label=Star)](https://github.com/123123213weqw/rwkv-agent) |  | A local agent runtime centered on RWKV recurrent states, supporting state reuse across turns, structured tool calls, and state isolation across tasks; provides web search, command, and file tools. |
+| RWKV-Scout | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-Scout.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-Scout) |  | A web-search agent with RWKV at its decision-making core, covering task decomposition, query and tool selection, evidence review, and answer generation while recording evidence and execution traces. |
+| RWKV-LH | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-LH.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-LH) |  | An experimental coding agent for RWKV state-continuation models, combining decision and execution models with an on-demand planning model; supports tool execution, completion-condition checks, and recovery after interruption. |
+| rwkv-dsh | [![Star](https://img.shields.io/github/stars/RWKV-Vibe/rwkv-dsh.svg?style=social&label=Star)](https://github.com/RWKV-Vibe/rwkv-dsh) |  | A desktop RWKV agent for local workspaces; reads project files with tools and answers from evidence, using rwkv_lightning as the inference backend. |
+| RWKV-SearchReader | [![Star](https://img.shields.io/github/stars/w1c2j3/RWKV-SearchReader.svg?style=social&label=Star)](https://github.com/w1c2j3/RWKV-SearchReader) |  | An RWKV-based search question-answering and local document reading system with web, CLI, and API interfaces. |
+| RWKV-ECRA | [![Star](https://img.shields.io/github/stars/ehooon/RWKV-ECRA.svg?style=social&label=Star)](https://github.com/ehooon/RWKV-ECRA) |  | A cloud-edge collaborative long-document analysis agent using RWKV as the on-device model. |
+| ai00-x-client | [![Star](https://img.shields.io/github/stars/cgisky1980/ai00-x-client.svg?style=social&label=Star)](https://github.com/cgisky1980/ai00-x-client) |  | A cross-platform AI00/RWKV desktop client with a personal assistant, coding agent, and tool workflows. |
+| rwkv7-agent-kit | [![Star](https://img.shields.io/github/stars/SU-180/rwkv7-agent-kit.svg?style=social&label=Star)](https://github.com/SU-180/rwkv7-agent-kit) |  | A local RWKV7-G1j-13.3B agent experiment with tool registration, sessions, and a ReAct-style loop. |
+| rwkv_dart | [![Star](https://img.shields.io/github/stars/dengzii/rwkv_dart.svg?style=social&label=Star)](https://github.com/dengzii/rwkv_dart) |  | A Dart/Flutter SDK for RWKV, unifying local inference, OpenAI-compatible services, and MCP tool calling. |
+| RWKV_Agent_Lite | [![Star](https://img.shields.io/github/stars/No-22-Github/RWKV_Agent_Lite.svg?style=social&label=Star)](https://github.com/No-22-Github/RWKV_Agent_Lite) |  | A lightweight MVP for validating RWKV agent loops and tool calling. |
+| rwkv-statetrace-agent | [![Star](https://img.shields.io/github/stars/wangkeyu-u/rwkv-statetrace-agent.svg?style=social&label=Star)](https://github.com/wangkeyu-u/rwkv-statetrace-agent) |  | A code-diagnosis agent with trace replay, evidence validation, and task checkpoints; RWKV is integrated through an adapter and has not yet been measured with a native runtime. |
+| SocialDeductionLLM | [![Star](https://img.shields.io/github/stars/SocialDeductionLLM/SocialDeductionLLM.svg?style=social&label=Star)](https://github.com/SocialDeductionLLM/SocialDeductionLLM) | [![arXiv:2502.06060](https://img.shields.io/badge/arXiv-2502.06060-b31b1b.svg)](https://arxiv.org/abs/2502.06060) | (AAMAS 2025) Multi-agent reinforcement learning. |
+
+---
+
 ## RAG Systems for RWKV
 
 | Title | Code | Paper | Description |
@@ -327,15 +350,11 @@ A curated list of outstanding projects, tools, and resources in the RWKV ecosyst
 | Easy_RWKV_webui | [![Star](https://img.shields.io/github/stars/No-22-Github/Easy_RWKV_webui.svg?style=social&label=Star)](https://github.com/No-22-Github/Easy_RWKV_webui) |  | An online chat room for RWKV models, built with PyWebIO. |
 | Mini Model Daemon | [![Star](https://img.shields.io/github/stars/recursal/minmodmon.svg?style=social&label=Star)](https://github.com/recursal/minmodmon) |  | An RWKV inference tool using the web-rwkv backend. |
 | frank_esp32 | [![Star](https://img.shields.io/github/stars/lsk-china/frank_esp32.svg?style=social&label=Star)](https://github.com/lsk-china/frank_esp32) |  | A hardware implementation of the RWKV-powered Firefly chatbot. |
-| RWKV State Agent | [![Star](https://img.shields.io/github/stars/123123213weqw/rwkv-agent.svg?style=social&label=Star)](https://github.com/123123213weqw/rwkv-agent) |  | A local agent runtime centered on RWKV recurrent states, supporting state reuse across turns, structured tool calls, and state isolation across tasks; provides web search, command, and file tools. |
 | rwkv_lightning | [![Star](https://img.shields.io/github/stars/RWKV-Vibe/rwkv_lightning.svg?style=social&label=Star)](https://github.com/RWKV-Vibe/rwkv_lightning) |  | An RWKV batch inference backend built on Albatross and FastAPI, with NVIDIA CUDA and AMD ROCm execution paths, quantized inference, and serving interfaces. |
 | RWKV-Server | [![Star](https://img.shields.io/github/stars/AUXStar/RWKV-Server.svg?style=social&label=Star)](https://github.com/AUXStar/RWKV-Server) |  | An RWKV batch inference server for concurrent requests, with an OpenAI-compatible API, server-sent events (SSE) streaming, recurrent-state reuse, and dynamic batching. |
 | RWKV-Router | [![Star](https://img.shields.io/github/stars/cgisky1980/rwkv-router.svg?style=social&label=Star)](https://github.com/cgisky1980/rwkv-router) |  | A request-routing gateway using rules and a small RWKV classifier to categorize requests and route them to local models or cloud APIs; provides OpenAI- and Anthropic-compatible interfaces and bindings for multiple languages. |
-| RWKV-Scout | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-Scout.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-Scout) |  | A web-search agent with RWKV at its decision-making core, covering task decomposition, query and tool selection, evidence review, and answer generation while recording evidence and execution traces. |
 | rwkv_lightning_cuda | [![Star](https://img.shields.io/github/stars/Alic-Li/rwkv_lightning_cuda.svg?style=social&label=Star)](https://github.com/Alic-Li/rwkv_lightning_cuda) |  | An RWKV-7 inference service for NVIDIA CUDA with an additional AMD HIP path, providing OpenAI-compatible and native batch APIs, streaming, state caching, state fine-tuning, and quantization. |
-| RWKV-LH | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-LH.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-LH) |  | An experimental coding agent for RWKV state-continuation models, combining decision and execution models with an on-demand planning model; supports tool execution, completion-condition checks, and recovery after interruption. |
 | RWKV_Role_Playing_with_GPT-SoVITS | [![Star](https://img.shields.io/github/stars/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS.svg?style=social&label=Star)](https://github.com/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS) |  | Adds GPT-SoVITS voice conversations to an RWKV role-playing WebUI, with character configuration and local execution; suited to single-user use. |
-| RWKV-Agent | [![Star](https://img.shields.io/github/stars/No-22-Github/RWKV-Agent.svg?style=social&label=Star)](https://github.com/No-22-Github/RWKV-Agent) |  | A local-first RWKV workspace agent for Apple Silicon, using Go and MLX inference, with command-line, terminal UI, desktop, and browser interfaces; its current tools primarily support read-only operations. |
 
 ---
 
@@ -390,7 +409,6 @@ A curated list of outstanding projects, tools, and resources in the RWKV ecosyst
 
 | Title | Code | Paper | Description |
 | :--- | :--- | :--- | :--- |
-| SocialDeductionLLM | [![Star](https://img.shields.io/github/stars/SocialDeductionLLM/SocialDeductionLLM.svg?style=social&label=Star)](https://github.com/SocialDeductionLLM/SocialDeductionLLM) | [![arXiv:2502.06060](https://img.shields.io/badge/arXiv-2502.06060-b31b1b.svg)](https://arxiv.org/abs/2502.06060) | (AAMAS 2025) Multi-agent reinforcement learning. |
 | JSONL to binidx | [![Star](https://img.shields.io/github/stars/Abel2076/json2binidx_tool.svg?style=social&label=Star)](https://github.com/Abel2076/json2binidx_tool) |  | A tool for converting `.jsonl` files into `.bin`/`.idx` (binidx) data for RWKV training. |
 | RWKV-IF | [![Star](https://img.shields.io/github/stars/Lyttr/RWKVInverseFolding.svg?style=social&label=Star)](https://github.com/Lyttr/RWKVInverseFolding) | [![bioRxiv](https://img.shields.io/badge/bioRxiv-green)](https://www.biorxiv.org/content/10.1101/2025.06.13.659654v1.full.pdf) | An efficient, controllable RNA inverse-folding design framework based on RWKV. |
 | PCF-RWKV |  | [![Paper](https://img.shields.io/badge/Paper-Preprint-yellow)](https://www.preprints.org/manuscript/202412.1705/v1) | A product carbon footprint estimation system based on RWKV. |
