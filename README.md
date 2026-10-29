@@ -32,6 +32,7 @@
 - [时间序列](#时间序列)
 - [机器人与具身智能](#机器人与具身智能)
 - [RWKV 分词器](#rwkv-分词器)
+- [RWKV-agent](#rwkv-agent)
 - [RWKV 的 RAG 系统](#rwkv-的-rag-系统)
 - [聊天机器人与推理 API 服务器](#聊天机器人与推理-api-服务器)
 - [RWKV 基准测试](#rwkv-基准测试)
@@ -305,6 +306,28 @@
 
 ---
 
+## RWKV-agent
+
+收录 RWKV 智能体运行时、桌面客户端、检索/编码 Agent 与多智能体研究项目；具体能力与模型兼容性以各仓库说明为准。
+
+| 标题 | 代码 | 论文 | 简介 |
+| :--- | :--- | :--- | :--- |
+| RWKV-Agent | [![Star](https://img.shields.io/github/stars/No-22-Github/RWKV-Agent.svg?style=social&label=Star)](https://github.com/No-22-Github/RWKV-Agent) |  | 面向 Apple Silicon 的本地优先 RWKV 工作区 Agent，使用 Go 与 MLX 推理，提供命令行、终端界面、桌面与浏览器入口；当前工具能力以只读操作为主。 |
+| RWKV State Agent | [![Star](https://img.shields.io/github/stars/123123213weqw/rwkv-agent.svg?style=social&label=Star)](https://github.com/123123213weqw/rwkv-agent) |  | 以 RWKV 循环状态为核心的本地 Agent 运行时，支持跨轮状态复用、结构化工具调用和多任务状态隔离，提供联网检索、命令与文件工具。 |
+| RWKV-Scout | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-Scout.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-Scout) |  | 以 RWKV 为决策核心的联网检索 Agent，涵盖任务拆解、查询与工具选择、证据审核及回答生成，并记录证据与执行轨迹。 |
+| RWKV-LH | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-LH.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-LH) |  | 面向 RWKV 状态续写模型的实验性编码 Agent，结合决策模型、执行模型和按需调用的规划模型，提供工具执行、完成条件校验与中断恢复。 |
+| rwkv-dsh | [![Star](https://img.shields.io/github/stars/RWKV-Vibe/rwkv-dsh.svg?style=social&label=Star)](https://github.com/RWKV-Vibe/rwkv-dsh) | | 面向本地工作区的 RWKV 桌面智能体，通过工具读取项目文件并基于证据回答，接入 rwkv_lightning 推理服务。 |
+| RWKV-SearchReader | [![Star](https://img.shields.io/github/stars/w1c2j3/RWKV-SearchReader.svg?style=social&label=Star)](https://github.com/w1c2j3/RWKV-SearchReader) | | 基于 RWKV 的搜索问答与本地文档阅读系统，提供 Web、CLI 和 API。 |
+| RWKV-ECRA | [![Star](https://img.shields.io/github/stars/ehooon/RWKV-ECRA.svg?style=social&label=Star)](https://github.com/ehooon/RWKV-ECRA) | | 端云协同的长文本分析智能体，以 RWKV 作为端侧模型。 |
+| ai00-x-client | [![Star](https://img.shields.io/github/stars/cgisky1980/ai00-x-client.svg?style=social&label=Star)](https://github.com/cgisky1980/ai00-x-client) | | AI00/RWKV 跨平台桌面客户端，包含个人助手、编码智能体与工具工作流。 |
+| rwkv7-agent-kit | [![Star](https://img.shields.io/github/stars/SU-180/rwkv7-agent-kit.svg?style=social&label=Star)](https://github.com/SU-180/rwkv7-agent-kit) | | 基于 RWKV7-G1j-13.3B 的本地智能体实验项目，包含工具注册、会话与 ReAct 循环。 |
+| rwkv_dart | [![Star](https://img.shields.io/github/stars/dengzii/rwkv_dart.svg?style=social&label=Star)](https://github.com/dengzii/rwkv_dart) | | 面向 Dart/Flutter 的 RWKV SDK，统一本地推理、OpenAI 兼容服务与 MCP 工具调用。 |
+| RWKV_Agent_Lite | [![Star](https://img.shields.io/github/stars/No-22-Github/RWKV_Agent_Lite.svg?style=social&label=Star)](https://github.com/No-22-Github/RWKV_Agent_Lite) | | 用于验证 RWKV 智能体循环与工具调用的轻量 MVP。 |
+| rwkv-statetrace-agent | [![Star](https://img.shields.io/github/stars/wangkeyu-u/rwkv-statetrace-agent.svg?style=social&label=Star)](https://github.com/wangkeyu-u/rwkv-statetrace-agent) | | 支持轨迹回放、证据验证与任务检查点的代码诊断智能体；RWKV 通过适配层接入，原生运行时尚未验证。 |
+|SocialDeductionLLM|[![Star](https://img.shields.io/github/stars/SocialDeductionLLM/SocialDeductionLLM.svg?style=social&label=Star)](https://github.com/SocialDeductionLLM/SocialDeductionLLM)|[![arXiv:2502.06060](https://img.shields.io/badge/arXiv-2502.06060-b31b1b.svg)](https://arxiv.org/abs/2502.06060)|【AAMAS 2025】多智能体强化学习|
+
+---
+
 ## RWKV 的 RAG 系统
 
 | 标题 | 代码 | 论文 | 简介 |
@@ -324,15 +347,11 @@
 | Easy_RWKV_webui | [![Star](https://img.shields.io/github/stars/No-22-Github/Easy_RWKV_webui.svg?style=social&label=Star)](https://github.com/No-22-Github/Easy_RWKV_webui) | | 基于 PyWebIO 的 RWKV 模型在线聊天室。 |
 | Mini Model Daemon | [![Star](https://img.shields.io/github/stars/recursal/minmodmon.svg?style=social&label=Star)](https://github.com/recursal/minmodmon) | | 基于 web-rwkv 推理后端的 RWKV 模型推理工具。 |
 | frank_esp32 | [![Star](https://img.shields.io/github/stars/lsk-china/frank_esp32.svg?style=social&label=Star)](https://github.com/lsk-china/frank_esp32) | | 基于 RWKV 的 Firefly 聊天机器人硬件实现 |
-| RWKV State Agent | [![Star](https://img.shields.io/github/stars/123123213weqw/rwkv-agent.svg?style=social&label=Star)](https://github.com/123123213weqw/rwkv-agent) |  | 以 RWKV 循环状态为核心的本地 Agent 运行时，支持跨轮状态复用、结构化工具调用和多任务状态隔离，提供联网检索、命令与文件工具。 |
 | rwkv_lightning | [![Star](https://img.shields.io/github/stars/RWKV-Vibe/rwkv_lightning.svg?style=social&label=Star)](https://github.com/RWKV-Vibe/rwkv_lightning) |  | 基于 Albatross 与 FastAPI 的 RWKV 批量推理后端，提供 NVIDIA CUDA 和 AMD ROCm 路径，并支持量化推理与服务接口。 |
 | RWKV-Server | [![Star](https://img.shields.io/github/stars/AUXStar/RWKV-Server.svg?style=social&label=Star)](https://github.com/AUXStar/RWKV-Server) |  | 面向并发请求的 RWKV 批量推理服务器，提供 OpenAI 兼容 API、SSE 流式输出、循环状态复用与动态批处理调度。 |
 | RWKV-Router | [![Star](https://img.shields.io/github/stars/cgisky1980/rwkv-router.svg?style=social&label=Star)](https://github.com/cgisky1980/rwkv-router) |  | 基于规则与小型 RWKV 分类器的请求路由网关，将请求分级并分配给本地模型或云端 API，提供 OpenAI、Anthropic 兼容接口与多语言绑定。 |
-| RWKV-Scout | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-Scout.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-Scout) |  | 以 RWKV 为决策核心的联网检索 Agent，涵盖任务拆解、查询与工具选择、证据审核及回答生成，并记录证据与执行轨迹。 |
 | rwkv_lightning_cuda | [![Star](https://img.shields.io/github/stars/Alic-Li/rwkv_lightning_cuda.svg?style=social&label=Star)](https://github.com/Alic-Li/rwkv_lightning_cuda) |  | 面向 NVIDIA CUDA、附带 AMD HIP 路径的 RWKV-7 推理服务，提供 OpenAI 兼容与原生批量 API、流式输出、状态缓存、状态微调和量化功能。 |
-| RWKV-LH | [![Star](https://img.shields.io/github/stars/rwkv-rs/RWKV-LH.svg?style=social&label=Star)](https://github.com/rwkv-rs/RWKV-LH) |  | 面向 RWKV 状态续写模型的实验性编码 Agent，结合决策模型、执行模型和按需调用的规划模型，提供工具执行、完成条件校验与中断恢复。 |
 | RWKV_Role_Playing_with_GPT-SoVITS | [![Star](https://img.shields.io/github/stars/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS.svg?style=social&label=Star)](https://github.com/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS) |  | 在 RWKV 角色扮演 WebUI 基础上接入 GPT-SoVITS 语音对话，支持角色配置与本地运行；适合单用户体验。 |
-| RWKV-Agent | [![Star](https://img.shields.io/github/stars/No-22-Github/RWKV-Agent.svg?style=social&label=Star)](https://github.com/No-22-Github/RWKV-Agent) |  | 面向 Apple Silicon 的本地优先 RWKV 工作区 Agent，使用 Go 与 MLX 推理，提供命令行、终端界面、桌面与浏览器入口；当前工具能力以只读操作为主。 |
 ---
 
 ## RWKV 基准测试
@@ -386,7 +405,6 @@
 
 | 标题 | 代码 | 论文 | 简介 |
 | :--- | :--- | :--- | :--- |
-|SocialDeductionLLM|[![Star](https://img.shields.io/github/stars/SocialDeductionLLM/SocialDeductionLLM.svg?style=social&label=Star)](https://github.com/SocialDeductionLLM/SocialDeductionLLM)|[![arXiv:2502.06060](https://img.shields.io/badge/arXiv-2502.06060-b31b1b.svg)](https://arxiv.org/abs/2502.06060)|【AAMAS 2025】多智能体强化学习|
 | JSONL to binidx | [![Star](https://img.shields.io/github/stars/Abel2076/json2binidx_tool.svg?style=social&label=Star)](https://github.com/Abel2076/json2binidx_tool) | | 这个工具用于将 `.jsonl` 文件转成适合 RWKV 训练的 `.bin /.idx`（binidx）数据。 |
 | RWKV-IF | [![Star](https://img.shields.io/github/stars/Lyttr/RWKVInverseFolding.svg?style=social&label=Star)](https://github.com/Lyttr/RWKVInverseFolding) | [![bioRxiv](https://img.shields.io/badge/bioRxiv-green)](https://www.biorxiv.org/content/10.1101/2025.06.13.659654v1.full.pdf)| 基于RWKV的高效可控RNA逆折叠设计框架。|
 |PCF-RWKV||[![Paper](https://img.shields.io/badge/Paper-Preprint-yellow)](https://www.preprints.org/manuscript/202412.1705/v1)|基于 RWKV 模型的产品碳足迹估算系统|
